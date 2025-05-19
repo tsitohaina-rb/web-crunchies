@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import ShopModal from "../product/ShopModal";
 
 const Hero = () => {
+  const [isShopModalOpen, setIsShopModalOpen] = useState(false);
   return (
     <section className="relative bg-primary-foreground py-12 md:py-16 lg:py-20">
       <div className="absolute top-10 left-10 w-20 h-20 bg-primary/20 rounded-full opacity-50"></div>
@@ -24,7 +28,10 @@ const Hero = () => {
               store for quality pet supplies, toys, food, and more.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="text-white rounded-full px-8 py-6 font-medium">
+              <Button
+                className="text-white rounded-full px-8 py-6 font-medium"
+                onClick={() => setIsShopModalOpen(true)}
+              >
                 Shop Now <ArrowRight size={18} className="ml-1" />
               </Button>
               {/* <Button
@@ -60,6 +67,12 @@ const Hero = () => {
           </svg>
         </div>
       </div>
+      {/* Shop Modal */}
+      <ShopModal
+        isOpen={isShopModalOpen}
+        onOpen={() => setIsShopModalOpen(true)}
+        onClose={() => setIsShopModalOpen(false)}
+      />
     </section>
   );
 };

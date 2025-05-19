@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <main className="flex-grow flex items-center justify-center py-20">
+    <main className="flex-grow flex items-center justify-center mt-20 lg:mt-28 py-20">
       <div className="text-center max-w-lg px-4">
         <h1 className="text-8xl font-bold text-primary mb-6">404</h1>
         <h2 className="text-3xl font-semibold mb-4">Page Not Found</h2>

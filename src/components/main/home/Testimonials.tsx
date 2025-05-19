@@ -1,61 +1,73 @@
 import React from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, Globe, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
     id: 1,
     name: "John Smith",
-    role: "Dog Owner",
+    product: "Dog Chew Toy",
     image:
       "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
     text: "I've been shopping at Crunchies for over a year now, and I'm amazed by the quality of their products. My dog absolutely loves the toys and treats I get from here!",
+    countryCode: "US",
+    date: "2025-01-01",
   },
   {
     id: 2,
     name: "Sarah Johnson",
-    role: "Cat Owner",
+    product: "Cat Chew Toy",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
     text: "The cat supplies from Crunchies are simply the best. The delivery is always on time, and their customer service team is incredibly helpful whenever I have questions.",
+    countryCode: "FR",
+    date: "2025-01-02",
   },
   {
     id: 3,
     name: "Michael Brown",
-    role: "Bird Enthusiast",
+    product: "Bird Enthusiast",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
     text: "I appreciate the wide selection of bird supplies available at Crunchies. They have everything I need for my feathered friends at competitive prices.",
+    countryCode: "FR",
+    date: "2025-01-01",
   },
   {
     id: 4,
     name: "John Smith",
-    role: "Dog Owner",
+    product: "Dog Owner",
     image:
       "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
     text: "I've been shopping at Crunchies for over a year now, and I'm amazed by the quality of their products. My dog absolutely loves the toys and treats I get from here!",
+    countryCode: "IT",
+    date: "2025-01-01",
   },
   {
     id: 5,
     name: "Sarah Johnson",
-    role: "Cat Owner",
+    product: "Cat Owner",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 4,
     text: "The cat supplies from Crunchies are simply the best. The delivery is always on time, and their customer service team is incredibly helpful whenever I have questions.",
+    countryCode: "US",
+    date: "2025-01-01",
   },
   {
     id: 6,
     name: "Michael Brown",
-    role: "Bird Enthusiast",
+    product: "Bird Enthusiast",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
     text: "I appreciate the wide selection of bird supplies available at Crunchies. They have everything I need for my feathered friends at competitive prices.",
+    countryCode: "FR",
+    date: "2025-01-01",
   },
 ];
 
@@ -83,14 +95,18 @@ const Testimonials = () => {
               </div>
 
               <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="h-14 w-14 rounded-full object-cover"
-                />
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                  {testimonial.name.charAt(0).toUpperCase()}
+                </div>
                 <div>
-                  <h4 className="font-semibold">{testimonial.name}</h4>
-                  <p className="text-sm ">{testimonial.role}</p>
+                  <h4 className="font-semibold flex items-center">
+                    {testimonial.name}{" "}
+                    <Globe size={12} className="m-1 text-primary" />
+                    <span className="text-gray-600 text-xs">
+                      {testimonial.countryCode}
+                    </span>
+                  </h4>
+                  <p className="text-sm ">{testimonial.product}</p>
                 </div>
               </div>
 
@@ -108,14 +124,17 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              <p className="">{testimonial.text}</p>
+              <p className="mb-4">{testimonial.text}</p>
+              <p className="text-xs text-gray-500 flex items-center">
+                <Clock size={12} className="mr-1" /> {testimonial.date}
+              </p>
             </div>
           ))}
         </div>
       </div>
       <div className="mt-12 text-center">
         <Button className="bg-primary-foreground text-gray-800 hover:bg-primary/20 rounded-full px-8 py-6 font-medium">
-          View All Reviews
+          Load More
         </Button>
       </div>
     </section>

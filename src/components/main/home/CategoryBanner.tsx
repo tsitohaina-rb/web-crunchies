@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { Cat, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -9,56 +7,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useIsMobile } from "@/hooks/use-mobile";
 import Link from "next/link";
-
-const categories = [
-  {
-    id: 1,
-    title: "Pet Food",
-    count: "152",
-    image: "/images/category-pet-food.png",
-    color: "bg-primary/10",
-    href: "/category/pet-food",
-  },
-  {
-    id: 2,
-    title: "Pet Grooming",
-    count: "137",
-    image: "/images/category-pet-grooming.png",
-    color: "bg-yellow-50",
-    href: "/category/pet-grooming",
-  },
-  {
-    id: 3,
-    title: "Pet Apparel",
-    count: "57",
-    image: "/images/category-pet-apparel.png",
-    color: "bg-blue-100",
-    href: "/category/pet-apparel",
-  },
-  {
-    id: 4,
-    title: "Pet Healthcare",
-    count: "83",
-    image: "/images/category-pet-healthcare.png",
-    color: "bg-green-100",
-    href: "/category/pet-healthcare",
-  },
-];
+import categories from "@/data/categories-data";
 
 const CategoryBanner = () => {
-  const isMobile = useIsMobile();
-
-  // Determine number of items to show based on screen size
-  const getItemsPerSlide = () => {
-    if (isMobile) {
-      return 1; // Mobile: 1 item per slide
-    } else {
-      return 1.5; // Desktop: 1.5 items per slide
-    }
-  };
-
   return (
     <section className="section-padding">
       <div className="container-custom">
@@ -88,7 +40,7 @@ const CategoryBanner = () => {
                   className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/4"
                 >
                   <Link
-                    href={category.href}
+                    href={`/shop/${category.slug}`}
                     className={`${category.color} rounded-2xl p-4 block h-full transition-transform hover:-translate-y-2 group`}
                   >
                     <div className="h-40 sm:h-52 relative overflow-hidden rounded-xl mb-4">
@@ -104,10 +56,8 @@ const CategoryBanner = () => {
                           {category.title}
                         </h3>
                         <div className="flex items-center ">
-                          <Cat size={14} className="mr-1" />
-                          <span className="text-sm">
-                            {category.count} Products
-                          </span>
+                          <span className="mr-1">{category.icon}</span>
+                          <span className="text-sm">6 Products</span>
                         </div>
                       </div>
                       <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
