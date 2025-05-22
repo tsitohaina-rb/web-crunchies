@@ -16,7 +16,7 @@ import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 
 interface ProductDetailProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 const ProductDetailPage = async ({ params }: ProductDetailProps) => {

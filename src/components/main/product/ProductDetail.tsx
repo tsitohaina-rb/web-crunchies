@@ -5,9 +5,7 @@ import ReviewModal from "./ReviewModal";
 import products from "@/data/products-data";
 import {
   MessageSquarePlus,
-  ShoppingCart,
   Star,
-  Share2,
   Facebook,
   Twitter,
   Instagram,
@@ -18,8 +16,7 @@ import {
   ChevronDown,
   Globe,
   Clock,
-  MapPin,
-  ThumbsUp,
+  ShoppingBag,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -29,13 +26,14 @@ import {
   getLinkWithSubcategoriesAndName,
 } from "@/lib/formats";
 import { averageRating } from "@/lib/review";
+import ShopModal from "../shop/ShopModal";
 
 const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
-  const [quantity, setQuantity] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
   const [wishlist, setWishlist] = useState(false);
+  const [isShopModalOpen, setIsShopModalOpen] = useState(false);
 
   const handleSubmitReview = (data: any) => {
     if (!product) return;
@@ -159,57 +157,61 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
           </div>
 
           {/* Price */}
-          <div className="mb-6">
+          <div className="mb-8 bg-gray-50 p-4 rounded-lg">
             {selectedVariant.salePrice ? (
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-primary">
-                  {getCurrencySymbol(selectedVariant.currency)}
-                  {selectedVariant.salePrice.toFixed(2)}
-                </span>
-                <span className="text-lg text-gray-500 line-through">
-                  {getCurrencySymbol(selectedVariant.currency)}
-                  {selectedVariant.price.toFixed(2)}
+              <div className="flex flex-col">
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl font-bold text-primary">
+                    {getCurrencySymbol(selectedVariant.currency)}
+                    {selectedVariant.salePrice.toFixed(2)}
+                  </span>
+                  <span className="text-lg text-gray-400 line-through">
+                    {getCurrencySymbol(selectedVariant.currency)}
+                    {selectedVariant.price.toFixed(2)}
+                  </span>
+                  <span className="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">
+                    Save {getCurrencySymbol(selectedVariant.currency)}
+                    {(
+                      selectedVariant.price - selectedVariant.salePrice
+                    ).toFixed(2)}
+                  </span>
+                </div>
+                <span className="text-sm text-gray-500 mt-1">
+                  Limited time offer
                 </span>
               </div>
             ) : (
-              <span className="text-2xl font-bold text-primary">
-                {selectedVariant.currency}
+              <span className="text-3xl font-bold text-primary">
+                {getCurrencySymbol(selectedVariant.currency)}
                 {selectedVariant.price.toFixed(2)}
               </span>
             )}
           </div>
 
           {/* Short Description */}
-          <div className="text-gray-700 mb-6 border-t border-b border-gray-200 py-4">
+          <div className="text-gray-700 mb-8 border-l-4 border-primary/20 pl-4">
             <p>{product.description}</p>
           </div>
 
           {/* Variants Selection */}
-          <div className="mb-6">
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Weight
+          <div className="mb-8">
+            <label className="block text-sm font-medium text-gray-700 mb-3">
+              Select Weight
             </label>
-            <div className="relative">
-              <select
-                className="w-full border border-gray-300 rounded-md py-2 pl-4 pr-10 appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary bg-white"
-                value={selectedVariant.weight}
-                onChange={(e) => {
-                  const selected = product.variants.find(
-                    (v) => v.weight === e.target.value
-                  );
-                  if (selected) setSelectedVariant(selected);
-                }}
-              >
-                {product.variants.map((variant, index) => (
-                  <option key={index} value={variant.weight}>
-                    {variant.weight}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
-                size={18}
-              />
+            <div className="flex flex-wrap gap-3">
+              {product.variants.map((variant, index) => (
+                <button
+                  key={index}
+                  className={`px-4 py-2 rounded-lg border-2 transition-all duration-200 ${
+                    selectedVariant.weight === variant.weight
+                      ? "border-primary bg-primary/5 text-primary"
+                      : "border-gray-200 hover:border-gray-300 text-gray-700 hover:bg-gray-50"
+                  }`}
+                  onClick={() => setSelectedVariant(variant)}
+                >
+                  {variant.weight}
+                </button>
+              ))}
             </div>
           </div>
 
@@ -218,9 +220,10 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
             <Button
               className="flex-grow flex items-center justify-center"
               size="lg"
+              onClick={() => setIsShopModalOpen(true)}
             >
-              <ShoppingCart size={20} className="mr-2" />
-              Shop Now
+              <ShoppingBag size={20} className="mr-2" />
+              WHERE TO BUY
             </Button>
             <Button
               variant="outline"
@@ -405,6 +408,13 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
           )}
         </div>
       </div>
+
+      <ShopModal
+        slug={product.slug}
+        isOpen={isShopModalOpen}
+        onOpen={() => setIsShopModalOpen(true)}
+        onClose={() => setIsShopModalOpen(false)}
+      />
 
       <ReviewModal
         isOpen={isReviewModalOpen}

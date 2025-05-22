@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import products from "@/data/products-data";
 import ProductCard from "../product/ProductCard";
+import Link from "next/link";
 
 const FeaturedProducts = () => {
   return (
@@ -26,7 +27,7 @@ const FeaturedProducts = () => {
 
         <div className="mt-12 text-center">
           <Button className="bg-primary hover:bg-primary/95 text-white rounded-full px-8 py-6 font-medium">
-            View All Products
+            <Link href="/shop/all">View All Products</Link>
           </Button>
         </div>
       </div>

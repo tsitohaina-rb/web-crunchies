@@ -35,7 +35,7 @@ export const getLinkWithSubcategoriesAndName = (slug: string): getLinkType => {
       nameSub:
         category.subcategories.find((item) => item.slug === slug)?.title || "",
       linkCateg: `/shop/${category.slug}`,
-      linkSub: `/shop/${category.slug}?sub=${slug}`,
+      linkSub: `/shop/${category.slug}?subcategory=${slug}`,
     };
   }
   return {

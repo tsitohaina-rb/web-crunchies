@@ -11,9 +11,11 @@ import {
   getCurrencySymbol,
   getLinkWithSubcategoriesAndName,
 } from "@/lib/formats";
+import ShopModal from "../shop/ShopModal";
 
 const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isShopModalOpen, setIsShopModalOpen] = useState(false);
 
   return (
     <div
@@ -88,11 +90,22 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
             )}
           </div>
 
-          <Button size="sm" variant="default" className="rounded-full">
+          <Button
+            size="sm"
+            variant="default"
+            className="rounded-full"
+            onClick={() => setIsShopModalOpen(true)}
+          >
             Shop Now
           </Button>
         </div>
       </div>
+      <ShopModal
+        slug={product.slug}
+        isOpen={isShopModalOpen}
+        onOpen={() => setIsShopModalOpen(true)}
+        onClose={() => setIsShopModalOpen(false)}
+      />
     </div>
   );
 };

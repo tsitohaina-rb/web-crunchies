@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
+import About from "@/components/main/about/About";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const AboutPage = () => {
-  return <div className="flex-grow mt-20 lg:mt-28"></div>;
+  return <About />;
 };
 
 export default AboutPage;

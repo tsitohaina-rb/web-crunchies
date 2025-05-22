@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const BlogPage = () => {
   return (
     <div className="flex-grow mt-20 lg:mt-28">
-      <div className=" bg-primary-foreground py-16">
+      <div className="bg-primary-foreground py-16 relative">
         <div className="container-custom">
           <h2 className="section-title text-center">
             Our <span className="text-primary">Pet Blog</span>
@@ -25,6 +25,20 @@ const BlogPage = () => {
             Discover tips, advice, and stories about pet care, health, and
             happiness
           </p>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full h-16 md:h-24">
+          <svg
+            className="w-full h-full"
+            preserveAspectRatio="none"
+            viewBox="0 0 1440 48"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0,0 C240,48 720,48 1440,0 L1440,48 L0,48 Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </div>
 

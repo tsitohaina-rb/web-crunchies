@@ -23,7 +23,8 @@ import Link from "next/link";
 import Image from "next/image";
 import categories from "@/data/categories-data";
 import { motion, AnimatePresence } from "framer-motion";
-import ShopModal from "@/components/main/product/ShopModal";
+import ShopModal from "@/components/main/shop/ShopModal";
+import SearchModal from "./header/SearchModal";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,6 +33,7 @@ const Header = () => {
     "shop" | null
   >(null);
   const [isShopModalOpen, setIsShopModalOpen] = useState(false);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -95,7 +97,10 @@ const Header = () => {
               <Phone size={16} className="text-primary" />
               <span className="text-sm font-medium">+1 (234) 567-8901</span>
             </div>
-            <div className="flex items-center gap-2 hover:text-primary transition-all cursor-pointer">
+            <div
+              className="flex items-center gap-2 hover:text-primary transition-all cursor-pointer"
+              onClick={() => setIsShopModalOpen(true)}
+            >
               <MapPin size={16} className="text-primary" />
               <span className="text-sm font-medium">Find a Store</span>
             </div>
@@ -106,6 +111,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-4">
             <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
+              <option>JPY</option>
               <option>USD</option>
               <option>EUR</option>
               <option>GBP</option>
@@ -202,7 +208,7 @@ const Header = () => {
                                 {category.subcategories.map((sub) => (
                                   <li key={sub.id}>
                                     <Link
-                                      href={`/shop/${category.slug}?sub=${sub.slug}`}
+                                      href={`/shop/${category.slug}?subcategory=${sub.slug}`}
                                       className="text-sm py-1.5 px-2 rounded hover:bg-primary/5 hover:text-primary transition-colors flex items-center gap-2"
                                     >
                                       <span className="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
@@ -251,6 +257,7 @@ const Header = () => {
             <Button
               variant="outline"
               className="rounded-full shadow-none border-primary/20 hover:bg-primary/5 hover:border-primary/30"
+              onClick={() => setIsSearchModalOpen(true)}
             >
               <Search className="text-primary" size={18} />
               <span className="hidden sm:inline-flex ml-2">Search</span>
@@ -262,7 +269,9 @@ const Header = () => {
             >
               <div className="flex items-center gap-2">
                 <ShoppingBag size={18} />
-                <span className="hidden sm:inline-flex">Shop Now</span>
+                <span className="hidden sm:inline-flex uppercase">
+                  WHERE TO BUY
+                </span>
               </div>
             </Button>
             <button
@@ -375,7 +384,7 @@ const Header = () => {
                                 {category.subcategories?.map((sub) => (
                                   <div key={sub.id} className="ml-8 mb-2">
                                     <Link
-                                      href={`/shop/${category.slug}?sub=${sub.slug}`}
+                                      href={`/shop/${category.slug}?subcategory=${sub.slug}`}
                                       className="text-sm py-1.5 hover:text-primary flex items-center gap-2"
                                       onClick={() => setIsMenuOpen(false)}
                                     >
@@ -436,15 +445,15 @@ const Header = () => {
                     </div>
                     <span className="text-sm">+1 (234) 567-8901</span>
                   </Link>
-                  <Link
-                    href="/stores"
-                    className="flex items-center gap-3 hover:text-primary transition-colors"
+                  <p
+                    className="flex items-center cursor-pointer gap-3 hover:text-primary transition-colors"
+                    onClick={() => setIsShopModalOpen(true)}
                   >
                     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <MapPin size={16} className="text-primary" />
                     </div>
                     <span className="text-sm">Find a Store</span>
-                  </Link>
+                  </p>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <Clock size={16} className="text-primary" />
@@ -459,7 +468,7 @@ const Header = () => {
                     size="sm"
                     className="flex-1 text-xs"
                   >
-                    USD
+                    JPY
                   </Button>
                   <Button
                     variant="outline"
@@ -480,6 +489,12 @@ const Header = () => {
         isOpen={isShopModalOpen}
         onOpen={() => setIsShopModalOpen(true)}
         onClose={() => setIsShopModalOpen(false)}
+      />
+
+      {/* Search Modal */}
+      <SearchModal
+        isOpen={isSearchModalOpen}
+        onOpenChange={setIsSearchModalOpen}
       />
     </header>
   );

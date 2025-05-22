@@ -3,13 +3,15 @@ export default [
     id: 1,
     name: "Dog Chew Toy",
     slug: "dog-chew-toy",
+    category: "pet-food",
     subcategory: "dog-food",
     description: "This the description",
     images: [
       "https://images.unsplash.com/photo-1591946614720-90a587da4a36?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     ],
     variants: [
-      { weight: "2.5kg", price: 10.16, salePrice: 8.99, currency: "USD" },
+      { weight: "2.5kg", price: 10.16, salePrice: 8.99, currency: "JPY" },
+      { weight: "5.5kg", price: 40.16, salePrice: 3.99, currency: "JPY" },
     ],
     reviews: [
       {

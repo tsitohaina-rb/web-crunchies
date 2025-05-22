@@ -8,7 +8,6 @@ import PromoBanner from "@/components/main/home/PromoBanner";
 import Services from "@/components/main/home/Services";
 import Testimonials from "@/components/main/home/Testimonials";
 import { Metadata } from "next";
-// import ThreeSuperIPs from "@/components/main/home/ThreeSuperIPs";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -26,7 +25,6 @@ const HomePage = () => {
       <NewArrivals />
       <Services />
       <Testimonials />
-      {/* <ThreeSuperIPs /> */}
       <BlogSection />
       <Newsletter />
     </main>

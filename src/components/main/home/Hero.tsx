@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import ShopModal from "../product/ShopModal";
+import ShopModal from "../shop/ShopModal";
+import Link from "next/link";
 
 const Hero = () => {
   const [isShopModalOpen, setIsShopModalOpen] = useState(false);
@@ -30,9 +31,11 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Button
                 className="text-white rounded-full px-8 py-6 font-medium"
-                onClick={() => setIsShopModalOpen(true)}
+                asChild
               >
-                Shop Now <ArrowRight size={18} className="ml-1" />
+                <Link href="/shop/all">
+                  Shop Now <ArrowRight size={18} className="ml-1" />
+                </Link>
               </Button>
               {/* <Button
                 variant="outline"
