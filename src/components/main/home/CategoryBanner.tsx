@@ -9,8 +9,12 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import categories from "@/data/categories-data";
+import products from "@/data/products-data";
 
 const CategoryBanner = () => {
+  const getTotalProductsForCategory = (slug: string): number => {
+    return products.filter((product) => product.category === slug).length;
+  };
   return (
     <section className="section-padding">
       <div className="container-custom">
@@ -57,7 +61,9 @@ const CategoryBanner = () => {
                         </h3>
                         <div className="flex items-center ">
                           <span className="mr-1">{category.icon}</span>
-                          <span className="text-sm">6 Products</span>
+                          <span className="text-sm">
+                            {getTotalProductsForCategory(category.slug)}
+                          </span>
                         </div>
                       </div>
                       <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">

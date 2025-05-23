@@ -10,12 +10,14 @@ import dynamic from "next/dynamic";
 import { averageRating } from "@/lib/review";
 import { getCurrencySymbol } from "@/lib/formats";
 import { Input } from "@/components/ui/input";
+import { MapShopProps } from "@/components/ui/map-shop";
 
 interface ShopModalProps {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
   slug?: string;
+  markers?: MapShopProps[];
 }
 
 const MapComponent = dynamic(() => import("@/components/ui/map-shop"), {
@@ -31,7 +33,7 @@ const MapComponent = dynamic(() => import("@/components/ui/map-shop"), {
 
 type ActiveTab = "online" | "nearby";
 
-const ShopModal = ({ isOpen, onClose, slug }: ShopModalProps) => {
+const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState<ActiveTab>("online");
   const [searchQuery, setSearchQuery] = useState("");
@@ -350,7 +352,7 @@ const ShopModal = ({ isOpen, onClose, slug }: ShopModalProps) => {
                           </div>
                         </div>
                         <Button
-                          className="bg-primary/90 hover:bg-primary text-white px-6 py-2 rounded-xl transition-all duration-200 hover:shadow-lg hover:scale-105"
+                          className="rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105"
                           asChild
                         >
                           <a
@@ -369,7 +371,7 @@ const ShopModal = ({ isOpen, onClose, slug }: ShopModalProps) => {
                 {/* Map View */}
                 {activeTab === "nearby" && (
                   <div className="rounded-xl overflow-hidden border-2 border-gray-100 shadow-sm">
-                    <MapComponent />
+                    <MapComponent markersDynamic={markers} />
                   </div>
                 )}
               </div>

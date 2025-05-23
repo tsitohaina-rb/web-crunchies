@@ -141,7 +141,7 @@ const MapComponent = () => {
   return (
     <div className="relative">
       {/* Map controls matching the image layout */}
-      <div className="absolute top-2 left-2 z-10 bg-white rounded-md p-1 flex">
+      <div className="absolute top-2 left-2 z-1 bg-white rounded-md p-1 flex">
         <button
           onClick={() => handleLayerChange("Plan")}
           className="px-3 py-1 text-sm rounded-sm mr-1 focus:outline-none cursor-pointer"
@@ -178,7 +178,7 @@ const MapComponent = () => {
       </div>
 
       {/* Zoom controls matching the image */}
-      <div className="absolute right-2 top-20 z-10 bg-white rounded-md flex flex-col">
+      <div className="absolute right-2 top-20 z-1 bg-white rounded-md flex flex-col">
         <button
           className="p-2 focus:outline-none border-b border-gray-200 cursor-pointer"
           onClick={() =>
