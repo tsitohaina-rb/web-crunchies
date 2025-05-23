@@ -12,6 +12,7 @@ import {
   getLinkWithSubcategoriesAndName,
 } from "@/lib/formats";
 import ShopModal from "../shop/ShopModal";
+import Image from "next/image";
 
 const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,11 +25,15 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative h-60 overflow-hidden">
-        <img
-          src={product.images[0]}
-          alt={product.name}
-          className="w-full h-full object-cover transition-transform group-hover:scale-110"
-        />
+        <Link href={`/product/${product.slug}`}>
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            className="w-full h-full object-cover transition-transform group-hover:scale-110"
+            height={240}
+            width={100}
+          />
+        </Link>
 
         {/* Product badges */}
         <div className="absolute top-4 left-4 flex flex-col gap-2">

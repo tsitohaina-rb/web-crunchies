@@ -278,31 +278,39 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden shadow-md">
-                <img
+                <Image
                   src="/api/placeholder/300/300"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
+                  height={300}
+                  width={300}
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
-                <img
+                <Image
                   src="/api/placeholder/300/300"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
+                  height={300}
+                  width={300}
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
-                <img
+                <Image
                   src="/api/placeholder/300/300"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
+                  height={300}
+                  width={300}
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
-                <img
+                <Image
                   src="/api/placeholder/300/300"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
+                  height={300}
+                  width={300}
                 />
               </div>
             </div>

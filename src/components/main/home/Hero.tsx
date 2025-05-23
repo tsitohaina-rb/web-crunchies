@@ -30,7 +30,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
-                className="text-white rounded-full px-8 py-6 font-medium"
+                className="text-white rounded-full px-8 py-6 font-medium transition-all duration-200 hover:shadow-lg hover:scale-105"
                 asChild
               >
                 <Link href="/shop/all">

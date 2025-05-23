@@ -112,15 +112,10 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
               <option>JPY</option>
-              <option>USD</option>
-              <option>EUR</option>
-              <option>GBP</option>
             </select>
             <div className="h-4 w-px bg-gray-300"></div>
             <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
               <option>English</option>
-              <option>Spanish</option>
-              <option>French</option>
             </select>
           </div>
         </div>
@@ -256,7 +251,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <Button
               variant="outline"
-              className="rounded-full shadow-none border-primary/20 hover:bg-primary/5 hover:border-primary/30"
+              className="rounded-full shadow-none border-primary/20 hover:bg-primary/5 hover:border-primary/30 transition-all duration-200 hover:scale-105"
               onClick={() => setIsSearchModalOpen(true)}
             >
               <Search className="text-primary" size={18} />
@@ -264,7 +259,7 @@ const Header = () => {
             </Button>
             <Button
               variant="default"
-              className="rounded-full"
+              className="rounded-full transition-all duration-200 hover:scale-105"
               onClick={() => setIsShopModalOpen(true)}
             >
               <div className="flex items-center gap-2">

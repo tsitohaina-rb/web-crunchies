@@ -14,9 +14,38 @@ import ProductDetail from "@/components/main/product/ProductDetail";
 import RelatedProducts from "@/components/main/product/RelatedProducts";
 import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
+import { Metadata } from "next";
 
 interface ProductDetailProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: ProductDetailProps): Promise<Metadata> {
+  const { slug } = await params;
+  const product = products.find((product) => product.slug === slug);
+
+  try {
+    if (product) {
+      return {
+        title: `${product.name}` || "Crunchies : Product Detail",
+        description: product.description || "Product detail description",
+        openGraph: {
+          title: product.name,
+          description: product.description,
+          images: product?.images ?? null,
+        },
+      };
+    }
+  } catch (error) {
+    console.error("Error fetching post for metadata:", error);
+  }
+
+  return {
+    title: "Crunchies : Product not found",
+    description: "Product not found description",
+  };
 }
 
 const ProductDetailPage = async ({ params }: ProductDetailProps) => {
