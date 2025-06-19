@@ -164,7 +164,7 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                                 {product.name}
                               </h4>
                               <div className="flex items-center gap-4">
-                                <div className="text-sm text-gray-600">
+                                {/* <div className="text-sm text-gray-600">
                                   {product.variants[0].salePrice ? (
                                     <div className="flex items-center gap-2">
                                       <span className="text-primary font-medium">
@@ -188,7 +188,7 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                                       {product.variants[0].price}
                                     </span>
                                   )}
-                                </div>
+                                </div> */}
                                 <div className="flex items-center gap-1 bg-primary/5 px-2 py-1 rounded-full">
                                   <Star className="w-3 h-3 fill-primary text-primary" />
                                   <span className="text-xs font-medium text-primary">
@@ -222,11 +222,11 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                             fill
                             className="object-contain p-3"
                           />
-                          {selectedProduct.isNew && (
+                          {/* {selectedProduct.isNew && (
                             <div className="absolute top-2 left-2 bg-green-500 text-white text-xs font-medium px-2 py-1 rounded-full">
                               New
                             </div>
-                          )}
+                          )} */}
                         </div>
 
                         {/* Product Info */}
@@ -266,7 +266,7 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                                   <span className="font-medium">
                                     {variant.weight}
                                   </span>
-                                  <span className="mx-2">-</span>
+                                  {/* <span className="mx-2">-</span>
                                   {variant.salePrice ? (
                                     <span>
                                       <span className="text-primary font-medium">
@@ -283,7 +283,7 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                                       {getCurrencySymbol(variant.currency)}
                                       {variant.price}
                                     </span>
-                                  )}
+                                  )} */}
                                 </div>
                               ))}
                             </div>

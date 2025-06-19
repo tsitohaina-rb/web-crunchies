@@ -29,10 +29,10 @@ const HomePage = () => {
       <Hero />
       <CategoryBanner />
       <FeaturedProducts />
-      <PromoBanner />
-      <NewArrivals />
-      <Services />
+      {/* <PromoBanner />
+      <NewArrivals /> */}
       <Testimonials />
+      <Services />
       <BlogSection />
       <Newsletter />
     </main>

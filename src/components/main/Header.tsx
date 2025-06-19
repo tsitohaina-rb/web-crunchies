@@ -162,7 +162,7 @@ const Header = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <motion.ul
-                      className="grid w-[300px] gap-3 grid-cols-2 p-6 max-[1552px]:w-[900px] max-[1552px]:grid-cols-3 "
+                      className="grid w-[300px] gap-3 grid-cols-2 p-6 max-[40000px]:w-[900px] max-[1552px]:grid-cols-3 "
                       variants={menuVariants}
                       initial="hidden"
                       animate="visible"

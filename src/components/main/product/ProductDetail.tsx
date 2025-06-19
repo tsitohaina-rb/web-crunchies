@@ -59,7 +59,7 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
         {/* Product Images Section */}
         <div className="relative md:col-span-2">
           <div className="mb-4 overflow-hidden rounded-lg border border-gray-200 bg-white relative group">
-            {product.isNew && (
+            {/* {product.isNew && (
               <div className="absolute top-4 left-4 z-1 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded">
                 New
               </div>
@@ -73,7 +73,7 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
                 )}
                 % OFF
               </div>
-            )}
+            )} */}
 
             <Image
               src={product.images[activeImageIndex]}
@@ -157,7 +157,7 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
           </div>
 
           {/* Price */}
-          <div className="mb-8 bg-gray-50 p-4 rounded-lg">
+          {/* <div className="mb-8 bg-gray-50 p-4 rounded-lg">
             {selectedVariant.salePrice ? (
               <div className="flex flex-col">
                 <div className="flex items-center gap-3">
@@ -186,7 +186,7 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
                 {selectedVariant.price.toFixed(2)}
               </span>
             )}
-          </div>
+          </div> */}
 
           {/* Short Description */}
           <div className="text-gray-700 mb-8 border-l-4 border-primary/20 pl-4">
