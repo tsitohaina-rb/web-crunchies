@@ -5,8 +5,8 @@ const services = [
   {
     id: 1,
     icon: Truck,
-    title: "Free Shipping",
-    description: "Free shipping for orders above $50",
+    title: "Fast Delivery",
+    description: "Get your orders delivered quickly and safely",
   },
   {
     id: 2,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Mail, Send } from "lucide-react";
+import { ArrowRight, Mail, Send } from "lucide-react";
 
 const Newsletter = () => {
   return (
@@ -23,18 +23,16 @@ const Newsletter = () => {
 
           <div className="w-full md:w-1/2 max-w-md">
             <form className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-white border-primary/10 focus-visible:ring-primary"
-                required
-              />
-              <Button
-                type="submit"
-                className="bg-primary hover:bg-primary/95 text-white flex-shrink-0"
-              >
-                <Send size={18} className="mr-2" /> Subscribe
-              </Button>
+              <div className="w-full md:w-1/2 flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-2 rounded-lg border border-primary/20 focus:outline-none focus:border-primary"
+                />
+                <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2">
+                  Subscribe <ArrowRight size={16} />
+                </button>
+              </div>
             </form>
             <p className="text-sm  mt-2">
               By subscribing, you agree to our privacy policy and consent to

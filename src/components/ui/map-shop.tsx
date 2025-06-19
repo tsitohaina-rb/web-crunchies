@@ -26,12 +26,15 @@ interface MapShopComponentProps {
 }
 
 const markersDefault = [
-  { name: "Wallis", coordinates: [-176.2, -13.3] },
-  { name: "Madagascar", coordinates: [47.5, -18.8] },
-  { name: "Réunion", coordinates: [55.5, -21.1] },
-  { name: "Mayotte", coordinates: [45.2, -12.8] },
-  { name: "Papouasie-Nouvelle-Guinée", coordinates: [143.5, -6.3] },
-  { name: "Nouvelle-Calédonie", coordinates: [165.6, -21.3] },
+  { name: "China", coordinates: [104.195397, 35.86166] },
+  { name: "South Korea", coordinates: [127.766922, 35.907757] },
+  { name: "Vietnam", coordinates: [108.277199, 14.058324] },
+  { name: "Thailand", coordinates: [100.992541, 15.870032] },
+  { name: "Indonesia", coordinates: [113.921327, -0.789275] },
+  { name: "Philippines", coordinates: [121.774017, 12.879721] },
+  { name: "Malaysia", coordinates: [101.975766, 4.210484] },
+  { name: "Colombia", coordinates: [-74.297333, 4.570868] },
+  { name: "France", coordinates: [2.213749, 46.227638] },
 ];
 
 const MapShop = ({ markersDynamic }: MapShopComponentProps) => {

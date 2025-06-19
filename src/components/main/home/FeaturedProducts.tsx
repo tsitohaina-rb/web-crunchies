@@ -1,34 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import products from "@/data/products-data";
 import ProductCard from "../product/ProductCard";
 import Link from "next/link";
 
 const FeaturedProducts = () => {
-  const [productLimit, setProductLimit] = useState(8);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 1024) {
-        // mobile
-        setProductLimit(4);
-      } else if (width < 1280) {
-        // tablet
-        setProductLimit(6);
-      } else {
-        // desktop
-        setProductLimit(8);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <section className="section-padding bg-primary-foreground">
       <div className="container-custom">
@@ -42,7 +20,7 @@ const FeaturedProducts = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.slice(0, productLimit).map((product) => (
+          {products.slice(0, 4).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
