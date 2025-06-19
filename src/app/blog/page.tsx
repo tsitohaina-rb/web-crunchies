@@ -7,6 +7,7 @@ import blogPosts from "@/data/blog-data";
 import BlogCard from "@/components/main/blog/BlogCard";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Newsletter from "@/components/main/Newsletter";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -145,6 +146,7 @@ const BlogPage = () => {
           </div>
         </div>
       </div>
+      <Newsletter />
     </div>
   );
 };

@@ -328,15 +328,15 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                         <div className="flex items-center gap-4">
                           <div className="relative w-20 h-20 rounded-lg overflow-hidden bg-white p-2 border border-gray-100 group-hover:border-primary/20 transition-colors">
                             <Image
-                              src={shop.image || "/images/logo/amazone.png"}
-                              alt={shop.shopName || "Online Store"}
+                              src={shop.image}
+                              alt={shop.shopName}
                               fill
                               className="object-contain"
                             />
                           </div>
                           <div>
                             <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                              {shop.shopName || "Online Store"}
+                              {shop.shopName}
                             </h3>
                             <div className="flex items-center gap-2 mt-1">
                               <div className="flex items-center gap-1 bg-primary/5 px-2 py-1 rounded-full">

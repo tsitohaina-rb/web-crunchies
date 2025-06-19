@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { title } from "process";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -88,11 +87,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-semibold text-lg">Email Address</h3>
-                    <p className="text-petio-text mt-1">
-                      info@petio.com
-                      <br />
-                      support@petio.com
-                    </p>
+                    <p className="text-petio-text mt-1">info@crunchies.com</p>
                   </div>
                 </div>
 
@@ -103,11 +98,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="font-semibold text-lg">Working Hours</h3>
                     <p className="text-petio-text mt-1">
-                      Monday - Friday: 8:00 AM - 6:00 PM
-                      <br />
-                      Saturday: 9:00 AM - 5:00 PM
-                      <br />
-                      Sunday: Closed
+                      Hide "Mon-Sat: 8.00-18.00
                     </p>
                   </div>
                 </div>

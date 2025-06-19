@@ -164,7 +164,7 @@ const ProductsFilter = ({ categ }: ProductsFilterProps) => {
               </div>
 
               {/* Price Range Filter */}
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 <label className="text-sm font-medium text-gray-700">
                   Price Range
                 </label>
@@ -185,7 +185,7 @@ const ProductsFilter = ({ categ }: ProductsFilterProps) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Rating Filter */}
               <div className="space-y-3">

@@ -41,7 +41,7 @@ const About = () => {
             >
               <div className="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-xl hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/images/about-img.png"
+                  src="/images/about/about-img.png"
                   alt="Pet and Owner"
                   className="w-full h-full object-cover"
                   height={500}
@@ -129,7 +129,7 @@ const About = () => {
         className="py-16 bg-primary/5"
       >
         <div className="container-custom px-6">
-          <div className="flex flex-col-reverse md:flex-row items-center">
+          <div className="flex flex-col-reverse md:flex-row items-center gap-12">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -145,46 +145,48 @@ const About = () => {
                 the right solutions:
               </p>
 
-              <div className="mb-4 flex items-start">
-                <div className="text-primary mr-4">
-                  <i className="fas fa-paw text-xl"></i>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="text-primary mt-1">
+                    <i className="fas fa-paw text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 text-lg">
+                      Nutritionally balanced food
+                    </h3>
+                    <p className="text-gray-600">for optimal health</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 text-lg">
-                    Nutritionally balanced food
-                  </h3>
-                  <p className="text-gray-600">for optimal health</p>
+
+                <div className="flex items-start gap-4">
+                  <div className="text-primary mt-1">
+                    <i className="fas fa-paw text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 text-lg">
+                      Tailored grooming products, daily care essentials, and
+                      supplements
+                    </h3>
+                    <p className="text-gray-600">
+                      prioritizing comfort and vitality
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="text-primary mt-1">
+                    <i className="fas fa-paw text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 text-lg">
+                      Relentless research and innovation
+                    </h3>
+                    <p className="text-gray-600">to elevate pets' lifestyles</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="mb-4 flex items-start">
-                <div className="text-primary mr-4">
-                  <i className="fas fa-paw text-xl"></i>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 text-lg">
-                    Tailored grooming products, daily care essentials, and
-                    supplements
-                  </h3>
-                  <p className="text-gray-600">
-                    prioritizing comfort and vitality
-                  </p>
-                </div>
-              </div>
-
-              <div className="mb-4 flex items-start">
-                <div className="text-primary mr-4">
-                  <i className="fas fa-paw text-xl"></i>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 text-lg">
-                    Relentless research and innovation
-                  </h3>
-                  <p className="text-gray-600">to elevate pets' lifestyles</p>
-                </div>
-              </div>
-
-              <p className="text-gray-700 mt-6 italic">
+              <p className="text-gray-700 mt-8 italic">
                 Our mission is to cultivate a culture of holistic well-being,
                 where science and care converge for every cherished companion.
               </p>
@@ -194,15 +196,17 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="md:w-1/2 mb-10 md:mb-0 h-10"
+              className="md:w-1/2 flex justify-center items-center"
             >
-              <Image
-                src="/images/about-img-2.png"
-                alt="Happy Pets"
-                className="rounded-lg w-full h-auto"
-                height={500}
-                width={500}
-              />
+              <div className="relative w-full max-w-md">
+                <Image
+                  src="/images/about/about-img-2.png"
+                  alt="Happy Pets"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -279,7 +283,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/api/placeholder/300/300"
+                  src="/images/about/image-1.jpeg"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
                   height={300}
@@ -288,7 +292,7 @@ const About = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/api/placeholder/300/300"
+                  src="/images/about/image-2.jpeg"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
                   height={300}
@@ -297,7 +301,7 @@ const About = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/api/placeholder/300/300"
+                  src="/images/about/image-3.jpeg"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
                   height={300}
@@ -306,7 +310,7 @@ const About = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/api/placeholder/300/300"
+                  src="/images/about/image-4.png"
                   alt="Pet Photo"
                   className="w-full h-full object-cover"
                   height={300}

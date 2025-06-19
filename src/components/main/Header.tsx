@@ -106,7 +106,9 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-primary" />
-              <span className="text-sm font-medium">Mon-Sat: 8.00-18.00</span>
+              <span className="text-sm font-medium">
+                Hide "Mon-Sat: 8.00-18.00
+              </span>
             </div>
           </div>
           <div className="flex items-center gap-4">
