@@ -1,5 +1,6 @@
 import Contact from "@/components/main/contact/Contact";
 import Map from "@/components/main/contact/MapComponent";
+import Newsletter from "@/components/main/Newsletter";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import React from "react";
@@ -52,9 +53,10 @@ const ContactPage = () => {
         </div>
       </div>
       <Contact />
-      <div className="container-custom">
+      <div className="container-custom mb-8">
         <MapComponent />
       </div>
+      <Newsletter />
     </div>
   );
 };

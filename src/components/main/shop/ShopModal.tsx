@@ -128,7 +128,7 @@ const ShopModal = ({ isOpen, onClose, slug, markers }: ShopModalProps) => {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder="Search products..."
-                      className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-gray-100 focus:border-primary/30 transition-all duration-200 bg-white shadow-sm"
+                      className="w-full border-0 focus-visible:ring-0 pl-12 pr-4 py-6 text-lg focus:border-b-1 focus:border-primary/30 transition-all duration-200"
                     />
                     <Search
                       className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-hover:text-primary transition-colors duration-200"

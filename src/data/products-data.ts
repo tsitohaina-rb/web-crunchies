@@ -53,16 +53,16 @@ export default [
     ],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -108,16 +108,16 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -163,16 +163,16 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -204,16 +204,16 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -252,16 +252,16 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -300,16 +300,16 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
-        url: "www.amazon.com",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://www.shoppe.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -348,14 +348,14 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazone",
-        image: "/images/logo/amazone.png",
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
         url: "www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
-        shopName: "Amazone",
+        shopName: "Amazon",
         image: "/images/logo/shopee.png",
         url: "www.shoppe.co.th",
         note: 4.5,
