@@ -62,7 +62,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -117,7 +117,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -172,7 +172,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -213,7 +213,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -261,7 +261,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -309,7 +309,7 @@ export default [
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
-        url: "https://www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
