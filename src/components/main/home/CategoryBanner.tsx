@@ -74,8 +74,8 @@ const CategoryBanner = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 border-primary text-primary hover:bg-primary hover:text-white" />
-            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 border-primary text-primary hover:bg-primary hover:text-white" />
+            <CarouselPrevious className="absolute flex lg:hidden left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 border-primary text-primary hover:bg-primary hover:text-white" />
+            <CarouselNext className="absolute flex lg:hidden right-0 top-1/2 -translate-y-1/2 translate-x-1/2 border-primary text-primary hover:bg-primary hover:text-white" />
           </Carousel>
         </div>
       </div>

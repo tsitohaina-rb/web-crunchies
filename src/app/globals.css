@@ -115,19 +115,19 @@
   }
 }
 @utility container-custom {
-  @apply container mx-auto px-4;
+  @apply container mx-auto px-4 md:px-6 lg:px-8;
 }
 
 @utility section-padding {
-  @apply py-16 md:py-20 lg:py-24;
+  @apply py-16 md:py-20 lg:py-24 xl:py-32;
 }
 
 @utility section-title {
-  @apply text-3xl md:text-4xl lg:text-5xl mb-4 font-semibold;
+  @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 font-semibold;
 }
 
 @utility section-subtitle {
-  @apply text-lg mb-10 max-w-2xl mx-auto;
+  @apply text-lg md:text-xl mb-10 max-w-3xl mx-auto;
 }
 
 :root {
@@ -206,10 +206,12 @@
   body {
     @apply bg-background text-foreground;
     overflow-x: hidden;
+    font-family: var(--font-sans);
   }
 
   button {
     cursor: pointer;
+    @apply transition-colors duration-200;
   }
 
   h1,
@@ -228,5 +230,11 @@
   ::-moz-selection {
     @apply bg-primary/75;
     color: #ffffff;
+  }
+
+  .bg-hero {
+    background-image: url("/images/hero-bg.mp4");
+    background-size: cover;
+    background-position: center;
   }
 }
