@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <div className="bg-white border border-petio-border rounded-lg p-6">
+            <div className="bg-white border border-petio-border rounded-lg px-6 py-11">
               <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
 
               <div className="space-y-6">
@@ -88,18 +88,6 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="font-semibold text-lg">Email Address</h3>
                     <p className="text-petio-text mt-1">info@crunchies.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="text-primary" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="font-semibold text-lg">Working Hours</h3>
-                    <p className="text-petio-text mt-1">
-                      Hide "Mon-Sat: 8.00-18.00
-                    </p>
                   </div>
                 </div>
               </div>

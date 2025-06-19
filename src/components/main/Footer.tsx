@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/images/logo.png"
@@ -71,45 +71,34 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-2">
+          <div>
             <h4 className="text-lg font-bold mb-6 relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-0.5 after:bg-primary after:left-0 after:-bottom-2">
               Get in Touch
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start gap-3 group">
-                  <MapPin
-                    size={18}
-                    className="text-primary mt-1 group-hover:scale-110 transition-transform"
-                  />
-                  <p className="text-gray-600">
-                    1234 Pet Street, Pawsville, <br />
-                    CA 98765, United States
-                  </p>
-                </div>
-                <div className="flex items-center gap-3 group">
-                  <Phone
-                    size={18}
-                    className="text-primary group-hover:scale-110 transition-transform"
-                  />
-                  <p className="text-gray-600">+1 (234) 567-8901</p>
-                </div>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3 group">
+                <MapPin
+                  size={18}
+                  className="text-primary mt-1 group-hover:scale-110 transition-transform"
+                />
+                <p className="text-gray-600">
+                  1234 Pet Street, Pawsville, <br />
+                  CA 98765, United States
+                </p>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 group">
-                  <Mail
-                    size={18}
-                    className="text-primary group-hover:scale-110 transition-transform"
-                  />
-                  <p className="text-gray-600">info@crunchies.com</p>
-                </div>
-                <div className="flex items-center gap-3 group">
-                  <Clock
-                    size={18}
-                    className="text-primary group-hover:scale-110 transition-transform"
-                  />
-                  <p className="text-gray-600">Hide "Mon-Sat: 8.00-18.00</p>
-                </div>
+              <div className="flex items-center gap-3 group">
+                <Phone
+                  size={18}
+                  className="text-primary group-hover:scale-110 transition-transform"
+                />
+                <p className="text-gray-600">+1 (234) 567-8901</p>
+              </div>
+              <div className="flex items-center gap-3 group">
+                <Mail
+                  size={18}
+                  className="text-primary group-hover:scale-110 transition-transform"
+                />
+                <p className="text-gray-600">info@crunchies.com</p>
               </div>
             </div>
           </div>
@@ -125,24 +114,32 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
             >
               <Facebook size={18} />
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
             >
               <Twitter size={18} />
             </a>
             <a
               href="https://www.instagram.com/crunchies0601"
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
             >
               <Instagram size={18} />
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full bg-primary/5 flex items-center justify-center hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
             >
               <Youtube size={18} />

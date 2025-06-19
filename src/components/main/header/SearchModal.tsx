@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import {
   Dialog,
   DialogContent,
@@ -9,7 +10,6 @@ import { Input } from "@/components/ui/input";
 import { Search as SearchIcon, Clock, X, Star } from "lucide-react";
 import products from "@/data/products-data";
 import Image from "next/image";
-import Link from "next/link";
 import { getCurrencySymbol } from "@/lib/formats";
 import { averageRating } from "@/lib/review";
 
@@ -22,6 +22,7 @@ interface SearchModalProps {
 }
 
 const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState(products);
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
@@ -61,6 +62,12 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
     saveToHistory(query);
   };
 
+  const handleProductClick = (slug: string, query: string) => {
+    saveToHistory(query);
+    onOpenChange(false);
+    router.push(`/product/${slug}`);
+  };
+
   useEffect(() => {
     const filtered = products.filter((product) =>
       product.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -95,18 +102,19 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
         </div>
 
         {searchQuery ? (
-          <div className="max-h-[60vh] overflow-auto">
+          <div className="max-h-[60vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300">
             {searchResults.length > 0 ? (
               <div className="p-4 divide-y">
                 {searchResults.map((product) => (
-                  <Link
+                  <div
                     key={product.id}
-                    href={`/product/${product.slug}`}
-                    className="flex justify-between py-4 hover:bg-muted/50 px-2 rounded-lg transition-colors"
-                    onClick={() => onOpenChange(false)}
+                    onClick={() =>
+                      handleProductClick(product.slug, searchQuery)
+                    }
+                    className="flex justify-between py-4 hover:bg-muted/50 px-2 rounded-lg transition-colors cursor-pointer"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-muted">
+                      <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-muted flex-shrink-0">
                         <Image
                           src={product.images[0]}
                           alt={product.name}
@@ -115,41 +123,20 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
                         />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-medium text-sm mb-1 truncate">
+                        <h4 className="font-medium text-sm mb-1 line-clamp-2">
                           {product.name}
                         </h4>
                         <div className="text-sm text-muted-foreground">
-                          {product.variants[0].salePrice ? (
-                            <div className="flex items-center gap-2">
-                              <span className="text-primary font-medium">
-                                {getCurrencySymbol(
-                                  product.variants[0].currency
-                                )}
-                                {product.variants[0].salePrice}
-                              </span>
-                              <span className="line-through">
-                                {getCurrencySymbol(
-                                  product.variants[0].currency
-                                )}
-                                {product.variants[0].price}
-                              </span>
-                            </div>
-                          ) : (
-                            <span>
-                              {getCurrencySymbol(product.variants[0].currency)}
-                              {product.variants[0].price}
+                          <div className="flex items-center gap-1">
+                            <Star className="w-4 h-4 fill-primary text-primary" />
+                            <span className="text-sm font-medium">
+                              {averageRating(product.reviews).toFixed(1)}
                             </span>
-                          )}
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-primary text-primary" />
-                      <span className="text-sm font-medium">
-                        {averageRating(product.reviews).toFixed(1)}
-                      </span>
-                    </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             ) : (

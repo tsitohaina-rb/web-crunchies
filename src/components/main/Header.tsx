@@ -104,12 +104,6 @@ const Header = () => {
               <MapPin size={16} className="text-primary" />
               <span className="text-sm font-medium">Find a Store</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Clock size={16} className="text-primary" />
-              <span className="text-sm font-medium">
-                Hide "Mon-Sat: 8.00-18.00
-              </span>
-            </div>
           </div>
           <div className="flex items-center gap-4">
             <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
