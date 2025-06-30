@@ -2,13 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
-import Link from "next/link";
 import { Fragment, useState } from "react";
 import products from "@/data/products-data";
 import { averageRating } from "@/lib/review";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 import ShopModal from "../shop/ShopModal";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
   const [isHovered, setIsHovered] = useState(false);

@@ -19,13 +19,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import Link from "next/link";
 import Image from "next/image";
 import categories from "@/data/categories-data";
 import { motion, AnimatePresence } from "framer-motion";
 import ShopModal from "@/components/main/shop/ShopModal";
 import SearchModal from "./header/SearchModal";
 import LanguageSwitcher from "../ui/language-switcher";
+import { Link } from "@/i18n/routing";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -453,15 +453,15 @@ const Header = () => {
                     </div>
                     <span className="text-sm">+1 (234) 567-8901</span>
                   </Link>
-                  <p
+                  <div
                     className="flex items-center cursor-pointer gap-3 hover:text-primary transition-colors"
                     onClick={() => setIsShopModalOpen(true)}
                   >
-                    <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                    <p className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <MapPin size={16} className="text-primary" />
-                    </div>
+                    </p>
                     <span className="text-sm">Find a Store</span>
-                  </p>
+                  </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <Clock size={16} className="text-primary" />
@@ -471,20 +471,7 @@ const Header = () => {
                 </div>
 
                 <div className="mt-4 flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 text-xs"
-                  >
-                    JPY
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 text-xs"
-                  >
-                    English
-                  </Button>
+                  <LanguageSwitcher languages={languages} className="w-full" />
                 </div>
               </div>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import blogPosts from "@/data/blog-data";
 import { ArrowRight, Calendar, User } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const BlogCard = ({ post }: { post: (typeof blogPosts)[0] }) => {
   return (

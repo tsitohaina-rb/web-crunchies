@@ -7,9 +7,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Link from "next/link";
 import categories from "@/data/categories-data";
 import products from "@/data/products-data";
+import { Link } from "@/i18n/routing";
 
 const BrandBanner = () => {
   const getTotalProductsForCategory = (slug: string): number => {

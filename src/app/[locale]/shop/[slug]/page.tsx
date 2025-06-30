@@ -4,7 +4,7 @@ import React from "react";
 import productsData from "@/data/products-data";
 import categoriesData from "@/data/categories-data";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 interface ShopProps {
   params: Promise<{ slug: string }>;

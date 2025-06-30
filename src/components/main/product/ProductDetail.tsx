@@ -19,7 +19,6 @@ import {
   ShoppingBag,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
 import {
   getCurrencySymbol,
@@ -27,6 +26,7 @@ import {
 } from "@/lib/formats";
 import { averageRating } from "@/lib/review";
 import ShopModal from "../shop/ShopModal";
+import { Link } from "@/i18n/routing";
 
 const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
