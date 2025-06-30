@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "Blog": {
+      "_comment": "Terjemahan Indonesia untuk halaman blog",
+      "titlePrefix": "Blog",
+      "titleMain": "Hewan Peliharaan Kami",
+      "subtitle": "Temukan tips, saran, dan cerita tentang perawatan, kesehatan, dan kebahagiaan hewan peliharaan",
+      "loadMore": "Muat Lebih Banyak",
+      "searchPlaceholder": "Cari artikel blog...",
+      "categoriesTitle": "Kategori",
+      "categories": {
+        "dogs": "Anjing",
+        "dogsCount": "12",
+        "cats": "Kucing",
+        "catsCount": "9",
+        "healthcare": "Kesehatan",
+        "healthcareCount": "9", 
+        "general": "Umum",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "Artikel Populer"
+    }
+  }
+}

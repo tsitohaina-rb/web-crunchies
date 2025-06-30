@@ -2,6 +2,7 @@ import Contact from "@/components/main/contact/Contact";
 import Map from "@/components/main/contact/MapComponent";
 import Newsletter from "@/components/main/Newsletter";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -25,16 +26,16 @@ const MapComponent = dynamic(
 );
 
 const ContactPage = () => {
+    const t = useTranslations('pages.Contact');
   return (
     <div className="flex-grow mt-20 lg:mt-28  rounded-lg">
       <div className=" bg-primary-foreground py-16 relative">
         <div className="container-custom">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Contact Us
+            {t('text2')}
           </h1>
           <p className="text-lg text-center max-w-2xl mx-auto text-petio-text">
-            We'd love to hear from you! Send us a message and we'll respond as
-            soon as possible.
+            {t('text3')}
           </p>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-16 md:h-24">

@@ -27,39 +27,6 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const t = await getTranslations();
-
-  return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || ""),
-    alternates: {
-      canonical: "/",
-      languages: {
-        "en-US": "/en",
-        "fr-FR": "/fr",
-      },
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
-    verification: {
-      google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
-    },
-  };
-}
-
 export default async function RootLayout({
   children,
   params,
@@ -84,8 +51,9 @@ export default async function RootLayout({
       baseUrl,
     });
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <html lang={locale} dir="ltr">
       <head>
+        {/* Alternates */}
         {alternateLinks.map((link) => (
           <link
             key={link.hrefLang}
@@ -95,6 +63,25 @@ export default async function RootLayout({
           />
         ))}
         <link rel="canonical" href={canonical} />
+        {/* Hardcoded alternates as per config */}
+        <link rel="alternate" hrefLang="en-US" href={`${baseUrl}/en`} />
+        <link rel="alternate" hrefLang="fr-FR" href={`${baseUrl}/fr`} />
+        {/* Robots meta */}
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="googlebot"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        {/* Google site verification */}
+        {process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
+          <meta
+            name="google-site-verification"
+            content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION}
+          />
+        )}
         <meta property="og:locale" content={currentLocale} />
         {alternateLocales.map((meta, index) => (
           <meta key={index} property={meta.property} content={meta.content} />

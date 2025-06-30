@@ -5,6 +5,7 @@ import productsData from "@/data/products-data";
 import categoriesData from "@/data/categories-data";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface ShopProps {
   params: Promise<{ slug: string }>;
@@ -25,6 +26,7 @@ export async function generateMetadata({
 }
 
 const ShopPage = async ({ params }: ShopProps) => {
+  const t = useTranslations('pages.Shop');
   const { slug } = await params;
   const category = categoriesData.find((categ) => categ.slug === slug);
 
@@ -51,13 +53,13 @@ const ShopPage = async ({ params }: ShopProps) => {
           />
         </svg>
         <h2 className="text-2xl font-semibold text-gray-700 mb-2">
-          Category Not Found
+          {t('text1')}
         </h2>
         <p className="text-gray-500 mb-4 text-center">
-          Sorry, we couldn't find the category you are looking for.
+          {t('text2')}
         </p>
         <Button asChild>
-          <Link href="/">Back to home</Link>
+          <Link href="/">{t('text3')}</Link>
         </Button>
       </main>
     );
@@ -68,7 +70,7 @@ const ShopPage = async ({ params }: ShopProps) => {
       <div className="bg-primary-foreground py-16 relative">
         <div className="container-custom">
           <h2 className="section-title text-center">
-            Shopping for{" "}
+            {t('text4')}{" "}
             <span className="text-primary capitalize">
               {slug === "all" ? "All Products" : category?.title}
             </span>
