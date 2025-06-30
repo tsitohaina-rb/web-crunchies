@@ -25,6 +25,7 @@ import categories from "@/data/categories-data";
 import { motion, AnimatePresence } from "framer-motion";
 import ShopModal from "@/components/main/shop/ShopModal";
 import SearchModal from "./header/SearchModal";
+import LanguageSwitcher from "../ui/language-switcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,6 +88,24 @@ const Header = () => {
     },
   };
 
+  const languages = [
+    { code: "en", name: "English", flag: "https://flagcdn.com/w320/us.png" },
+    { code: "th", name: "ไทย", flag: "https://flagcdn.com/w320/th.png" }, // Thai
+    {
+      code: "ms",
+      name: "Bahasa Melayu",
+      flag: "https://flagcdn.com/w320/my.png",
+    }, // Malay
+    { code: "ko", name: "한국어", flag: "https://flagcdn.com/w320/kr.png" }, // Korean
+    { code: "zh", name: "中文", flag: "https://flagcdn.com/w320/cn.png" }, // Chinese
+    { code: "ph", name: "Filipino", flag: "https://flagcdn.com/w320/ph.png" }, // Filipino
+    {
+      code: "id",
+      name: "Bahasa Indonesia",
+      flag: "https://flagcdn.com/w320/id.png",
+    }, // Indonesian
+  ];
+
   return (
     <header className="w-full fixed top-0 z-10">
       {/* Top Header */}
@@ -106,13 +125,11 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
+            {/* <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
               <option>JPY</option>
-            </select>
+            </select> */}
             <div className="h-4 w-px bg-gray-300"></div>
-            <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
-              <option>English</option>
-            </select>
+            <LanguageSwitcher languages={languages} />
           </div>
         </div>
       </div>

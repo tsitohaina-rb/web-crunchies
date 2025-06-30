@@ -350,14 +350,14 @@ export default [
       {
         shopName: "Amazon",
         image: "/images/logo/amazon.png",
-        url: "www.amazon.com",
+        url: "https://www.amazon.com",
         note: 4.9,
         review: 2000,
       },
       {
         shopName: "Amazon",
         image: "/images/logo/shopee.png",
-        url: "www.shoppe.co.th",
+        url: "https://shopee.co.th",
         note: 4.5,
         review: 1400,
       },
@@ -366,5 +366,53 @@ export default [
     stockAmount: 2,
     isNew: true,
     isSale: true,
+  },
+
+  {
+    id: 8,
+    name: "Crunchies Tofu Blend Cat Litter",
+    slug: "crunchies-tofu-blend-cat-litter",
+    brand: "Crunchies",
+    category: "pet-grooming-supplies",
+    subcategory: "cleaning-solutions-litter",
+    description:
+      "Vacuum-sealed tofu blend cat litter with superior absorption and odor control. Eco-friendly and dust-free formula.",
+    images: ["/images/products/crunchies-tofu-blend-litter.jpg"],
+    variants: [
+      {
+        weight: "1.9kg",
+        price: 12.99,
+        salePrice: 10.99,
+        currency: "JPY",
+        code: "Crunchies Tofu Blend 1.9kg",
+      },
+    ],
+    reviews: [],
+    findOnline: [
+      {
+        shopName: "Amazon",
+        image: "/images/logo/amazon.png",
+        url: "https://www.amazon.com",
+        note: 4.8,
+        review: 1200,
+      },
+      {
+        shopName: "Shopee",
+        image: "/images/logo/shopee.png",
+        url: "https://shopee.co.th",
+        note: 4.6,
+        review: 850,
+      },
+    ],
+    locations: [{ alt: -17878, lot: -9009 }],
+    stockAmount: 24,
+    isNew: true,
+    isSale: true,
+    specifications: {
+      packaging: "1.9kg per bag (vacuum-sealed)",
+      bagDimensions: "26cm × 20cm × 5cm",
+      boxQuantity: "12 bags per carton",
+      cartonDimensions: "41.5cm × 29.5cm × 32cm",
+    },
   },
 ];
