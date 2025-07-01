@@ -150,7 +150,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="How can we help you?"
+                    placeholder={t('text14')}
                     required
                   />
                 </div>

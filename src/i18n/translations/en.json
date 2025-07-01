@@ -34,7 +34,13 @@
       "text1": "Category Not Found",
       "text2": "Sorry, we couldn't find the category you are looking for.",
       "text3": "Back to home",
-      "text4": "Shopping for"
+      "text4": "Shopping for",
+      "text5": "",
+      "text6": "",
+      "text7": "",
+      "text8": "",
+      "text9": "",
+      "text10": ""
     }
   },
 
@@ -96,7 +102,13 @@
           "text10": "Your Message",
           "text11": "Write your message here...",
           "text12": "Sending...",
-          "text13": "Send Message"
+          "text13": "Send Message",
+          "text14": "How can we help you?"
+        },
+        "MapComponent": {
+          "text1": "Plan",
+          "text2": "Satellite",
+          "text3": "Relief"
         }
       },
       "header": {

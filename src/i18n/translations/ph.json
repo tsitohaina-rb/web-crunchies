@@ -96,7 +96,13 @@
           "text10": "Ang Iyong Mensahe",
           "text11": "Isulat ang iyong mensahe dito...",
           "text12": "Ipinapadala...",
-          "text13": "Ipadala ang Mensahe"
+          "text13": "Ipadala ang Mensahe",
+          "text14": "Paano kami makakatulong sa iyo?"
+        },
+        "MapComponent": {
+          "text1": "Mapa",
+          "text2": "Satellite",
+          "text3": "Relief"
         }
       },
       "header": {

@@ -95,7 +95,13 @@
           "text10": "Pesan Anda",
           "text11": "Tulis pesan Anda di sini...",
           "text12": "Mengirim...",
-          "text13": "Kirim Pesan"
+          "text13": "Kirim Pesan",
+          "text14": "Bagaimana kami bisa membantu Anda?"
+        },
+        "MapComponent": {
+          "text1": "Peta",
+          "text2": "Satelit",
+          "text3": "Relief"
         }
       },
       "header": {

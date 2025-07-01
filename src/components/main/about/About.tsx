@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations('components.main.about.About');
+  const t = useTranslations("components.main.about.About");
   return (
     <div className="flex-grow mt-20 lg:mt-28">
       <section className="relative min-h-[80vh] flex items-center">
@@ -25,14 +25,14 @@ const About = () => {
               className="md:w-1/2 text-center md:text-left"
             >
               <h1 className="heading text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-                {t('text1')} <span className="text-primary">{t('text2')}</span>{" "}
-                {t('text3')}
+                {t("text1")} <span className="text-primary">{t("text2")}</span>{" "}
+                {t("text3")}
               </h1>
               <p className="text-xl md:text-2xl mb-12 text-gray-700">
-                {t('text4')}
+                {t("text4")}
               </p>
               <Button className="rounded-full  hover:scale-105 transition-transform">
-                {t('text5')}
+                {t("text5")}
               </Button>
             </motion.div>
             <motion.div
@@ -79,13 +79,13 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center mb-20">
             <h2 className="heading text-2xl md:text-3xl font-bold text-gray-800">
-              {t('title')}
+              {t("title")}
             </h2>
             <div className="w-24 h-2 bg-primary mx-auto mt-6 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[t('text6'), t('text7'), t('text8'), t('text9')].map(
+            {[t("text6"), t("text7"), t("text8"), t("text9")].map(
               (item, index) => (
                 <motion.div
                   key={item}
@@ -108,12 +108,9 @@ const About = () => {
                   </h3>
                   <p className="text-gray-600">
                     {
-                      [
-                        t('text10'),
-                        t('text11'),
-                        t('text12'),
-                        t('text13'),
-                      ][index]
+                      [t("text10"), t("text11"), t("text12"), t("text13")][
+                        index
+                      ]
                     }
                   </p>
                 </motion.div>
@@ -140,11 +137,9 @@ const About = () => {
               className="md:w-1/2 pr-0 md:pr-10"
             >
               <h2 className="heading text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-                {t('text14')}
+                {t("text14")}
               </h2>
-              <p className="text-gray-600 mb-6">
-                {t('text15')}
-              </p>
+              <p className="text-gray-600 mb-6">{t("text15")}</p>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -153,9 +148,9 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      {t('text16')}
+                      {t("text16")}
                     </h3>
-                    <p className="text-gray-600">{t('text17')}</p>
+                    <p className="text-gray-600">{t("text17")}</p>
                   </div>
                 </div>
 
@@ -165,11 +160,9 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      {t('text18')}
+                      {t("text18")}
                     </h3>
-                    <p className="text-gray-600">
-                      {t('text19')}
-                    </p>
+                    <p className="text-gray-600">{t("text19")}</p>
                   </div>
                 </div>
 
@@ -179,16 +172,14 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      {t('text20')}
+                      {t("text20")}
                     </h3>
-                    <p className="text-gray-600">{t('text21')}</p>
+                    <p className="text-gray-600">{t("text21")}</p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-gray-700 mt-8 italic">
-                {t('text22')}
-              </p>
+              <p className="text-gray-700 mt-8 italic">{t("text22")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -221,11 +212,11 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center mb-12">
             <h2 className="heading text-2xl md:text-3xll font-bold text-gray-800">
-              {t('text23')}
+              {t("text23")}
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto mt-4"></div>
             <p className="text-xl text-primary mt-6 font-medium max-w-3xl mx-auto">
-              {t('text24')}
+              {t("text24")}
             </p>
           </div>
 
@@ -241,10 +232,10 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 leading-relaxed">
-                      {t('text25')}
+                      {t("text25")}
                     </p>
                     <p className="text-primary font-medium mt-4 italic">
-                      "{t('text26')}"
+                      "{t("text26")}"
                     </p>
                   </div>
                 </div>
@@ -260,10 +251,10 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 leading-relaxed">
-                      {t('text27')}
+                      {t("text27")}
                     </p>
                     <p className="text-primary font-medium mt-4 italic">
-                      "{t('text28')}"
+                      "{t("text28")}"
                     </p>
                   </div>
                 </div>
@@ -322,13 +313,11 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center">
             <h2 className="heading text-3xl md:text-4xl font-bold mb-8">
-              {t('text29')}
+              {t("text29")}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto mb-12">
-              {t('text30')}
-            </p>
+            <p className="text-lg max-w-3xl mx-auto mb-12">{t("text30")}</p>
             <button className="bg-white text-primary font-semibold py-3 px-8 rounded-full hover:bg-primary/5 transition">
-              {t('text31')}
+              {t("text31")}
             </button>
           </div>
         </div>

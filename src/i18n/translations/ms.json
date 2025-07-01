@@ -96,7 +96,13 @@
           "text10": "Mesej Anda",
           "text11": "Tulis mesej anda di sini...",
           "text12": "Menghantar...",
-          "text13": "Hantar Mesej"
+          "text13": "Hantar Mesej",
+          "text14": "Bagaimana kami boleh membantu anda?"
+        },
+        "MapComponent": {
+          "text1": "Peta",
+          "text2": "Satellit",
+          "text3": "Bantuan"
         }
       },
       "header": {

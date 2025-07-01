@@ -15,6 +15,7 @@ import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 import { Metadata } from "next";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 interface ProductDetailProps {
   params: Promise<{ slug: string }>;
