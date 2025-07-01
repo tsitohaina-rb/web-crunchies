@@ -78,99 +78,99 @@
       },
       "blog": {
         "BlogCard": {
-          "text1": "Read More",
+          "text1": "อ่านเพิ่มเติม",
           "text2": ""
         }
       },
       "contact": {
         "Contact": {
-          "text1": "Get In Touch",
-          "text2": "Our Location",
-          "text3": "United States",
-          "text4": "Phone Number",
-          "text5": "Email Address",
-          "text6": "Send Us A Message",
-          "text7": "Your Name",
-          "text8": "Your Email",
-          "text9": "Subject",
-          "text10": "Your Message",
-          "text11": "Write your message here...",
-          "text12": "Sending...",
-          "text13": "Send Message"
+          "text1": "ติดต่อเรา",
+          "text2": "ที่ตั้งของเรา",
+          "text3": "สหรัฐอเมริกา",
+          "text4": "หมายเลขโทรศัพท์",
+          "text5": "ที่อยู่อีเมล",
+          "text6": "ส่งข้อความถึงเรา",
+          "text7": "ชื่อของคุณ",
+          "text8": "อีเมลของคุณ",
+          "text9": "หัวข้อ",
+          "text10": "ข้อความของคุณ",
+          "text11": "เขียนข้อความของคุณที่นี่...",
+          "text12": "กำลังส่ง...",
+          "text13": "ส่งข้อความ"
         }
       },
       "header": {
         "SearchModal": {
-          "text1": "Search Products",
-          "text2": "No products found for",
-          "text3": "Recent searches",
-          "text4": "Clear all",
-          "text5": "No recent searches",
-          "text6": "Search products..."
+          "text1": "ค้นหาสินค้า",
+          "text2": "ไม่พบสินค้าสำหรับ",
+          "text3": "การค้นหาล่าสุด",
+          "text4": "ล้างทั้งหมด",
+          "text5": "ไม่มีการค้นหาล่าสุด",
+          "text6": "ค้นหาสินค้า..."
         }
       },
       "home": {
         "BlogSection": {
-          "text1": "Our",
-          "text2": "Pet Blog",
-          "text3": "Read our latest articles on pet care, training, and health",
-          "text4": "View All Posts"
+          "text1": "บล็อก",
+          "text2": "สัตว์เลี้ยงของเรา",
+          "text3": "อ่านบทความล่าสุดของเราเกี่ยวกับการดูแลสัตว์เลี้ยง การฝึกอบรม และสุขภาพ",
+          "text4": "ดูโพสต์ทั้งหมด"
         },
         "BrandBanner": {
-          "text1": "Shop by",
-          "text2": "Brand",
-          "text3": "Browse through our product brand to find the perfect match for your pet"
+          "text1": "เลือกซื้อตาม",
+          "text2": "แบรนด์",
+          "text3": "เรียกดูแบรนด์ผลิตภัณฑ์ของเราเพื่อหาสิ่งที่สมบูรณ์แบบสำหรับสัตว์เลี้ยงของคุณ"
         },
         "CategoryBanner": {
-          "text1": "Shop by",
-          "text2": "Categories",
-          "text3": "Browse through our product categories to find the perfect match for your pet"
+          "text1": "เลือกซื้อตาม",
+          "text2": "หมวดหมู่",
+          "text3": "เรียกดูหมวดหมู่ผลิตภัณฑ์ของเราเพื่อหาสิ่งที่สมบูรณ์แบบสำหรับสัตว์เลี้ยงของคุณ"
         },
         "FeaturedProducts": {
-          "text1": "Featured",
-          "text2": "Products",
-          "text3": "Find the perfect products for your beloved pets",
-          "text4": "View All Products",
+          "text1": "สินค้า",
+          "text2": "แนะนำ",
+          "text3": "ค้นหาสินค้าที่สมบูรณ์แบบสำหรับสัตว์เลี้ยงที่คุณรัก",
+          "text4": "ดูสินค้าทั้งหมด",
           "text5": ""
         },
         "Hero": {
-          "text1": "Best Destination For Your Pets",
-          "text2": "We Care ",
-          "text3": "For Your Pets",
-          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
-          "text5": "Shop Now"
+          "text1": "จุดหมายปลายทางที่ดีที่สุดสำหรับสัตว์เลี้ยงของคุณ",
+          "text2": "เราใส่ใจ",
+          "text3": "สัตว์เลี้ยงของคุณ",
+          "text4": "ค้นหาเพื่อนคู่ใจที่สมบูรณ์แบบที่เข้ากับไลฟ์สไตล์ของคุณ เยี่ยมชมร้านค้าของเราสำหรับอุปกรณ์สัตว์เลี้ยงคุณภาพ ของเล่น อาหาร และอื่น ๆ อีกมากมาย",
+          "text5": "ช้อปเลย"
         },
         "NewArrivals": {
-          "text1": "New",
-          "text2": "Arrivals",
-          "text3": "Check out our latest pet products and accessories"
+          "text1": "สินค้า",
+          "text2": "มาใหม่",
+          "text3": "ตรวจสอบผลิตภัณฑ์และอุปกรณ์สัตว์เลี้ยงล่าสุดของเรา"
         },
         "PromoBanner": {
-          "text1": "New Arrivals",
-          "text2": "Premium",
-          "text3": "Dog Food",
-          "text4": "Balanced nutrition for your furry friend's health and happiness",
-          "text5": "Shop Now ",
-          "text6": "Special Offer",
-          "text7": "Cat",
-          "text8": "Accessories",
-          "text9": "Everything your feline friend needs for comfort and play",
-          "text10": "Shop Now"
+          "text1": "สินค้ามาใหม่",
+          "text2": "อาหารสุนัข",
+          "text3": "พรีเมียม",
+          "text4": "โภชนาการที่สมดุลเพื่อสุขภาพและความสุขของเพื่อนขนปุยของคุณ",
+          "text5": "ช้อปเลย",
+          "text6": "ข้อเสนอพิเศษ",
+          "text7": "อุปกรณ์",
+          "text8": "สำหรับแมว",
+          "text9": "ทุกสิ่งที่เพื่อนแมวของคุณต้องการเพื่อความสบายและการเล่น",
+          "text10": "ช้อปเลย"
         },
         "Services": {
-          "text1": "Fast Delivery",
-          "text2": "Get your orders delivered quickly and safely",
-          "text3": "Quality Products",
-          "text4": "We ensure the quality of our products",
-          "text5": "24/7 Customer Support",
-          "text6": "Dedicated support team for queries",
-          "text7": "Special Discounts",
-          "text8": "Regular promotions and member discounts"
+          "text1": "จัดส่งรวดเร็ว",
+          "text2": "รับสินค้าของคุณจัดส่งอย่างรวดเร็วและปลอดภัย",
+          "text3": "สินค้าคุณภาพ",
+          "text4": "เรามั่นใจในคุณภาพของผลิตภัณฑ์ของเรา",
+          "text5": "ฝ่ายสนับสนุนลูกค้า 24/7",
+          "text6": "ทีมสนับสนุนเฉพาะสำหรับข้อสงสัย",
+          "text7": "ส่วนลดพิเศษ",
+          "text8": "โปรโมชั่นปกติและส่วนลดสำหรับสมาชิก"
         },
         "Testimonials": {
-          "text1": "What Our",
-          "text2": "Customers Say",
-          "text3": "Read testimonials from our happy customers and their pets",
+          "text1": "ลูกค้าของเรา",
+          "text2": "พูดอะไรบ้าง",
+          "text3": "อ่านคำรับรองจากลูกค้าที่มีความสุขของเราและสัตว์เลี้ยงของพวกเขา",
           "text4": ""
         }
       }
@@ -186,22 +186,22 @@
       "text8": "หาร้านค้า"
     },
     "Footer": {
-      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
-      "text2": "Quick Links",
-      "text3": "Blog",
-      "text4": "About Us",
-      "text5": "Contact Us",
-      "text6": "Get in Touch",
+      "text1": "Crunchies เป็นร้านขายสัตว์เลี้ยงระดับพรีเมียมที่มุ่งมั่นนำเสนอผลิตภัณฑ์คุณภาพสูงและการบริการที่เป็นเลิศสำหรับสัตว์เลี้ยงและเจ้าของ",
+      "text2": "ลิงก์ด่วน",
+      "text3": "บล็อก",
+      "text4": "เกี่ยวกับเรา",
+      "text5": "ติดต่อเรา",
+      "text6": "ติดต่อ",
       "text7": "1234 Pet Street, Pawsville,",
-      "text8": "CA 98765, United States",
-      "text9": "All Rights Reserved."
+      "text8": "CA 98765, สหรัฐอเมริกา",
+      "text9": "สงวนลิขสิทธิ์"
     },
     "Newsletter": {
-      "text1": "Sign Up for Our Newsletter",
-      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
-      "text3": "Subscribe ",
-      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
-      "text5": "Enter your email"
+      "text1": "สมัครรับจดหมายข่าวของเรา",
+      "text2": "สมัครรับจดหมายข่าวของเราและรับข้อมูลอัปเดตเกี่ยวกับผลิตภัณฑ์ใหม่ ข้อเสนอพิเศษ และเคล็ดลับการดูแลสัตว์เลี้ยงของคุณ",
+      "text3": "สมัครสมาชิก",
+      "text4": "การสมัครรับจดหมายข่าวแสดงว่าคุณยอมรับนโยบายความเป็นส่วนตัวของเราและยินยอมที่จะรับข้อมูลอัปเดตจากบริษัทของเรา",
+      "text5": "ป้อนอีเมลของคุณ"
     }
   }
 }

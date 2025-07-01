@@ -78,99 +78,99 @@
       },
       "blog": {
         "BlogCard": {
-          "text1": "Read More",
+          "text1": "Baca Lagi",
           "text2": ""
         }
       },
       "contact": {
         "Contact": {
-          "text1": "Get In Touch",
-          "text2": "Our Location",
-          "text3": "United States",
-          "text4": "Phone Number",
-          "text5": "Email Address",
-          "text6": "Send Us A Message",
-          "text7": "Your Name",
-          "text8": "Your Email",
-          "text9": "Subject",
-          "text10": "Your Message",
-          "text11": "Write your message here...",
-          "text12": "Sending...",
-          "text13": "Send Message"
+          "text1": "Hubungi Kami",
+          "text2": "Lokasi Kami",
+          "text3": "Amerika Syarikat",
+          "text4": "Nombor Telefon",
+          "text5": "Alamat Emel",
+          "text6": "Hantar Mesej Kepada Kami",
+          "text7": "Nama Anda",
+          "text8": "Emel Anda",
+          "text9": "Subjek",
+          "text10": "Mesej Anda",
+          "text11": "Tulis mesej anda di sini...",
+          "text12": "Menghantar...",
+          "text13": "Hantar Mesej"
         }
       },
       "header": {
         "SearchModal": {
-          "text1": "Search Products",
-          "text2": "No products found for",
-          "text3": "Recent searches",
-          "text4": "Clear all",
-          "text5": "No recent searches",
-          "text6": "Search products..."
+          "text1": "Cari Produk",
+          "text2": "Tiada produk ditemui untuk",
+          "text3": "Carian terkini",
+          "text4": "Kosongkan semua",
+          "text5": "Tiada carian terkini",
+          "text6": "Cari produk..."
         }
       },
       "home": {
         "BlogSection": {
-          "text1": "Our",
-          "text2": "Pet Blog",
-          "text3": "Read our latest articles on pet care, training, and health",
-          "text4": "View All Posts"
+          "text1": "Blog",
+          "text2": "Haiwan Peliharaan Kami",
+          "text3": "Baca artikel terkini kami tentang penjagaan haiwan peliharaan, latihan, dan kesihatan",
+          "text4": "Lihat Semua Catatan"
         },
         "BrandBanner": {
-          "text1": "Shop by",
-          "text2": "Brand",
-          "text3": "Browse through our product brand to find the perfect match for your pet"
+          "text1": "Beli mengikut",
+          "text2": "Jenama",
+          "text3": "Semak imbas jenama produk kami untuk mencari padanan sempurna untuk haiwan kesayangan anda"
         },
         "CategoryBanner": {
-          "text1": "Shop by",
-          "text2": "Categories",
-          "text3": "Browse through our product categories to find the perfect match for your pet"
+          "text1": "Beli mengikut",
+          "text2": "Kategori",
+          "text3": "Semak imbas kategori produk kami untuk mencari padanan sempurna untuk haiwan kesayangan anda"
         },
         "FeaturedProducts": {
-          "text1": "Featured",
-          "text2": "Products",
-          "text3": "Find the perfect products for your beloved pets",
-          "text4": "View All Products",
+          "text1": "Produk",
+          "text2": "Pilihan",
+          "text3": "Cari produk yang sempurna untuk haiwan kesayangan anda",
+          "text4": "Lihat Semua Produk",
           "text5": ""
         },
         "Hero": {
-          "text1": "Best Destination For Your Pets",
-          "text2": "We Care ",
-          "text3": "For Your Pets",
-          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
-          "text5": "Shop Now"
+          "text1": "Destinasi Terbaik untuk Haiwan Peliharaan Anda",
+          "text2": "Kami Prihatin",
+          "text3": "Terhadap Haiwan Peliharaan Anda",
+          "text4": "Cari teman yang sesuai dengan gaya hidup anda. Lawati kedai kami untuk bekalan haiwan kesayangan berkualiti, mainan, makanan, dan banyak lagi.",
+          "text5": "Beli Sekarang"
         },
         "NewArrivals": {
-          "text1": "New",
-          "text2": "Arrivals",
-          "text3": "Check out our latest pet products and accessories"
+          "text1": "Ketibaan",
+          "text2": "Terbaru",
+          "text3": "Lihat produk dan aksesori haiwan peliharaan terkini kami"
         },
         "PromoBanner": {
-          "text1": "New Arrivals",
-          "text2": "Premium",
-          "text3": "Dog Food",
-          "text4": "Balanced nutrition for your furry friend's health and happiness",
-          "text5": "Shop Now ",
-          "text6": "Special Offer",
-          "text7": "Cat",
-          "text8": "Accessories",
-          "text9": "Everything your feline friend needs for comfort and play",
-          "text10": "Shop Now"
+          "text1": "Ketibaan Baru",
+          "text2": "Makanan Anjing",
+          "text3": "Premium",
+          "text4": "Nutrisi seimbang untuk kesihatan dan kebahagiaan teman berbulu anda",
+          "text5": "Beli Sekarang",
+          "text6": "Tawaran Istimewa",
+          "text7": "Aksesori",
+          "text8": "Kucing",
+          "text9": "Semua yang diperlukan oleh teman kucing anda untuk keselesaan dan permainan",
+          "text10": "Beli Sekarang"
         },
         "Services": {
-          "text1": "Fast Delivery",
-          "text2": "Get your orders delivered quickly and safely",
-          "text3": "Quality Products",
-          "text4": "We ensure the quality of our products",
-          "text5": "24/7 Customer Support",
-          "text6": "Dedicated support team for queries",
-          "text7": "Special Discounts",
-          "text8": "Regular promotions and member discounts"
+          "text1": "Penghantaran Cepat",
+          "text2": "Dapatkan pesanan anda dihantar dengan cepat dan selamat",
+          "text3": "Produk Berkualiti",
+          "text4": "Kami memastikan kualiti produk kami",
+          "text5": "Sokongan Pelanggan 24/7",
+          "text6": "Pasukan sokongan yang berdedikasi untuk pertanyaan",
+          "text7": "Diskaun Istimewa",
+          "text8": "Promosi biasa dan diskaun ahli"
         },
         "Testimonials": {
-          "text1": "What Our",
-          "text2": "Customers Say",
-          "text3": "Read testimonials from our happy customers and their pets",
+          "text1": "Apa Kata",
+          "text2": "Pelanggan Kami",
+          "text3": "Baca testimoni daripada pelanggan gembira kami dan haiwan peliharaan mereka",
           "text4": ""
         }
       }
@@ -186,22 +186,22 @@
       "text8": "Cari Kedai"
     },
     "Footer": {
-      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
-      "text2": "Quick Links",
+      "text1": "Crunchies ialah kedai haiwan peliharaan premium yang berdedikasi untuk menyediakan produk berkualiti tinggi dan perkhidmatan luar biasa untuk haiwan peliharaan dan pemiliknya.",
+      "text2": "Pautan Pantas",
       "text3": "Blog",
-      "text4": "About Us",
-      "text5": "Contact Us",
-      "text6": "Get in Touch",
+      "text4": "Tentang Kami",
+      "text5": "Hubungi Kami",
+      "text6": "Berhubung",
       "text7": "1234 Pet Street, Pawsville,",
-      "text8": "CA 98765, United States",
-      "text9": "All Rights Reserved."
+      "text8": "CA 98765, Amerika Syarikat",
+      "text9": "Hak Cipta Terpelihara."
     },
     "Newsletter": {
-      "text1": "Sign Up for Our Newsletter",
-      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
-      "text3": "Subscribe ",
-      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
-      "text5": "Enter your email"
+      "text1": "Daftar untuk Surat Berita Kami",
+      "text2": "Langgan surat berita kami dan terima kemas kini tentang produk baharu, tawaran istimewa, dan petua penjagaan untuk haiwan peliharaan anda.",
+      "text3": "Langgan",
+      "text4": "Dengan melanggan, anda bersetuju dengan dasar privasi kami dan bersetuju untuk menerima kemas kini daripada syarikat kami.",
+      "text5": "Masukkan emel anda"
     }
   }
 }

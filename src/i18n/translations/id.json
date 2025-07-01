@@ -77,99 +77,99 @@
       },
       "blog": {
         "BlogCard": {
-          "text1": "Read More",
+          "text1": "Baca Selengkapnya",
           "text2": ""
         }
       },
       "contact": {
         "Contact": {
-          "text1": "Get In Touch",
-          "text2": "Our Location",
-          "text3": "United States",
-          "text4": "Phone Number",
-          "text5": "Email Address",
-          "text6": "Send Us A Message",
-          "text7": "Your Name",
-          "text8": "Your Email",
-          "text9": "Subject",
-          "text10": "Your Message",
-          "text11": "Write your message here...",
-          "text12": "Sending...",
-          "text13": "Send Message"
+          "text1": "Hubungi Kami",
+          "text2": "Lokasi Kami",
+          "text3": "Amerika Serikat",
+          "text4": "Nomor Telepon",
+          "text5": "Alamat Email",
+          "text6": "Kirimkan Pesan Kepada Kami",
+          "text7": "Nama Anda",
+          "text8": "Email Anda",
+          "text9": "Subjek",
+          "text10": "Pesan Anda",
+          "text11": "Tulis pesan Anda di sini...",
+          "text12": "Mengirim...",
+          "text13": "Kirim Pesan"
         }
       },
       "header": {
         "SearchModal": {
-          "text1": "Search Products",
-          "text2": "No products found for",
-          "text3": "Recent searches",
-          "text4": "Clear all",
-          "text5": "No recent searches",
-          "text6": "Search products..."
+          "text1": "Cari Produk",
+          "text2": "Tidak ada produk ditemukan untuk",
+          "text3": "Pencarian terakhir",
+          "text4": "Bersihkan semua",
+          "text5": "Tidak ada pencarian terakhir",
+          "text6": "Cari produk..."
         }
       },
       "home": {
         "BlogSection": {
-          "text1": "Our",
-          "text2": "Pet Blog",
-          "text3": "Read our latest articles on pet care, training, and health",
-          "text4": "View All Posts"
+          "text1": "Blog",
+          "text2": "Hewan Peliharaan Kami",
+          "text3": "Baca artikel terbaru kami tentang perawatan hewan peliharaan, pelatihan, dan kesehatan",
+          "text4": "Lihat Semua Postingan"
         },
         "BrandBanner": {
-          "text1": "Shop by",
-          "text2": "Brand",
-          "text3": "Browse through our product brand to find the perfect match for your pet"
+          "text1": "Belanja berdasarkan",
+          "text2": "Merek",
+          "text3": "Jelajahi merek produk kami untuk menemukan yang paling cocok untuk hewan peliharaan Anda"
         },
         "CategoryBanner": {
-          "text1": "Shop by",
-          "text2": "Categories",
-          "text3": "Browse through our product categories to find the perfect match for your pet"
+          "text1": "Belanja berdasarkan",
+          "text2": "Kategori",
+          "text3": "Jelajahi kategori produk kami untuk menemukan yang paling cocok untuk hewan peliharaan Anda"
         },
         "FeaturedProducts": {
-          "text1": "Featured",
-          "text2": "Products",
-          "text3": "Find the perfect products for your beloved pets",
-          "text4": "View All Products",
+          "text1": "Produk",
+          "text2": "Unggulan",
+          "text3": "Temukan produk yang sempurna untuk hewan peliharaan kesayangan Anda",
+          "text4": "Lihat Semua Produk",
           "text5": ""
         },
         "Hero": {
-          "text1": "Best Destination For Your Pets",
-          "text2": "We Care ",
-          "text3": "For Your Pets",
-          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
-          "text5": "Shop Now"
+          "text1": "Destinasi Terbaik untuk Hewan Peliharaan Anda",
+          "text2": "Kami Peduli",
+          "text3": "Terhadap Hewan Peliharaan Anda",
+          "text4": "Temukan pendamping sempurna yang sesuai dengan gaya hidup Anda. Kunjungi toko kami untuk perlengkapan hewan peliharaan berkualitas, mainan, makanan, dan banyak lagi.",
+          "text5": "Belanja Sekarang"
         },
         "NewArrivals": {
-          "text1": "New",
-          "text2": "Arrivals",
-          "text3": "Check out our latest pet products and accessories"
+          "text1": "Kedatangan",
+          "text2": "Baru",
+          "text3": "Lihat produk dan aksesori hewan peliharaan terbaru kami"
         },
         "PromoBanner": {
-          "text1": "New Arrivals",
-          "text2": "Premium",
-          "text3": "Dog Food",
-          "text4": "Balanced nutrition for your furry friend's health and happiness",
-          "text5": "Shop Now ",
-          "text6": "Special Offer",
-          "text7": "Cat",
-          "text8": "Accessories",
-          "text9": "Everything your feline friend needs for comfort and play",
-          "text10": "Shop Now"
+          "text1": "Kedatangan Baru",
+          "text2": "Makanan Anjing",
+          "text3": "Premium",
+          "text4": "Gizi seimbang untuk kesehatan dan kebahagiaan teman berbulu Anda",
+          "text5": "Belanja Sekarang",
+          "text6": "Penawaran Spesial",
+          "text7": "Aksesori",
+          "text8": "Kucing",
+          "text9": "Segala yang dibutuhkan teman kucing Anda untuk kenyamanan dan bermain",
+          "text10": "Belanja Sekarang"
         },
         "Services": {
-          "text1": "Fast Delivery",
-          "text2": "Get your orders delivered quickly and safely",
-          "text3": "Quality Products",
-          "text4": "We ensure the quality of our products",
-          "text5": "24/7 Customer Support",
-          "text6": "Dedicated support team for queries",
-          "text7": "Special Discounts",
-          "text8": "Regular promotions and member discounts"
+          "text1": "Pengiriman Cepat",
+          "text2": "Dapatkan pesanan Anda dikirim dengan cepat dan aman",
+          "text3": "Produk Berkualitas",
+          "text4": "Kami memastikan kualitas produk kami",
+          "text5": "Dukungan Pelanggan 24/7",
+          "text6": "Tim dukungan khusus untuk pertanyaan",
+          "text7": "Diskon Spesial",
+          "text8": "Promosi rutin dan diskon anggota"
         },
         "Testimonials": {
-          "text1": "What Our",
-          "text2": "Customers Say",
-          "text3": "Read testimonials from our happy customers and their pets",
+          "text1": "Apa Kata",
+          "text2": "Pelanggan Kami",
+          "text3": "Baca testimoni dari pelanggan kami yang bahagia dan hewan peliharaan mereka",
           "text4": ""
         }
       }
@@ -185,22 +185,22 @@
       "text8": "Temukan Toko"
     },
     "Footer": {
-      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
-      "text2": "Quick Links",
+      "text1": "Crunchies adalah toko hewan peliharaan premium yang didedikasikan untuk menyediakan produk berkualitas tinggi dan layanan luar biasa untuk hewan peliharaan dan pemiliknya.",
+      "text2": "Tautan Cepat",
       "text3": "Blog",
-      "text4": "About Us",
-      "text5": "Contact Us",
-      "text6": "Get in Touch",
+      "text4": "Tentang Kami",
+      "text5": "Hubungi Kami",
+      "text6": "Terhubung",
       "text7": "1234 Pet Street, Pawsville,",
-      "text8": "CA 98765, United States",
-      "text9": "All Rights Reserved."
+      "text8": "CA 98765, Amerika Serikat",
+      "text9": "Semua Hak Dilindungi Undang-Undang."
     },
     "Newsletter": {
-      "text1": "Sign Up for Our Newsletter",
-      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
-      "text3": "Subscribe ",
-      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
-      "text5": "Enter your email"
+      "text1": "Daftar untuk Buletin Kami",
+      "text2": "Berlangganan buletin kami dan terima pembaruan tentang produk baru, penawaran khusus, dan tips perawatan untuk hewan peliharaan Anda.",
+      "text3": "Berlangganan",
+      "text4": "Dengan berlangganan, Anda menyetujui kebijakan privasi kami dan menyetujui untuk menerima pembaruan dari perusahaan kami.",
+      "text5": "Masukkan email Anda"
     }
   }
 }

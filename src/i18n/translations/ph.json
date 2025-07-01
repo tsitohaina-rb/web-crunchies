@@ -78,99 +78,99 @@
       },
       "blog": {
         "BlogCard": {
-          "text1": "Read More",
+          "text1": "Basahin Higit Pa",
           "text2": ""
         }
       },
       "contact": {
         "Contact": {
-          "text1": "Get In Touch",
-          "text2": "Our Location",
-          "text3": "United States",
-          "text4": "Phone Number",
+          "text1": "Makipag-ugnayan",
+          "text2": "Ang Aming Lokasyon",
+          "text3": "Estados Unidos",
+          "text4": "Numero ng Telepono",
           "text5": "Email Address",
-          "text6": "Send Us A Message",
-          "text7": "Your Name",
-          "text8": "Your Email",
-          "text9": "Subject",
-          "text10": "Your Message",
-          "text11": "Write your message here...",
-          "text12": "Sending...",
-          "text13": "Send Message"
+          "text6": "Magpadala sa Amin ng Mensahe",
+          "text7": "Ang Iyong Pangalan",
+          "text8": "Ang Iyong Email",
+          "text9": "Paksa",
+          "text10": "Ang Iyong Mensahe",
+          "text11": "Isulat ang iyong mensahe dito...",
+          "text12": "Ipinapadala...",
+          "text13": "Ipadala ang Mensahe"
         }
       },
       "header": {
         "SearchModal": {
-          "text1": "Search Products",
-          "text2": "No products found for",
-          "text3": "Recent searches",
-          "text4": "Clear all",
-          "text5": "No recent searches",
-          "text6": "Search products..."
+          "text1": "Maghanap ng Produkto",
+          "text2": "Walang nakitang produkto para sa",
+          "text3": "Mga kamakailang paghahanap",
+          "text4": "I-clear lahat",
+          "text5": "Walang kamakailang paghahanap",
+          "text6": "Maghanap ng produkto..."
         }
       },
       "home": {
         "BlogSection": {
-          "text1": "Our",
+          "text1": "Ang Aming",
           "text2": "Pet Blog",
-          "text3": "Read our latest articles on pet care, training, and health",
-          "text4": "View All Posts"
+          "text3": "Basahin ang aming pinakabagong artikulo tungkol sa pangangalaga sa alaga, pagsasanay, at kalusugan",
+          "text4": "Tingnan Lahat ng Post"
         },
         "BrandBanner": {
-          "text1": "Shop by",
+          "text1": "Mamili ayon sa",
           "text2": "Brand",
-          "text3": "Browse through our product brand to find the perfect match for your pet"
+          "text3": "Mag-browse sa aming brand ng produkto upang mahanap ang perpektong tugma para sa iyong alaga"
         },
         "CategoryBanner": {
-          "text1": "Shop by",
-          "text2": "Categories",
-          "text3": "Browse through our product categories to find the perfect match for your pet"
+          "text1": "Mamili ayon sa",
+          "text2": "Kategorya",
+          "text3": "Mag-browse sa aming mga kategorya ng produkto upang mahanap ang perpektong tugma para sa iyong alaga"
         },
         "FeaturedProducts": {
-          "text1": "Featured",
-          "text2": "Products",
-          "text3": "Find the perfect products for your beloved pets",
-          "text4": "View All Products",
+          "text1": "Mga Tampok na",
+          "text2": "Produk",
+          "text3": "Hanapin ang perpektong produkto para sa iyong minamahal na alaga",
+          "text4": "Tingnan Lahat ng Produkto",
           "text5": ""
         },
         "Hero": {
-          "text1": "Best Destination For Your Pets",
-          "text2": "We Care ",
-          "text3": "For Your Pets",
-          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
-          "text5": "Shop Now"
+          "text1": "Pinakamahusay na Destinasyon para sa Iyong Mga Alaga",
+          "text2": "Pinapahalagahan Namin",
+          "text3": "Ang Iyong Mga Alaga",
+          "text4": "Hanapin ang perpektong kasama na akma sa iyong pamumuhay. Bisitahin ang aming tindahan para sa de-kalidad na supply ng alaga, mga laruan, pagkain, at marami pa.",
+          "text5": "Mamili Ngayon"
         },
         "NewArrivals": {
-          "text1": "New",
-          "text2": "Arrivals",
-          "text3": "Check out our latest pet products and accessories"
+          "text1": "Mga Bagong",
+          "text2": "Dating",
+          "text3": "Tingnan ang aming pinakabagong mga produkto at accessories ng alaga"
         },
         "PromoBanner": {
-          "text1": "New Arrivals",
+          "text1": "Mga Bagong Dating",
           "text2": "Premium",
-          "text3": "Dog Food",
-          "text4": "Balanced nutrition for your furry friend's health and happiness",
-          "text5": "Shop Now ",
-          "text6": "Special Offer",
-          "text7": "Cat",
-          "text8": "Accessories",
-          "text9": "Everything your feline friend needs for comfort and play",
-          "text10": "Shop Now"
+          "text3": "Pagkain ng Aso",
+          "text4": "Balanseng nutrisyon para sa kalusugan at kaligayahan ng iyong mabalahibong kaibigan",
+          "text5": "Mamili Ngayon",
+          "text6": "Espesyal na Alok",
+          "text7": "Mga",
+          "text8": "Kagamitan ng Pusa",
+          "text9": "Lahat ng kailangan ng iyong pusa para sa ginhawa at paglalaro",
+          "text10": "Mamili Ngayon"
         },
         "Services": {
-          "text1": "Fast Delivery",
-          "text2": "Get your orders delivered quickly and safely",
-          "text3": "Quality Products",
-          "text4": "We ensure the quality of our products",
-          "text5": "24/7 Customer Support",
-          "text6": "Dedicated support team for queries",
-          "text7": "Special Discounts",
-          "text8": "Regular promotions and member discounts"
+          "text1": "Mabilis na Paghahatid",
+          "text2": "Makuha ang iyong mga order na naihatid nang mabilis at ligtas",
+          "text3": "Mga Produktong De-kalidad",
+          "text4": "Tinitiyak namin ang kalidad ng aming mga produkto",
+          "text5": "24/7 Suporta sa Customer",
+          "text6": "Dedikadong pangkat ng suporta para sa mga katanungan",
+          "text7": "Mga Espesyal na Diskwento",
+          "text8": "Regular na promosyon at mga diskwento sa miyembro"
         },
         "Testimonials": {
-          "text1": "What Our",
-          "text2": "Customers Say",
-          "text3": "Read testimonials from our happy customers and their pets",
+          "text1": "Ang Sinasabi ng Aming",
+          "text2": "Mga Customer",
+          "text3": "Basahin ang mga testimonya mula sa aming masayang mga customer at kanilang mga alaga",
           "text4": ""
         }
       }
@@ -186,22 +186,22 @@
       "text8": "Find a Store"
     },
     "Footer": {
-      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
-      "text2": "Quick Links",
+      "text1": "Ang Crunchies ay isang premium na pet store na nakatuon sa pagbibigay ng mataas na kalidad na produkto at pambihirang serbisyo para sa mga alaga at kanilang mga may-ari.",
+      "text2": "Mabilis na Link",
       "text3": "Blog",
-      "text4": "About Us",
-      "text5": "Contact Us",
-      "text6": "Get in Touch",
+      "text4": "Tungkol sa Amin",
+      "text5": "Makipag-ugnayan sa Amin",
+      "text6": "Makipag-ugnayan",
       "text7": "1234 Pet Street, Pawsville,",
       "text8": "CA 98765, United States",
-      "text9": "All Rights Reserved."
+      "text9": "Lahat ng Karapatan ay Nakalaan."
     },
     "Newsletter": {
-      "text1": "Sign Up for Our Newsletter",
-      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
-      "text3": "Subscribe ",
-      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
-      "text5": "Enter your email"
+      "text1": "Mag-sign Up para sa Aming Newsletter",
+      "text2": "Mag-subscribe sa aming newsletter at makatanggap ng mga update sa mga bagong produkto, espesyal na alok, at mga tip sa pangangalaga para sa iyong mga alaga.",
+      "text3": "Mag-subscribe",
+      "text4": "Sa pag-subscribe, sumasang-ayon ka sa aming patakaran sa privacy at pumapayag na makatanggap ng mga update mula sa aming kumpanya.",
+      "text5": "Ilagay ang iyong email"
     }
   }
 }
