@@ -15,7 +15,7 @@ import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 import { Metadata } from "next";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 interface ProductDetailProps {
   params: Promise<{ slug: string }>;
@@ -50,7 +50,7 @@ export async function generateMetadata({
 }
 
 const ProductDetailPage = async ({ params }: ProductDetailProps) => {
-  const t = useTranslations('pages.Product');
+  const t = await getTranslations('pages.Product');
   const { slug } = await params;
   const product = products.find((product) => product.slug === slug);
   if (!product) {

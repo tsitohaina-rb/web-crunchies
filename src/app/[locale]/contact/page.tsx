@@ -2,7 +2,7 @@ import Contact from "@/components/main/contact/Contact";
 import Map from "@/components/main/contact/MapComponent";
 import Newsletter from "@/components/main/Newsletter";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -25,8 +25,8 @@ const MapComponent = dynamic(
   }
 );
 
-const ContactPage = () => {
-    const t = useTranslations('pages.Contact');
+const ContactPage = async () => {
+    const t = await getTranslations('pages.Contact');
   return (
     <div className="flex-grow mt-20 lg:mt-28  rounded-lg">
       <div className=" bg-primary-foreground py-16 relative">
