@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 const Contact = () => {
+  const t = useTranslations('components.main.contact.Contact');
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,7 +50,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="bg-white border border-petio-border rounded-lg px-6 py-11">
-              <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-bold mb-6">{t('text1')}</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -56,7 +58,7 @@ const Contact = () => {
                     <MapPin className="text-primary" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-lg">Our Location</h3>
+                    <h3 className="font-semibold text-lg">{t('text2')}</h3>
                     <p className="text-petio-text mt-1">
                       123 Pet Street, Suite 101
                       <br />
@@ -72,7 +74,7 @@ const Contact = () => {
                     <Phone className="text-primary" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-lg">Phone Number</h3>
+                    <h3 className="font-semibold text-lg">{t('text4')}</h3>
                     <p className="text-petio-text mt-1">
                       +1 (234) 567-8901
                       <br />
@@ -86,7 +88,7 @@ const Contact = () => {
                     <Mail className="text-primary" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-lg">Email Address</h3>
+                    <h3 className="font-semibold text-lg">{t('text5')}</h3>
                     <p className="text-petio-text mt-1">info@crunchies.com</p>
                   </div>
                 </div>
@@ -97,7 +99,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white border border-petio-border rounded-lg p-6">
-              <h2 className="text-2xl font-bold mb-6">Send Us A Message</h2>
+              <h2 className="text-2xl font-bold mb-6">{t('text6')}</h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -106,7 +108,7 @@ const Contact = () => {
                       htmlFor="name"
                       className="block text-sm font-medium mb-2"
                     >
-                      Your Name
+                     {t('text7')}
                     </label>
                     <Input
                       id="name"
@@ -122,7 +124,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium mb-2"
                     >
-                      Your Email
+                      {t('text8')}
                     </label>
                     <Input
                       id="email"
@@ -141,14 +143,14 @@ const Contact = () => {
                     htmlFor="subject"
                     className="block text-sm font-medium mb-2"
                   >
-                    Subject
+                    {t('text9')}
                   </label>
                   <Input
                     id="subject"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="How can we help you?"
+                    placeholder={t('text14')}
                     required
                   />
                 </div>
@@ -158,14 +160,14 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-sm font-medium mb-2"
                   >
-                    Your Message
+                    {t('text10')}
                   </label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Write your message here..."
+                    placeholder={t('text11')}
                     rows={6}
                     required
                   />
@@ -176,7 +178,7 @@ const Contact = () => {
                   className="w-full md:w-auto"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? t('text12') : t('text13')}
                 </Button>
               </form>
             </div>

@@ -1,10 +1,12 @@
 import React from "react";
 import blogPosts from "@/data/blog-data";
 import { ArrowRight, Calendar, User } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const BlogCard = ({ post }: { post: (typeof blogPosts)[0] }) => {
+  const t = useTranslations('components.main.blog.BlogCard');
   return (
     <div className="group bg-white border border-primary/10 rounded-lg overflow-hidden hover:shadow-sm transition-all">
       <div className="h-48 overflow-hidden">
@@ -41,7 +43,7 @@ const BlogCard = ({ post }: { post: (typeof blogPosts)[0] }) => {
           href={`/blog/${post.slug}`}
           className="inline-flex items-center text-primary font-medium hover:underline"
         >
-          Read More <ArrowRight size={16} className="ml-1" />
+          {t('text1')} <ArrowRight size={16} className="ml-1" />
         </Link>
       </div>
     </div>

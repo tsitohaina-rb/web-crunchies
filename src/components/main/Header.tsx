@@ -19,14 +19,16 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import Link from "next/link";
 import Image from "next/image";
 import categories from "@/data/categories-data";
 import { motion, AnimatePresence } from "framer-motion";
 import ShopModal from "@/components/main/shop/ShopModal";
 import SearchModal from "./header/SearchModal";
-
+import LanguageSwitcher from "../ui/language-switcher";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 const Header = () => {
+  const t = useTranslations('components.Header');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeMobileCategory, setActiveMobileCategory] = useState<
@@ -87,6 +89,24 @@ const Header = () => {
     },
   };
 
+  const languages = [
+    { code: "en", name: "English", flag: "https://flagcdn.com/w320/us.png" },
+    { code: "th", name: "ไทย", flag: "https://flagcdn.com/w320/th.png" }, // Thai
+    {
+      code: "ms",
+      name: "Bahasa Melayu",
+      flag: "https://flagcdn.com/w320/my.png",
+    }, // Malay
+    { code: "ko", name: "한국어", flag: "https://flagcdn.com/w320/kr.png" }, // Korean
+    { code: "zh", name: "中文", flag: "https://flagcdn.com/w320/cn.png" }, // Chinese
+    { code: "ph", name: "Filipino", flag: "https://flagcdn.com/w320/ph.png" }, // Filipino
+    {
+      code: "id",
+      name: "Bahasa Indonesia",
+      flag: "https://flagcdn.com/w320/id.png",
+    }, // Indonesian
+  ];
+
   return (
     <header className="w-full fixed top-0 z-10">
       {/* Top Header */}
@@ -102,17 +122,15 @@ const Header = () => {
               onClick={() => setIsShopModalOpen(true)}
             >
               <MapPin size={16} className="text-primary" />
-              <span className="text-sm font-medium">Find a Store</span>
+              <span className="text-sm font-medium">{t('text1')}</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
+            {/* <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
               <option>JPY</option>
-            </select>
+            </select> */}
             <div className="h-4 w-px bg-gray-300"></div>
-            <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
-              <option>English</option>
-            </select>
+            <LanguageSwitcher languages={languages} />
           </div>
         </div>
       </div>
@@ -147,14 +165,14 @@ const Header = () => {
                     href="/"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    Home
+                    {t('text1')}
                   </Link>
                 </NavigationMenuItem>
 
                 {/* Categories Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="font-medium rounded-full hover:bg-primary/5 data-[state=open]:bg-primary/5 data-[state=open]:text-primary">
-                    Shop
+                    {t('text2')}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <motion.ul
@@ -220,7 +238,7 @@ const Header = () => {
                     href="/blog"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    Blog
+                    {t('text3')}
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -228,7 +246,7 @@ const Header = () => {
                     href="/about"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    About
+                    {t('text4')}
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -236,7 +254,7 @@ const Header = () => {
                     href="/contact"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    Contact
+                    {t('text5')}
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -251,7 +269,7 @@ const Header = () => {
               onClick={() => setIsSearchModalOpen(true)}
             >
               <Search className="text-primary" size={18} />
-              <span className="hidden sm:inline-flex ml-2">Search</span>
+              <span className="hidden sm:inline-flex ml-2">{t('text6')}</span>
             </Button>
             <Button
               variant="default"
@@ -261,7 +279,7 @@ const Header = () => {
               <div className="flex items-center gap-2">
                 <ShoppingBag size={18} />
                 <span className="hidden sm:inline-flex uppercase">
-                  WHERE TO BUY
+                  {t('text7')}
                 </span>
               </div>
             </Button>
@@ -319,7 +337,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Home
+                      {t('text1')}
                     </Link>
                   </li>
 
@@ -334,7 +352,7 @@ const Header = () => {
                         activeMobileCategory === "shop" ? "text-primary" : ""
                       }`}
                     >
-                      <span>Shop</span>
+                      <span>{t('text2')}</span>
                       <ChevronDown
                         size={18}
                         className={`transition-transform duration-300 ${
@@ -398,7 +416,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Blog
+                      {t('text3')}
                     </Link>
                   </li>
                   <li>
@@ -407,7 +425,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      About
+                      {t('text4')}
                     </Link>
                   </li>
                   <li>
@@ -416,7 +434,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Contact
+                      {t('text5')}
                     </Link>
                   </li>
                 </ul>
@@ -436,15 +454,15 @@ const Header = () => {
                     </div>
                     <span className="text-sm">+1 (234) 567-8901</span>
                   </Link>
-                  <p
+                  <div
                     className="flex items-center cursor-pointer gap-3 hover:text-primary transition-colors"
                     onClick={() => setIsShopModalOpen(true)}
                   >
-                    <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
+                    <p className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <MapPin size={16} className="text-primary" />
-                    </div>
-                    <span className="text-sm">Find a Store</span>
-                  </p>
+                    </p>
+                    <span className="text-sm">{t('text8')}</span>
+                  </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <Clock size={16} className="text-primary" />
@@ -454,20 +472,7 @@ const Header = () => {
                 </div>
 
                 <div className="mt-4 flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 text-xs"
-                  >
-                    JPY
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 text-xs"
-                  >
-                    English
-                  </Button>
+                  <LanguageSwitcher languages={languages} className="w-full" />
                 </div>
               </div>
             </div>

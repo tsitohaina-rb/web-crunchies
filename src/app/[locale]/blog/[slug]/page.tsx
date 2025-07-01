@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import {
   ArrowLeft,
@@ -15,6 +14,7 @@ import { Separator } from "@/components/ui/separator";
 import blogPosts from "@/data/blog-data";
 import BlogCard from "@/components/main/blog/BlogCard";
 import Newsletter from "@/components/main/Newsletter";
+import { Link } from "@/i18n/routing";
 
 interface BlogDetailProps {
   params: Promise<{ slug: string }>;

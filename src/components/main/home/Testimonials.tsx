@@ -1,8 +1,10 @@
 import React from "react";
 import { Star, Quote, Globe, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const testimonials = [
+
   {
     id: 1,
     name: "John Smith",
@@ -21,8 +23,8 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
-    text: "The cat supplies from Crunchies are simply the best. The delivery is always on time, and their customer service team is incredibly helpful whenever I have questions.",
-    countryCode: "FR",
+    text: "Bekalan kucing dari Crunchies memang terbaik. Penghantaran sentiasa tepat pada masanya, dan pasukan khidmat pelanggan mereka amat membantu setiap kali saya ada pertanyaan.",
+    countryCode: "MS",
     date: "2025-01-02",
   },
   {
@@ -32,7 +34,7 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
-    text: "I appreciate the wide selection of bird supplies available at Crunchies. They have everything I need for my feathered friends at competitive prices.",
+    text: "Les produits pour chats de Crunchies sont tout simplement géniaux. La livraison est toujours ponctuelle et leur service client est incroyablement serviable quand j'ai des questions.",
     countryCode: "FR",
     date: "2025-01-01",
   },
@@ -43,8 +45,8 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
-    text: "I've been shopping at Crunchies for over a year now, and I'm amazed by the quality of their products. My dog absolutely loves the toys and treats I get from here!",
-    countryCode: "IT",
+    text: "ฉันช้อปปิ้งที่ Crunchies มานานกว่าหนึ่งปีแล้ว และรู้สึกประทับใจกับคุณภาพของสินค้าที่นี่มาก สุนัขของฉันชอบของเล่นและขนมที่ฉันซื้อจากที่นี่มาก!",
+    countryCode: "TH",
     date: "2025-01-01",
   },
   {
@@ -65,22 +67,23 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
     rating: 5,
-    text: "I appreciate the wide selection of bird supplies available at Crunchies. They have everything I need for my feathered friends at competitive prices.",
+    text: "J'apprécie le large choix d'accessoires pour oiseaux proposé par Crunchies. Ils ont tout ce dont j'ai besoin pour mes amis à plumes à des prix compétitifs.",
     countryCode: "FR",
     date: "2025-01-01",
   },
 ];
 
 const Testimonials = () => {
+  const t = useTranslations('components.main.home.Testimonials');
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            What Our <span className="text-primary">Customers Say</span>
+            {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
           <p className="section-subtitle">
-            Read testimonials from our happy customers and their pets
+            {t('text3')}
           </p>
         </div>
 

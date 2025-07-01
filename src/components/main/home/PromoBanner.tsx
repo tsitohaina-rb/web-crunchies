@@ -2,8 +2,10 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const PromoBanner = () => {
+  const t = useTranslations('components.main.home.PromoBanner');
   return (
     <section className="py-16">
       <div className="container-custom">
@@ -12,16 +14,16 @@ const PromoBanner = () => {
           <div className="bg-primary/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center relative z-0 overflow-hidden">
             <div className="z-10 md:w-1/2">
               <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                New Arrivals
+                {t('text1')}
               </h3>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Premium <span className="text-primary">Dog Food</span>
+                {t('text2')} <span className="text-primary">{t('text3')}</span>
               </h2>
               <p className="mb-6 ">
-                Balanced nutrition for your furry friend's health and happiness
+                {t('text4')}
               </p>
               <Button className="bg-primary hover:bg-primary/85 text-white rounded-full">
-                Shop Now <ArrowRight size={16} className="ml-2" />
+                {t('text5')} <ArrowRight size={16} className="ml-2" />
               </Button>
             </div>
             <div className="md:w-1/2 mt-6 md:mt-0 md:absolute md:bottom-0 md:right-10">
@@ -39,16 +41,16 @@ const PromoBanner = () => {
           <div className="bg-yellow-600/10 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center relative overflow-hidden z-0">
             <div className="z-10 md:w-1/2">
               <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                Special Offer
+                {t('text6')}
               </h3>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Cat <span className="text-yellow-400">Accessories</span>
+                {t('text7')} <span className="text-yellow-400">{t('text8')}</span>
               </h2>
               <p className="mb-6 ">
-                Everything your feline friend needs for comfort and play
+                {t('text9')}
               </p>
               <Button className="bg-yellow-400 hover:bg-yellow-500/95 text-white rounded-full">
-                Shop Now <ArrowRight size={16} className="ml-2" />
+                {t('text10')} <ArrowRight size={16} className="ml-2" />
               </Button>
             </div>
             <div className="md:w-1/2 mt-6 md:mt-0 md:absolute md:bottom-0 md:right-10">

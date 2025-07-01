@@ -7,11 +7,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Link from "next/link";
 import categories from "@/data/categories-data";
 import products from "@/data/products-data";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const BrandBanner = () => {
+  const t = useTranslations('components.main.home.BrandBanner');
   const getTotalProductsForCategory = (slug: string): number => {
     return products.filter((product) => product.category === slug).length;
   };
@@ -20,11 +22,10 @@ const BrandBanner = () => {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Shop by <span className="text-primary">Brand</span>
+            {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
           <p className="section-subtitle">
-            Browse through our product brand to find the perfect match for your
-            pet
+            {t('text3')}
           </p>
         </div>
 

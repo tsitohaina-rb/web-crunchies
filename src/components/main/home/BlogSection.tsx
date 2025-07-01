@@ -1,18 +1,20 @@
 import React from "react";
-import Link from "next/link";
 import blogPosts from "@/data/blog-data";
 import BlogCard from "../blog/BlogCard";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const BlogSection = () => {
+  const t = useTranslations('components.main.home.BlogSection');
   return (
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Our <span className="text-primary">Pet Blog</span>
+            {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
           <p className="section-subtitle">
-            Read our latest articles on pet care, training, and health
+            {t('text3')}
           </p>
         </div>
 
@@ -27,7 +29,7 @@ const BlogSection = () => {
             href="/blog"
             className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary/10 rounded-full hover:border-primary hover:text-primary transition-colors font-medium"
           >
-            View All Posts
+            {t('text4')}
           </Link>
         </div>
       </div>

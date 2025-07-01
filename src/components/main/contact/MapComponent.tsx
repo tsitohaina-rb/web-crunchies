@@ -15,6 +15,7 @@ import { fromLonLat } from "ol/proj";
 import { Icon, Style } from "ol/style";
 import { defaults as defaultControls } from "ol/control";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // French overseas territories
 const markers = [
@@ -27,6 +28,7 @@ const markers = [
 ];
 
 const MapComponent = () => {
+  const t = useTranslations('components.main.contact.MapComponent');
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<Map | null>(null);
   const [selectedName, setSelectedName] = useState<string | null>(null);
@@ -151,7 +153,7 @@ const MapComponent = () => {
               : "transparent",
           }}
         >
-          Plan
+          {t('text1')}
         </button>
         <button
           onClick={() => handleLayerChange("Satellite")}
@@ -162,7 +164,7 @@ const MapComponent = () => {
               : "transparent",
           }}
         >
-          Satellite
+          {t('text2')}
         </button>
         <button
           onClick={() => handleLayerChange("Relief")}
@@ -173,7 +175,7 @@ const MapComponent = () => {
               : "transparent",
           }}
         >
-          Relief
+          {t('text3')}
         </button>
       </div>
 

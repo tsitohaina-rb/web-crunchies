@@ -1,0 +1,212 @@
+{
+  "pages": {
+    "Blog": {
+      "titlePrefix": "Blog",
+      "titleMain": "Hewan Peliharaan Kami",
+      "subtitle": "Temukan tips, saran, dan cerita tentang perawatan hewan peliharaan, kesehatan, dan kebahagiaan",
+      "loadMore": "Muat Lebih Banyak",
+      "searchPlaceholder": "Cari postingan blog...",
+      "categoriesTitle": "Kategori",
+      "categories": {
+        "dogs": "Anjing",
+        "dogsCount": "12",
+        "cats": "Kucing",
+        "catsCount": "9",
+        "healthcare": "Perawatan Kesehatan",
+        "healthcareCount": "9",
+        "general": "Umum",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "Postingan Populer"
+    },
+    "Contact": {
+      "text1": "Memuat peta...",
+      "text2": "Hubungi Kami",
+      "text3": "Kami senang mendengar dari Anda! Kirimkan pesan kepada kami dan kami akan membalas secepat mungkin."
+    },
+    "Product": {
+      "text1": "Produk Tidak Ditemukan",
+      "text2": "Maaf, kami tidak dapat menemukan produk yang Anda cari.",
+      "text3": "Kembali ke Produk",
+      "text4": "Beranda"
+    },
+    "Shop": {
+      "text1": "Kategori Tidak Ditemukan",
+      "text2": "Maaf, kami tidak dapat menemukan kategori yang Anda cari.",
+      "text3": "Kembali ke beranda",
+      "text4": "Berbelanja untuk"
+    }
+  },
+  "components": {
+    "main": {
+      "about": {
+        "About": {
+          "text1": "Pilihan Tepat untuk",
+          "text2": "Sahabat",
+          "text3": "Hewan Peliharaan",
+          "text4": "Di mana sains bertemu cinta untuk sahabat kesayangan Anda",
+          "text5": "Temukan Kisah Kami",
+          "title": "DNA Merek Kami",
+          "text6": "Ilmiah",
+          "text7": "Sehat",
+          "text8": "Premium",
+          "text9": "Holistik",
+          "text10": "Nutrisi dan solusi perawatan berbasis penelitian",
+          "text11": "Gizi seimbang untuk kesehatan hewan peliharaan yang optimal",
+          "text12": "Bahan dan produk kualitas tertinggi",
+          "text13": "Perawatan lengkap untuk kebutuhan fisik dan emosional hewan peliharaan",
+          "text14": "Misi Kami",
+          "text15": "Untuk kesejahteraan hewan peliharaan hari ini, CRUNCHIES berupaya memberikan solusi yang tepat:",
+          "text16": "Makanan bergizi seimbang",
+          "text17": "untuk kesehatan optimal",
+          "text18": "Produk perawatan khusus, kebutuhan perawatan harian, dan suplemen",
+          "text19": "memprioritaskan kenyamanan dan vitalitas",
+          "text20": "Penelitian dan inovasi tanpa henti",
+          "text21": "untuk meningkatkan gaya hidup hewan peliharaan",
+          "text22": "Misi kami adalah menumbuhkan budaya kesejahteraan holistik, di mana sains dan perawatan bersatu untuk setiap sahabat kesayangan.",
+          "text23": "Kisah Merek",
+          "text24": "Sebuah janji hangat dari Korea, berjuang untuk menjadi jembatan antara hewan peliharaan dan pemilik, menerangi rumah dengan cinta dan persahabatan.",
+          "text25": "Pada tahun 2012, L mengadopsi seekor anjing liar bernama Dudu di Korea Selatan. Melalui kesabaran dan cinta, Dudu bertransformasi dari teman yang pemalu menjadi bagian tak tergantikan dalam hidup L. Ketakutan Dudu terhadap badai petir dan hujan membuat L menyadari:",
+          "text26": "Hewan peliharaan tidak hanya membutuhkan makanan, tetapi juga keamanan dan persahabatan.",
+          "text27": "Pada tahun 2017, setelah Dudu meninggal, L mendirikan Crunchies—merek hewan peliharaan Korea yang berkomitmen untuk memberikan cinta dan perhatian kepada hewan peliharaan di seluruh dunia. Setiap desain produk membawa warisan Dudu, yang mewujudkan keyakinan L:",
+          "text28": "Setiap hewan peliharaan berhak mendapatkan cinta, dan setiap kehidupan berhak dihormati.",
+          "text29": "Komitmen Kami",
+          "text30": "CRUNCHIES berdedikasi untuk penelitian ilmiah dalam nutrisi hewan peliharaan, berkomitmen untuk meningkatkan penyerapan nutrisi, dan memanfaatkan teknologi mutakhir untuk membuat produk yang direkayasa secara presisi. Kami menyediakan solusi holistik untuk gaya hidup perawatan hewan peliharaan yang dipandu sains.",
+          "text31": "Temukan Produk Kami"
+        }
+      },
+      "blog": {
+        "BlogCard": {
+          "text1": "Baca Selengkapnya",
+          "text2": ""
+        }
+      },
+      "contact": {
+        "Contact": {
+          "text1": "Hubungi Kami",
+          "text2": "Lokasi Kami",
+          "text3": "Amerika Serikat",
+          "text4": "Nomor Telepon",
+          "text5": "Alamat Email",
+          "text6": "Kirimkan Pesan Kepada Kami",
+          "text7": "Nama Anda",
+          "text8": "Email Anda",
+          "text9": "Subjek",
+          "text10": "Pesan Anda",
+          "text11": "Tulis pesan Anda di sini...",
+          "text12": "Mengirim...",
+          "text13": "Kirim Pesan",
+          "text14": "Bagaimana kami bisa membantu Anda?"
+        },
+        "MapComponent": {
+          "text1": "Peta",
+          "text2": "Satelit",
+          "text3": "Relief"
+        }
+      },
+      "header": {
+        "SearchModal": {
+          "text1": "Cari Produk",
+          "text2": "Tidak ada produk ditemukan untuk",
+          "text3": "Pencarian terakhir",
+          "text4": "Bersihkan semua",
+          "text5": "Tidak ada pencarian terakhir",
+          "text6": "Cari produk..."
+        }
+      },
+      "home": {
+        "BlogSection": {
+          "text1": "Blog",
+          "text2": "Hewan Peliharaan Kami",
+          "text3": "Baca artikel terbaru kami tentang perawatan hewan peliharaan, pelatihan, dan kesehatan",
+          "text4": "Lihat Semua Postingan"
+        },
+        "BrandBanner": {
+          "text1": "Belanja berdasarkan",
+          "text2": "Merek",
+          "text3": "Jelajahi merek produk kami untuk menemukan yang paling cocok untuk hewan peliharaan Anda"
+        },
+        "CategoryBanner": {
+          "text1": "Belanja berdasarkan",
+          "text2": "Kategori",
+          "text3": "Jelajahi kategori produk kami untuk menemukan yang paling cocok untuk hewan peliharaan Anda"
+        },
+        "FeaturedProducts": {
+          "text1": "Produk",
+          "text2": "Unggulan",
+          "text3": "Temukan produk yang sempurna untuk hewan peliharaan kesayangan Anda",
+          "text4": "Lihat Semua Produk",
+          "text5": ""
+        },
+        "Hero": {
+          "text1": "Destinasi Terbaik untuk Hewan Peliharaan Anda",
+          "text2": "Kami Peduli",
+          "text3": "Terhadap Hewan Peliharaan Anda",
+          "text4": "Temukan pendamping sempurna yang sesuai dengan gaya hidup Anda. Kunjungi toko kami untuk perlengkapan hewan peliharaan berkualitas, mainan, makanan, dan banyak lagi.",
+          "text5": "Belanja Sekarang"
+        },
+        "NewArrivals": {
+          "text1": "Kedatangan",
+          "text2": "Baru",
+          "text3": "Lihat produk dan aksesori hewan peliharaan terbaru kami"
+        },
+        "PromoBanner": {
+          "text1": "Kedatangan Baru",
+          "text2": "Makanan Anjing",
+          "text3": "Premium",
+          "text4": "Gizi seimbang untuk kesehatan dan kebahagiaan teman berbulu Anda",
+          "text5": "Belanja Sekarang",
+          "text6": "Penawaran Spesial",
+          "text7": "Aksesori",
+          "text8": "Kucing",
+          "text9": "Segala yang dibutuhkan teman kucing Anda untuk kenyamanan dan bermain",
+          "text10": "Belanja Sekarang"
+        },
+        "Services": {
+          "text1": "Pengiriman Cepat",
+          "text2": "Dapatkan pesanan Anda dikirim dengan cepat dan aman",
+          "text3": "Produk Berkualitas",
+          "text4": "Kami memastikan kualitas produk kami",
+          "text5": "Dukungan Pelanggan 24/7",
+          "text6": "Tim dukungan khusus untuk pertanyaan",
+          "text7": "Diskon Spesial",
+          "text8": "Promosi rutin dan diskon anggota"
+        },
+        "Testimonials": {
+          "text1": "Apa Kata",
+          "text2": "Pelanggan Kami",
+          "text3": "Baca testimoni dari pelanggan kami yang bahagia dan hewan peliharaan mereka",
+          "text4": ""
+        }
+      }
+    },
+    "Header": {
+      "text1": "Beranda",
+      "text2": "Toko",
+      "text3": "Blog",
+      "text4": "Tentang",
+      "text5": "Kontak",
+      "text6": "Cari",
+      "text7": "DI MANA MEMBELI",
+      "text8": "Temukan Toko"
+    },
+    "Footer": {
+      "text1": "Crunchies adalah toko hewan peliharaan premium yang didedikasikan untuk menyediakan produk berkualitas tinggi dan layanan luar biasa untuk hewan peliharaan dan pemiliknya.",
+      "text2": "Tautan Cepat",
+      "text3": "Blog",
+      "text4": "Tentang Kami",
+      "text5": "Hubungi Kami",
+      "text6": "Terhubung",
+      "text7": "1234 Pet Street, Pawsville,",
+      "text8": "CA 98765, Amerika Serikat",
+      "text9": "Semua Hak Dilindungi Undang-Undang."
+    },
+    "Newsletter": {
+      "text1": "Daftar untuk Buletin Kami",
+      "text2": "Berlangganan buletin kami dan terima pembaruan tentang produk baru, penawaran khusus, dan tips perawatan untuk hewan peliharaan Anda.",
+      "text3": "Berlangganan",
+      "text4": "Dengan berlangganan, Anda menyetujui kebijakan privasi kami dan menyetujui untuk menerima pembaruan dari perusahaan kami.",
+      "text5": "Masukkan email Anda"
+    }
+  }
+}

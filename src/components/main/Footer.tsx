@@ -10,10 +10,12 @@ import {
   Youtube,
   ArrowRight,
 } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations('components.Footer');
   return (
     <footer className="bg-gradient-to-b from-white to-primary/5">
       {/* Main Footer */}
@@ -31,16 +33,14 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Crunchies is a premium pet store dedicated to providing
-              high-quality products and exceptional service for pets and their
-              owners.
+             {t('text1')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-bold mb-6 relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-0.5 after:bg-primary after:left-0 after:-bottom-2">
-              Quick Links
+              {t('text2')}
             </h4>
             <ul className="space-y-4">
               <li>
@@ -48,7 +48,7 @@ const Footer = () => {
                   href="/blog"
                   className="text-gray-600 hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
-                  Blog
+                  {t('text3')}
                 </Link>
               </li>
               <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="/about"
                   className="text-gray-600 hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
-                  About Us
+                  {t('text4')}
                 </Link>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                   href="/contact"
                   className="text-gray-600 hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
-                  Contact Us
+                  {t('text5')}
                 </Link>
               </li>
             </ul>
@@ -73,7 +73,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-6 relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-0.5 after:bg-primary after:left-0 after:-bottom-2">
-              Get in Touch
+              {t('text6')}
             </h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3 group">
@@ -82,8 +82,8 @@ const Footer = () => {
                   className="text-primary mt-1 group-hover:scale-110 transition-transform"
                 />
                 <p className="text-gray-600">
-                  1234 Pet Street, Pawsville, <br />
-                  CA 98765, United States
+                  {t('text7')} <br />
+                  {t('text8')}
                 </p>
               </div>
               <div className="flex items-center gap-3 group">
@@ -109,7 +109,7 @@ const Footer = () => {
       <div className="border-t border-primary/10 py-6 bg-white/50 backdrop-blur-sm">
         <div className="container-custom flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-center md:text-left">
-            &copy; {new Date().getFullYear()} Crunchies. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Crunchies. {t('text9')}
           </p>
           <div className="flex items-center gap-4">
             <a

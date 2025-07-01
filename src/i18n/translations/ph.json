@@ -1,0 +1,213 @@
+{
+  "pages": {
+    "Blog": {
+      "titlePrefix": "Ang Aming",
+      "titleMain": "Pet Blog",
+      "subtitle": "Tuklasin ang mga tip, payo, at kuwento tungkol sa pangangalaga sa alaga, kalusugan, at kaligayahan",
+      "loadMore": "Mag-load Pa",
+      "searchPlaceholder": "Maghanap sa mga post sa blog...",
+      "categoriesTitle": "Mga Kategorya",
+      "categories": {
+        "dogs": "Aso",
+        "dogsCount": "12",
+        "cats": "Pusa",
+        "catsCount": "9",
+        "healthcare": "Pangangalaga sa Kalusugan",
+        "healthcareCount": "9",
+        "general": "Pangkalahatan",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "Mga Sikat na Post"
+    },
+    "Contact": {
+      "text1": "Naglo-load ng mapa...",
+      "text2": "Makipag-ugnayan sa Amin",
+      "text3": "Gusto naming marinig mula sa iyo! Padalhan kami ng mensahe at sasagutin namin sa lalong madaling panahon."
+    },
+    "Product": {
+      "text1": "Hindi Nakita ang Produkto",
+      "text2": "Paumanhin, hindi namin mahanap ang produkto na hinahanap mo.",
+      "text3": "Bumalik sa Mga Produkto",
+      "text4": "Home"
+    },
+    "Shop": {
+      "text1": "Hindi Nakita ang Kategorya",
+      "text2": "Paumanhin, hindi namin mahanap ang kategorya na hinahanap mo.",
+      "text3": "Bumalik sa home",
+      "text4": "Pamimili para sa"
+    }
+  },
+
+  "components": {
+    "main": {
+      "about": {
+        "About": {
+          "text1": "Ang Tamang Pagpipilian para sa",
+          "text2": "Alagang",
+          "text3": "Hayop",
+          "text4": "Kung saan ang agham ay nagtatagpo ng pagmamahal para sa iyong minamahal na kasama",
+          "text5": "Tuklasin ang Aming Kuwento",
+          "title": "Ang DNA ng Aming Brand",
+          "text6": "Siyentipiko",
+          "text7": "Malusog",
+          "text8": "Premium",
+          "text9": "Holistic",
+          "text10": "Nutrisyon at solusyon sa pangangalaga na suportado ng pananaliksik",
+          "text11": "Balanseng nutrisyon para sa optimal na kalusugan ng alaga",
+          "text12": "Pinakamataas na kalidad ng sangkap at produkto",
+          "text13": "Kumpletong pangangalaga para sa pisikal at emosyonal na pangangailangan ng alaga",
+          "text14": "Ang Aming Misyon",
+          "text15": "Para sa kapakanan ng mga alaga ngayon, sinisikap ng CRUNCHIES na magbigay ng tamang solusyon:",
+          "text16": "Pagkaing balanse sa nutrisyon",
+          "text17": "para sa optimal na kalusugan",
+          "text18": "Mga produktong pangkulay, pang-araw-araw na pangangalaga, at suplemento",
+          "text19": "binibigyang-priyoridad ang kaginhawaan at sigla",
+          "text20": "Walang humpay na pananaliksik at inobasyon",
+          "text21": "upang mapataas ang pamumuhay ng mga alaga",
+          "text22": "Ang aming misyon ay linangin ang kultura ng holistic na kapakanan, kung saan nagtatagpo ang agham at pangangalaga para sa bawat minamahal na kasama.",
+          "text23": "Kuwento ng Brand",
+          "text24": "Isang mainit na pangako mula sa Korea, nagsusumikap na maging tulay sa pagitan ng mga alaga at may-ari, nagpapaliwanag ng mga tahanan ng pag-ibig at pagsasama.",
+          "text25": "Noong 2012, inampon ni L ang isang ligaw na aso na nagngangalang Dudu sa Timog Korea. Sa pamamagitan ng pagtitiis at pagmamahal, si Dudu ay nagbago mula sa isang mahiyain na kasama tungo sa isang hindi mapapalitang bahagi ng buhay ni L. Ang takot ni Dudu sa mga bagyo at ulan ay nagpabatid kay L:",
+          "text26": "Hindi lamang pagkain ang kailangan ng mga alaga, kundi pati na rin ang seguridad at pagsasama.",
+          "text27": "Noong 2017, pagkatapos ng pagkamatay ni Dudu, itinatag ni L ang Crunchies—isang Korean pet brand na nakatuon sa pagbibigay ng pagmamahal at pangangalaga sa mga alaga sa buong mundo. Bawat disenyo ng produkto ay nagtataglay ng pamana ni Dudu, na naglalaman ng paniniwala ni L:",
+          "text28": "Bawat alaga ay nararapat na mahalin, at bawat buhay ay nararapat na igalang.",
+          "text29": "Ang Aming Commitment",
+          "text30": "Ang CRUNCHIES ay nakatuon sa siyentipikong pananaliksik sa nutrisyon ng alaga, nakatuon sa pagpapahusay ng nutrient absorption, at paggamit ng cutting-edge na teknolohiya upang lumikha ng mga produkto na precision-engineered. Nagbibigay kami ng holistic na solusyon para sa isang science-guided pet care lifestyle.",
+          "text31": "Tuklasin ang Aming Mga Produkto"
+        }
+      },
+      "blog": {
+        "BlogCard": {
+          "text1": "Basahin Higit Pa",
+          "text2": ""
+        }
+      },
+      "contact": {
+        "Contact": {
+          "text1": "Makipag-ugnayan",
+          "text2": "Ang Aming Lokasyon",
+          "text3": "Estados Unidos",
+          "text4": "Numero ng Telepono",
+          "text5": "Email Address",
+          "text6": "Magpadala sa Amin ng Mensahe",
+          "text7": "Ang Iyong Pangalan",
+          "text8": "Ang Iyong Email",
+          "text9": "Paksa",
+          "text10": "Ang Iyong Mensahe",
+          "text11": "Isulat ang iyong mensahe dito...",
+          "text12": "Ipinapadala...",
+          "text13": "Ipadala ang Mensahe",
+          "text14": "Paano kami makakatulong sa iyo?"
+        },
+        "MapComponent": {
+          "text1": "Mapa",
+          "text2": "Satellite",
+          "text3": "Relief"
+        }
+      },
+      "header": {
+        "SearchModal": {
+          "text1": "Maghanap ng Produkto",
+          "text2": "Walang nakitang produkto para sa",
+          "text3": "Mga kamakailang paghahanap",
+          "text4": "I-clear lahat",
+          "text5": "Walang kamakailang paghahanap",
+          "text6": "Maghanap ng produkto..."
+        }
+      },
+      "home": {
+        "BlogSection": {
+          "text1": "Ang Aming",
+          "text2": "Pet Blog",
+          "text3": "Basahin ang aming pinakabagong artikulo tungkol sa pangangalaga sa alaga, pagsasanay, at kalusugan",
+          "text4": "Tingnan Lahat ng Post"
+        },
+        "BrandBanner": {
+          "text1": "Mamili ayon sa",
+          "text2": "Brand",
+          "text3": "Mag-browse sa aming brand ng produkto upang mahanap ang perpektong tugma para sa iyong alaga"
+        },
+        "CategoryBanner": {
+          "text1": "Mamili ayon sa",
+          "text2": "Kategorya",
+          "text3": "Mag-browse sa aming mga kategorya ng produkto upang mahanap ang perpektong tugma para sa iyong alaga"
+        },
+        "FeaturedProducts": {
+          "text1": "Mga Tampok na",
+          "text2": "Produk",
+          "text3": "Hanapin ang perpektong produkto para sa iyong minamahal na alaga",
+          "text4": "Tingnan Lahat ng Produkto",
+          "text5": ""
+        },
+        "Hero": {
+          "text1": "Pinakamahusay na Destinasyon para sa Iyong Mga Alaga",
+          "text2": "Pinapahalagahan Namin",
+          "text3": "Ang Iyong Mga Alaga",
+          "text4": "Hanapin ang perpektong kasama na akma sa iyong pamumuhay. Bisitahin ang aming tindahan para sa de-kalidad na supply ng alaga, mga laruan, pagkain, at marami pa.",
+          "text5": "Mamili Ngayon"
+        },
+        "NewArrivals": {
+          "text1": "Mga Bagong",
+          "text2": "Dating",
+          "text3": "Tingnan ang aming pinakabagong mga produkto at accessories ng alaga"
+        },
+        "PromoBanner": {
+          "text1": "Mga Bagong Dating",
+          "text2": "Premium",
+          "text3": "Pagkain ng Aso",
+          "text4": "Balanseng nutrisyon para sa kalusugan at kaligayahan ng iyong mabalahibong kaibigan",
+          "text5": "Mamili Ngayon",
+          "text6": "Espesyal na Alok",
+          "text7": "Mga",
+          "text8": "Kagamitan ng Pusa",
+          "text9": "Lahat ng kailangan ng iyong pusa para sa ginhawa at paglalaro",
+          "text10": "Mamili Ngayon"
+        },
+        "Services": {
+          "text1": "Mabilis na Paghahatid",
+          "text2": "Makuha ang iyong mga order na naihatid nang mabilis at ligtas",
+          "text3": "Mga Produktong De-kalidad",
+          "text4": "Tinitiyak namin ang kalidad ng aming mga produkto",
+          "text5": "24/7 Suporta sa Customer",
+          "text6": "Dedikadong pangkat ng suporta para sa mga katanungan",
+          "text7": "Mga Espesyal na Diskwento",
+          "text8": "Regular na promosyon at mga diskwento sa miyembro"
+        },
+        "Testimonials": {
+          "text1": "Ang Sinasabi ng Aming",
+          "text2": "Mga Customer",
+          "text3": "Basahin ang mga testimonya mula sa aming masayang mga customer at kanilang mga alaga",
+          "text4": ""
+        }
+      }
+    },
+    "Header": {
+      "text1": "Home",
+      "text2": "Shop",
+      "text3": "Blog",
+      "text4": "About",
+      "text5": "Contact",
+      "text6": "Search",
+      "text7": "WHERE TO BUY",
+      "text8": "Find a Store"
+    },
+    "Footer": {
+      "text1": "Ang Crunchies ay isang premium na pet store na nakatuon sa pagbibigay ng mataas na kalidad na produkto at pambihirang serbisyo para sa mga alaga at kanilang mga may-ari.",
+      "text2": "Mabilis na Link",
+      "text3": "Blog",
+      "text4": "Tungkol sa Amin",
+      "text5": "Makipag-ugnayan sa Amin",
+      "text6": "Makipag-ugnayan",
+      "text7": "1234 Pet Street, Pawsville,",
+      "text8": "CA 98765, United States",
+      "text9": "Lahat ng Karapatan ay Nakalaan."
+    },
+    "Newsletter": {
+      "text1": "Mag-sign Up para sa Aming Newsletter",
+      "text2": "Mag-subscribe sa aming newsletter at makatanggap ng mga update sa mga bagong produkto, espesyal na alok, at mga tip sa pangangalaga para sa iyong mga alaga.",
+      "text3": "Mag-subscribe",
+      "text4": "Sa pag-subscribe, sumasang-ayon ka sa aming patakaran sa privacy at pumapayag na makatanggap ng mga update mula sa aming kumpanya.",
+      "text5": "Ilagay ang iyong email"
+    }
+  }
+}

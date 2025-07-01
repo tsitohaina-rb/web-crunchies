@@ -4,8 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const About = () => {
+  const t = useTranslations("components.main.about.About");
   return (
     <div className="flex-grow mt-20 lg:mt-28">
       <section className="relative min-h-[80vh] flex items-center">
@@ -23,14 +25,14 @@ const About = () => {
               className="md:w-1/2 text-center md:text-left"
             >
               <h1 className="heading text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-                The Right Choice for <span className="text-primary">Pet</span>{" "}
-                Companionship
+                {t("text1")} <span className="text-primary">{t("text2")}</span>{" "}
+                {t("text3")}
               </h1>
               <p className="text-xl md:text-2xl mb-12 text-gray-700">
-                Where science meets love for your cherished companion
+                {t("text4")}
               </p>
               <Button className="rounded-full  hover:scale-105 transition-transform">
-                Discover Our Story
+                {t("text5")}
               </Button>
             </motion.div>
             <motion.div
@@ -77,13 +79,13 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center mb-20">
             <h2 className="heading text-2xl md:text-3xl font-bold text-gray-800">
-              Our Brand DNA
+              {t("title")}
             </h2>
             <div className="w-24 h-2 bg-primary mx-auto mt-6 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {["Scientific", "Healthy", "Premium", "Holistic"].map(
+            {[t("text6"), t("text7"), t("text8"), t("text9")].map(
               (item, index) => (
                 <motion.div
                   key={item}
@@ -106,12 +108,9 @@ const About = () => {
                   </h3>
                   <p className="text-gray-600">
                     {
-                      [
-                        "Research-backed nutrition and care solutions",
-                        "Nutritionally balanced for optimal pet health",
-                        "Highest quality ingredients and products",
-                        "Complete care for pet's physical and emotional needs",
-                      ][index]
+                      [t("text10"), t("text11"), t("text12"), t("text13")][
+                        index
+                      ]
                     }
                   </p>
                 </motion.div>
@@ -138,12 +137,9 @@ const About = () => {
               className="md:w-1/2 pr-0 md:pr-10"
             >
               <h2 className="heading text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-                Our Mission
+                {t("text14")}
               </h2>
-              <p className="text-gray-600 mb-6">
-                For the well-being of pets today, CRUNCHIES strives to deliver
-                the right solutions:
-              </p>
+              <p className="text-gray-600 mb-6">{t("text15")}</p>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -152,9 +148,9 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      Nutritionally balanced food
+                      {t("text16")}
                     </h3>
-                    <p className="text-gray-600">for optimal health</p>
+                    <p className="text-gray-600">{t("text17")}</p>
                   </div>
                 </div>
 
@@ -164,12 +160,9 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      Tailored grooming products, daily care essentials, and
-                      supplements
+                      {t("text18")}
                     </h3>
-                    <p className="text-gray-600">
-                      prioritizing comfort and vitality
-                    </p>
+                    <p className="text-gray-600">{t("text19")}</p>
                   </div>
                 </div>
 
@@ -179,17 +172,14 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 text-lg">
-                      Relentless research and innovation
+                      {t("text20")}
                     </h3>
-                    <p className="text-gray-600">to elevate pets' lifestyles</p>
+                    <p className="text-gray-600">{t("text21")}</p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-gray-700 mt-8 italic">
-                Our mission is to cultivate a culture of holistic well-being,
-                where science and care converge for every cherished companion.
-              </p>
+              <p className="text-gray-700 mt-8 italic">{t("text22")}</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -222,12 +212,11 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center mb-12">
             <h2 className="heading text-2xl md:text-3xll font-bold text-gray-800">
-              Brand Story
+              {t("text23")}
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto mt-4"></div>
             <p className="text-xl text-primary mt-6 font-medium max-w-3xl mx-auto">
-              A warm promise from Korea, striving to be the bridge between pets
-              and owners, illuminating homes with love and companionship.
+              {t("text24")}
             </p>
           </div>
 
@@ -243,14 +232,10 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 leading-relaxed">
-                      In 2012, L adopted a stray dog named Dudu in South Korea.
-                      Through patience and love, Dudu transformed from a timid
-                      companion to an irreplaceable part of L's life. Dudu's
-                      fear of thunderstorms and rain made L realize:
+                      {t("text25")}
                     </p>
                     <p className="text-primary font-medium mt-4 italic">
-                      "Pets need not just food, but also security and
-                      companionship."
+                      "{t("text26")}"
                     </p>
                   </div>
                 </div>
@@ -266,14 +251,10 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-gray-600 leading-relaxed">
-                      In 2017, after Dudu's passing, L founded Crunchies—a
-                      Korean pet brand committed to delivering love and care to
-                      pets worldwide. Every product design carries Dudu's
-                      legacy, embodying L's belief:
+                      {t("text27")}
                     </p>
                     <p className="text-primary font-medium mt-4 italic">
-                      "Every pet deserves love, and every life deserves
-                      respect."
+                      "{t("text28")}"
                     </p>
                   </div>
                 </div>
@@ -332,17 +313,11 @@ const About = () => {
         <div className="container-custom px-6">
           <div className="text-center">
             <h2 className="heading text-3xl md:text-4xl font-bold mb-8">
-              Our Commitment
+              {t("text29")}
             </h2>
-            <p className="text-lg max-w-3xl mx-auto mb-12">
-              CRUNCHIES is dedicated to scientific research in pet nutrition,
-              committed to enhancing nutrient absorption, and leveraging
-              cutting-edge technology to craft precision-engineered products. We
-              provide holistic solutions for a science-guided pet care
-              lifestyle.
-            </p>
+            <p className="text-lg max-w-3xl mx-auto mb-12">{t("text30")}</p>
             <button className="bg-white text-primary font-semibold py-3 px-8 rounded-full hover:bg-primary/5 transition">
-              Discover Our Products
+              {t("text31")}
             </button>
           </div>
         </div>

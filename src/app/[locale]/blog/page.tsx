@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Metadata } from "next";
-import Link from "next/link";
 import React from "react";
 import blogPosts from "@/data/blog-data";
 import BlogCard from "@/components/main/blog/BlogCard";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import Newsletter from "@/components/main/Newsletter";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,16 +16,17 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => {
+  const t = useTranslations('pages.Blog');
+
   return (
     <div className="flex-grow mt-20 lg:mt-28">
       <div className="bg-primary-foreground py-16 relative">
         <div className="container-custom">
           <h2 className="section-title text-center">
-            Our <span className="text-primary">Pet Blog</span>
+            {t('titlePrefix')} <span className="text-primary">{t('titleMain')}</span>
           </h2>
           <p className="text-lg text-center max-w-2xl mx-auto text-petio-text">
-            Discover tips, advice, and stories about pet care, health, and
-            happiness
+            {t('subtitle')}
           </p>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-16 md:h-24">
@@ -55,7 +57,7 @@ const BlogPage = () => {
 
             <div className="mt-10 flex justify-center">
               <Button variant="outline" size="lg" className="rounded-full px-8">
-                Load More
+                {t('loadMore')}
               </Button>
             </div>
           </div>
@@ -66,7 +68,7 @@ const BlogPage = () => {
               <form className="flex gap-x-1 mb-4">
                 <Input
                   type="email"
-                  placeholder="Search blog posts..."
+                  placeholder={t('searchPlaceholder')}
                   className="bg-white border-primary/10 focus-visible:ring-primary"
                   required
                 />
@@ -77,7 +79,7 @@ const BlogPage = () => {
                   <Search size={18} />
                 </Button>
               </form>
-              <h3 className="text-xl font-semibold mb-4">Categories</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('categoriesTitle')}</h3>
               <Separator className="mb-4" />
               <ul className="space-y-2">
                 <li>
@@ -85,7 +87,7 @@ const BlogPage = () => {
                     href="/blog/category/dogs"
                     className="text-petio-text hover:text-primary transition-colors"
                   >
-                    Dogs (12)
+                    {t('categories.dogs')} ({t('categories.dogsCount')})
                   </Link>
                 </li>
                 <li>
@@ -93,15 +95,15 @@ const BlogPage = () => {
                     href="/blog/category/cats"
                     className="text-petio-text hover:text-primary transition-colors"
                   >
-                    Cats (9)
+                    {t('categories.cats')} ({t('categories.catsCount')})
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/blog/category/cats"
+                    href="/blog/category/healthcare"
                     className="text-petio-text hover:text-primary transition-colors"
                   >
-                    Healthcare (9)
+                    {t('categories.healthcare')} ({t('categories.healthcareCount')})
                   </Link>
                 </li>
                 <li>
@@ -109,14 +111,14 @@ const BlogPage = () => {
                     href="/blog/category/general"
                     className="text-petio-text hover:text-primary transition-colors"
                   >
-                    General (15)
+                    {t('categories.general')} ({t('categories.generalCount')})
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white border border-petio-border rounded-lg p-6 mt-8">
-              <h3 className="text-xl font-semibold mb-4">Popular Posts</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('popularPostsTitle')}</h3>
               <Separator className="mb-4" />
               <ul className="space-y-4">
                 {blogPosts.slice(0, 3).map((post) => (

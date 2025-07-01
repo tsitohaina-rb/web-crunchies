@@ -7,7 +7,6 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-import Link from "next/link";
 import products from "@/data/products-data";
 import { Button } from "@/components/ui/button";
 import ProductDetail from "@/components/main/product/ProductDetail";
@@ -15,6 +14,8 @@ import RelatedProducts from "@/components/main/product/RelatedProducts";
 import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 import { Metadata } from "next";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 interface ProductDetailProps {
   params: Promise<{ slug: string }>;
@@ -49,18 +50,19 @@ export async function generateMetadata({
 }
 
 const ProductDetailPage = async ({ params }: ProductDetailProps) => {
+  const t = useTranslations('pages.Product');
   const { slug } = await params;
   const product = products.find((product) => product.slug === slug);
   if (!product) {
     return (
       <main className="flex-grow bg-primary-foreground mt-20 lg:mt-28 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
+          <h1 className="text-2xl font-bold mb-4">{t('text1')}</h1>
           <p className="mb-6">
-            Sorry, we couldn't find the product you're looking for.
+            {t('text2')}
           </p>
           <Button asChild>
-            <Link href="/shops">Back to Products</Link>
+            <Link href="/shops">{t('text3')}</Link>
           </Button>
         </div>
       </main>
@@ -74,7 +76,7 @@ const ProductDetailPage = async ({ params }: ProductDetailProps) => {
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link href="/">Home</Link>
+                <Link href="/">{t('text4')}</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
