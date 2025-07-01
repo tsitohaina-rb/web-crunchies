@@ -1,73 +1,94 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
 import { Link, Locale } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
 import { ChevronDown } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+import clsx from "clsx";
+
+interface Language {
+  code: string;
+  name: string;
+  flag: string;
+  dir?: "ltr" | "rtl";
+}
 
 interface LanguageSwitcherProps {
   className?: string;
-  languages?: {
-    code: string;
-    name: string;
-    flag: string;
-    dir?: "ltr" | "rtl";
-  }[];
+  languages?: Language[];
 }
+
+const stripLocaleFromPath = (
+  path: string,
+  locales: string[],
+  currentLocale: string
+) => {
+  const regex = new RegExp(`^/(${locales.join("|")})(/|$)`);
+  return currentLocale === "en" ? path : path.replace(regex, "/");
+};
 
 const LanguageSwitcher = ({
   className,
   languages = [],
 }: LanguageSwitcherProps) => {
   const locale = useLocale() as Locale;
+  const pathname = usePathname();
+
+  const redirectTo = useMemo(
+    () =>
+      stripLocaleFromPath(
+        pathname,
+        languages.map((l) => l.code),
+        locale
+      ),
+    [pathname, languages, locale]
+  );
+
+  const selectedLang = languages.find((l) => l.code === locale);
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        {/* Show flag for selected language only */}
-        {(() => {
-          const selectedLang = languages.find((l) => l.code === locale);
-          if (selectedLang?.flag) {
-            return selectedLang.flag.startsWith("http") ? (
-              <div className="flex items-center *:hover:bg-primary/5 cursor-pointer">
-                <img
-                  src={selectedLang.flag}
-                  alt={selectedLang.name}
-                  className="h-6 w-6 object-cover rounded-full border border-primary/20 bg-white p-1 mr-2 align-middle"
-                />
-                <b>{selectedLang.code.toUpperCase()}</b>
-                <span className="mt-1">
-                  <ChevronDown size={16} />
-                </span>
-              </div>
+        <div
+          className={clsx(
+            "flex items-center space-x-2 cursor-pointer",
+            className
+          )}
+        >
+          {selectedLang?.flag &&
+            (selectedLang.flag.startsWith("http") ? (
+              <img
+                src={selectedLang.flag}
+                alt={selectedLang.name}
+                className="h-6 w-6 object-cover rounded-full border border-primary/20 bg-white p-1"
+              />
             ) : (
               <span className="text-xl">{selectedLang.flag}</span>
-            );
-          }
-          // No fallback icon
-          return null;
-        })()}
+            ))}
+          <b>{selectedLang?.code.toUpperCase()}</b>
+          <ChevronDown size={16} className="mt-1" />
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="!rounded-[12px]">
         {languages.map((language) => (
           <DropdownMenuItem
             asChild
             key={language.code}
-            className={
+            className={clsx(
+              "cursor-pointer",
               locale === language.code
-                ? "hover:!text-primary bg-primary/5 cursor-pointer"
-                : "hover:!bg-primary/5 hover:!text-primary cursor-pointer"
-            }
+                ? "hover:!text-primary bg-primary/5"
+                : "hover:!bg-primary/5 hover:!text-primary"
+            )}
           >
-            <Link href="/" locale={language.code}>
-              {/* Show flag image or emoji before language name */}
+            <Link href={redirectTo} locale={language.code}>
               {language.flag &&
                 (language.flag.startsWith("http") ? (
                   <img

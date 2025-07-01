@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Metadata } from "next";
-import Link from "next/link";
 import React from "react";
 import blogPosts from "@/data/blog-data";
 import BlogCard from "@/components/main/blog/BlogCard";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import Newsletter from "@/components/main/Newsletter";
-import { useTranslations } from 'next-intl';
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Create Next App",

@@ -7,7 +7,6 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-import Link from "next/link";
 import products from "@/data/products-data";
 import { Button } from "@/components/ui/button";
 import ProductDetail from "@/components/main/product/ProductDetail";
@@ -15,7 +14,7 @@ import RelatedProducts from "@/components/main/product/RelatedProducts";
 import Newsletter from "@/components/main/Newsletter";
 import { getLinkWithSubcategoriesAndName } from "@/lib/formats";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 interface ProductDetailProps {
   params: Promise<{ slug: string }>;

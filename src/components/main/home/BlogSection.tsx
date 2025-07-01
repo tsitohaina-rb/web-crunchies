@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import blogPosts from "@/data/blog-data";
 import BlogCard from "../blog/BlogCard";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const BlogSection = () => {

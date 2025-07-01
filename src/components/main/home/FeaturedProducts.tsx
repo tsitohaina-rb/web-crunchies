@@ -4,7 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import products from "@/data/products-data";
 import ProductCard from "../product/ProductCard";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const FeaturedProducts = () => {
