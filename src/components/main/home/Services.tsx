@@ -1,34 +1,37 @@
 import React from "react";
 import { Truck, ShieldCheck, Headphones, BadgePercent } from "lucide-react";
-
-const services = [
-  {
-    id: 1,
-    icon: Truck,
-    title: "Fast Delivery",
-    description: "Get your orders delivered quickly and safely",
-  },
-  {
-    id: 2,
-    icon: ShieldCheck,
-    title: "Quality Products",
-    description: "We ensure the quality of our products",
-  },
-  {
-    id: 3,
-    icon: Headphones,
-    title: "24/7 Customer Support",
-    description: "Dedicated support team for queries",
-  },
-  {
-    id: 4,
-    icon: BadgePercent,
-    title: "Special Discounts",
-    description: "Regular promotions and member discounts",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Services = () => {
+  const t = useTranslations('components.main.home.Services');
+  
+  const services = [
+    {
+      id: 1,
+      icon: Truck,
+      title: t('text1'),
+      description: t('text2'),
+    },
+    {
+      id: 2,
+      icon: ShieldCheck,
+      title: t('text3'),
+      description: t('text4'),
+    },
+    {
+      id: 3,
+      icon: Headphones,
+      title: t('text5'),
+      description: t('text6'),
+    },
+    {
+      id: 4,
+      icon: BadgePercent,
+      title: t('text7'),
+      description: t('text8'),
+    },
+  ];
+
   return (
     <section className="py-12 bg-primary-foreground">
       <div className="container-custom">
@@ -43,7 +46,7 @@ const Services = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
-                <p className=" text-sm">{service.description}</p>
+                <p className="text-sm">{service.description}</p>
               </div>
             </div>
           ))}

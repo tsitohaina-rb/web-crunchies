@@ -12,6 +12,7 @@ import products from "@/data/products-data";
 import Image from "next/image";
 import { getCurrencySymbol } from "@/lib/formats";
 import { averageRating } from "@/lib/review";
+import { useTranslations } from "next-intl";
 
 const SEARCH_HISTORY_KEY = "search_history";
 const MAX_HISTORY_ITEMS = 5;
@@ -22,6 +23,7 @@ interface SearchModalProps {
 }
 
 const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
+  const t = useTranslations('components.main.header.SearchModal');
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState(products);
@@ -79,7 +81,7 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-xl p-0">
         <DialogHeader className="sr-only">
-          <DialogTitle>Search Products</DialogTitle>
+          <DialogTitle>{t('text1')}</DialogTitle>
         </DialogHeader>
 
         <div className="relative">
@@ -89,7 +91,7 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
           />
           <Input
             className="w-full border-0 focus-visible:ring-0 pl-12 pr-4 py-6 text-lg"
-            placeholder="Search products..."
+            placeholder={t('text6')}
             autoFocus
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -141,7 +143,7 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
               </div>
             ) : (
               <div className="p-8 text-center text-muted-foreground">
-                No products found for "{searchQuery}"
+                {t('text2')}"{searchQuery}"
               </div>
             )}
           </div>
@@ -149,14 +151,14 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
           <div className="p-4 bg-muted/40">
             <div className="flex items-center justify-between mb-2">
               <div className="text-sm text-muted-foreground">
-                Recent searches
+                {t('text3')}
               </div>
               {searchHistory.length > 0 && (
                 <button
                   onClick={clearHistory}
                   className="text-xs text-primary hover:underline"
                 >
-                  Clear all
+                  {t('text4')}
                 </button>
               )}
             </div>
@@ -187,7 +189,7 @@ const SearchModal = ({ isOpen, onOpenChange }: SearchModalProps) => {
                 ))}
               </div>
             ) : (
-              <div className="text-sm">No recent searches</div>
+              <div className="text-sm">{t('text5')}</div>
             )}
           </div>
         )}

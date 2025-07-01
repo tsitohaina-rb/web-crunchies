@@ -1,8 +1,10 @@
 import React from "react";
 import { Star, Quote, Globe, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const testimonials = [
+
   {
     id: 1,
     name: "John Smith",
@@ -72,15 +74,16 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const t = useTranslations('components.main.home.Testimonials');
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            What Our <span className="text-primary">Customers Say</span>
+            {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
           <p className="section-subtitle">
-            Read testimonials from our happy customers and their pets
+            {t('text3')}
           </p>
         </div>
 

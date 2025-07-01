@@ -6,8 +6,10 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import ShopModal from "../shop/ShopModal";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+    const t = useTranslations('components.main.home.Hero');
   const [isShopModalOpen, setIsShopModalOpen] = useState(false);
   return (
     <section className="relative bg-primary-foreground py-12 md:py-16 lg:py-20">
@@ -18,15 +20,14 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 animate-slide-in">
             <span className="bg-white text-primary px-4 py-1 rounded-full text-sm font-medium">
-              Best Destination For Your Pets
+              {t('text1')}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 leading-tight">
-              We Care <br />
-              For Your Pets
+              {t('text2')} <br />
+              {t('text3')}
             </h1>
             <p className="text-lg mb-8 max-w-lg">
-              Find the perfect companion who fits your lifestyle. Visit our
-              store for quality pet supplies, toys, food, and more.
+              {t('text4')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -34,7 +35,7 @@ const Hero = () => {
                 asChild
               >
                 <Link href="/shop/all">
-                  Shop Now <ArrowRight size={18} className="ml-1" />
+                  {t('text5')} <ArrowRight size={18} className="ml-1" />
                 </Link>
               </Button>
               {/* <Button

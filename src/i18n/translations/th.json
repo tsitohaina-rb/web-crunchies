@@ -1,23 +1,207 @@
 {
-     "text": {
-    "text1": "",
-    "text2": "",
-    "text3": "",
-    "text4": "",
-    "text5": "",
-    "text6": "",
-    "text7": "",
-    "text8": "",
-    "text9": "",
-    "text10": "",
-    "text11": "",
-    "text12": "",
-    "text13": "",
-    "text14": "",
-    "text15": "",
-    "text16": "",
-    "text17": "",
-    "text18": ""
+  "pages": {
+    "Blog": {
+      "titlePrefix": "ของเรา",
+      "titleMain": "บล็อกสัตว์เลี้ยง",
+      "subtitle": "ค้นพบเคล็ดลับ คำแนะนำ และเรื่องราวเกี่ยวกับการดูแลสัตว์เลี้ยง สุขภาพ และความสุข",
+      "loadMore": "โหลดเพิ่มเติม",
+      "searchPlaceholder": "ค้นหาโพสต์ในบล็อก...",
+      "categoriesTitle": "หมวดหมู่",
+      "categories": {
+        "dogs": "สุนัข",
+        "dogsCount": "12",
+        "cats": "แมว",
+        "catsCount": "9",
+        "healthcare": "การดูแลสุขภาพ",
+        "healthcareCount": "9",
+        "general": "ทั่วไป",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "โพสต์ยอดนิยม"
+    },
+    "Contact": {
+      "text1": "กำลังโหลดแผนที่...",
+      "text2": "ติดต่อเรา",
+      "text3": "เรายินดีที่จะรับฟังจากคุณ! ส่งข้อความหาเรา แล้วเราจะตอบกลับโดยเร็วที่สุด"
+    },
+    "Product": {
+      "text1": "ไม่พบสินค้า",
+      "text2": "ขออภัย เราไม่พบสินค้าที่คุณกำลังมองหา",
+      "text3": "กลับไปที่สินค้า",
+      "text4": "หน้าแรก"
+    },
+    "Shop": {
+      "text1": "ไม่พบหมวดหมู่",
+      "text2": "ขออภัย เราไม่พบหมวดหมู่ที่คุณกำลังมองหา",
+      "text3": "กลับสู่หน้าหลัก",
+      "text4": "กำลังเลือกซื้อ"
+    }
+  },
 
+  "components": {
+    "main": {
+      "about": {
+        "About": {
+          "text1": "ทางเลือกที่ถูกต้องสำหรับ",
+          "text2": "เพื่อน",
+          "text3": "สัตว์เลี้ยง",
+          "text4": "ที่ซึ่งวิทยาศาสตร์มาบรรจบกับความรักสำหรับเพื่อนคู่ใจที่คุณหวงแหน",
+          "text5": "ค้นพบเรื่องราวของเรา",
+          "title": "ดีเอ็นเอของแบรนด์เรา",
+          "text6": "ทางวิทยาศาสตร์",
+          "text7": "สุขภาพดี",
+          "text8": "พรีเมียม",
+          "text9": "องค์รวม",
+          "text10": "โภชนาการและโซลูชั่นการดูแลที่ได้รับการสนับสนุนจากการวิจัย",
+          "text11": "สมดุลทางโภชนาการเพื่อสุขภาพสัตว์เลี้ยงที่ดีที่สุด",
+          "text12": "ส่วนผสมและผลิตภัณฑ์คุณภาพสูงสุด",
+          "text13": "การดูแลที่สมบูรณ์แบบสำหรับความต้องการทางกายภาพและอารมณ์ของสัตว์เลี้ยง",
+          "text14": "ภารกิจของเรา",
+          "text15": "เพื่อความเป็นอยู่ที่ดีของสัตว์เลี้ยงในวันนี้ CRUNCHIES มุ่งมั่นที่จะนำเสนอโซลูชั่นที่เหมาะสม:",
+          "text16": "อาหารสมดุลทางโภชนาการ",
+          "text17": "เพื่อสุขภาพที่ดีที่สุด",
+          "text18": "ผลิตภัณฑ์ดูแลขนที่ปรับแต่งได้, สิ่งจำเป็นสำหรับการดูแลประจำวัน, และอาหารเสริม",
+          "text19": "ให้ความสำคัญกับความสบายและความมีชีวิตชีวา",
+          "text20": "การวิจัยและนวัตกรรมอย่างไม่หยุดยั้ง",
+          "text21": "เพื่อยกระดับไลฟ์สไตล์ของสัตว์เลี้ยง",
+          "text22": "ภารกิจของเราคือการปลูกฝังวัฒนธรรมความเป็นอยู่ที่ดีแบบองค์รวม ที่ซึ่งวิทยาศาสตร์และการดูแลมาบรรจบกันสำหรับเพื่อนคู่ใจทุกตัว",
+          "text23": "เรื่องราวของแบรนด์",
+          "text24": "คำสัญญาอันอบอุ่นจากเกาหลี มุ่งมั่นที่จะเป็นสะพานเชื่อมระหว่างสัตว์เลี้ยงและเจ้าของ ส่องสว่างบ้านด้วยความรักและมิตรภาพ",
+          "text25": "ในปี 2012 L ได้รับเลี้ยงสุนัขจรจัดชื่อ Dudu ในเกาหลีใต้ ด้วยความอดทนและความรัก Dudu ได้เปลี่ยนจากเพื่อนที่ขี้อายมาเป็นส่วนหนึ่งที่ไม่อาจทดแทนได้ในชีวิตของ L ความกลัวพายุฝนฟ้าคะนองและฝนของ Dudu ทำให้ L ตระหนักว่า:",
+          "text26": "สัตว์เลี้ยงไม่เพียงต้องการอาหาร แต่ยังต้องการความมั่นคงและมิตรภาพ",
+          "text27": "ในปี 2017 หลังจากการจากไปของ Dudu, L ได้ก่อตั้ง Crunchies—แบรนด์สัตว์เลี้ยงของเกาหลีที่มุ่งมั่นที่จะส่งมอบความรักและการดูแลสัตว์เลี้ยงทั่วโลก การออกแบบผลิตภัณฑ์ทุกชิ้นสืบทอดมรดกของ Dudu ซึ่งเป็นตัวแทนความเชื่อของ L:",
+          "text28": "สัตว์เลี้ยงทุกตัวสมควรได้รับความรัก และทุกชีวิตสมควรได้รับความเคารพ",
+          "text29": "ความมุ่งมั่นของเรา",
+          "text30": "CRUNCHIES มุ่งมั่นในการวิจัยทางวิทยาศาสตร์ด้านโภชนาการสัตว์เลี้ยง มุ่งมั่นที่จะเพิ่มการดูดซึมสารอาหาร และใช้ประโยชน์จากเทคโนโลยีที่ทันสมัยเพื่อสร้างผลิตภัณฑ์ที่ออกแบบมาอย่างแม่นยำ เรานำเสนอโซลูชั่นแบบองค์รวมสำหรับไลฟ์สไตล์การดูแลสัตว์เลี้ยงที่ขับเคลื่อนด้วยวิทยาศาสตร์",
+          "text31": "ค้นพบผลิตภัณฑ์ของเรา"
+        }
+      },
+      "blog": {
+        "BlogCard": {
+          "text1": "Read More",
+          "text2": ""
+        }
+      },
+      "contact": {
+        "Contact": {
+          "text1": "Get In Touch",
+          "text2": "Our Location",
+          "text3": "United States",
+          "text4": "Phone Number",
+          "text5": "Email Address",
+          "text6": "Send Us A Message",
+          "text7": "Your Name",
+          "text8": "Your Email",
+          "text9": "Subject",
+          "text10": "Your Message",
+          "text11": "Write your message here...",
+          "text12": "Sending...",
+          "text13": "Send Message"
+        }
+      },
+      "header": {
+        "SearchModal": {
+          "text1": "Search Products",
+          "text2": "No products found for",
+          "text3": "Recent searches",
+          "text4": "Clear all",
+          "text5": "No recent searches",
+          "text6": "Search products..."
+        }
+      },
+      "home": {
+        "BlogSection": {
+          "text1": "Our",
+          "text2": "Pet Blog",
+          "text3": "Read our latest articles on pet care, training, and health",
+          "text4": "View All Posts"
+        },
+        "BrandBanner": {
+          "text1": "Shop by",
+          "text2": "Brand",
+          "text3": "Browse through our product brand to find the perfect match for your pet"
+        },
+        "CategoryBanner": {
+          "text1": "Shop by",
+          "text2": "Categories",
+          "text3": "Browse through our product categories to find the perfect match for your pet"
+        },
+        "FeaturedProducts": {
+          "text1": "Featured",
+          "text2": "Products",
+          "text3": "Find the perfect products for your beloved pets",
+          "text4": "View All Products",
+          "text5": ""
+        },
+        "Hero": {
+          "text1": "Best Destination For Your Pets",
+          "text2": "We Care ",
+          "text3": "For Your Pets",
+          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
+          "text5": "Shop Now"
+        },
+        "NewArrivals": {
+          "text1": "New",
+          "text2": "Arrivals",
+          "text3": "Check out our latest pet products and accessories"
+        },
+        "PromoBanner": {
+          "text1": "New Arrivals",
+          "text2": "Premium",
+          "text3": "Dog Food",
+          "text4": "Balanced nutrition for your furry friend's health and happiness",
+          "text5": "Shop Now ",
+          "text6": "Special Offer",
+          "text7": "Cat",
+          "text8": "Accessories",
+          "text9": "Everything your feline friend needs for comfort and play",
+          "text10": "Shop Now"
+        },
+        "Services": {
+          "text1": "Fast Delivery",
+          "text2": "Get your orders delivered quickly and safely",
+          "text3": "Quality Products",
+          "text4": "We ensure the quality of our products",
+          "text5": "24/7 Customer Support",
+          "text6": "Dedicated support team for queries",
+          "text7": "Special Discounts",
+          "text8": "Regular promotions and member discounts"
+        },
+        "Testimonials": {
+          "text1": "What Our",
+          "text2": "Customers Say",
+          "text3": "Read testimonials from our happy customers and their pets",
+          "text4": ""
+        }
+      }
+    },
+    "Header": {
+      "text1": "หน้าแรก",
+      "text2": "ร้านค้า",
+      "text3": "บล็อก",
+      "text4": "เกี่ยวกับ",
+      "text5": "ติดต่อ",
+      "text6": "ค้นหา",
+      "text7": "ที่ไหนที่ซื้อ",
+      "text8": "หาร้านค้า"
+    },
+    "Footer": {
+      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
+      "text2": "Quick Links",
+      "text3": "Blog",
+      "text4": "About Us",
+      "text5": "Contact Us",
+      "text6": "Get in Touch",
+      "text7": "1234 Pet Street, Pawsville,",
+      "text8": "CA 98765, United States",
+      "text9": "All Rights Reserved."
+    },
+    "Newsletter": {
+      "text1": "Sign Up for Our Newsletter",
+      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
+      "text3": "Subscribe ",
+      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
+      "text5": "Enter your email"
+    }
   }
 }

@@ -4,17 +4,19 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import products from "@/data/products-data";
 import NewArrivalCard from "../product/NewArrivalCard";
+import { useTranslations } from "next-intl";
 
 const NewArrivals = () => {
+  const t = useTranslations('components.main.home.NewArrivals');
   return (
     <section className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            New <span className="text-primary">Arrivals</span>
+            {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
           <p className="section-subtitle">
-            Check out our latest pet products and accessories
+            {t('text3')}
           </p>
         </div>
 

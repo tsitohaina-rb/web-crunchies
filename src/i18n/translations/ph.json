@@ -1,78 +1,79 @@
 {
   "pages": {
     "Blog": {
-      "titlePrefix": "Blog",
-      "titleMain": "Hewan Peliharaan Kami",
-      "subtitle": "Temukan tips, saran, dan cerita tentang perawatan hewan peliharaan, kesehatan, dan kebahagiaan",
-      "loadMore": "Muat Lebih Banyak",
-      "searchPlaceholder": "Cari postingan blog...",
-      "categoriesTitle": "Kategori",
+      "titlePrefix": "Ang Aming",
+      "titleMain": "Pet Blog",
+      "subtitle": "Tuklasin ang mga tip, payo, at kuwento tungkol sa pangangalaga sa alaga, kalusugan, at kaligayahan",
+      "loadMore": "Mag-load Pa",
+      "searchPlaceholder": "Maghanap sa mga post sa blog...",
+      "categoriesTitle": "Mga Kategorya",
       "categories": {
-        "dogs": "Anjing",
+        "dogs": "Aso",
         "dogsCount": "12",
-        "cats": "Kucing",
+        "cats": "Pusa",
         "catsCount": "9",
-        "healthcare": "Perawatan Kesehatan",
+        "healthcare": "Pangangalaga sa Kalusugan",
         "healthcareCount": "9",
-        "general": "Umum",
+        "general": "Pangkalahatan",
         "generalCount": "15"
       },
-      "popularPostsTitle": "Postingan Populer"
+      "popularPostsTitle": "Mga Sikat na Post"
     },
     "Contact": {
-      "text1": "Memuat peta...",
-      "text2": "Hubungi Kami",
-      "text3": "Kami senang mendengar dari Anda! Kirimkan pesan kepada kami dan kami akan membalas secepat mungkin."
+      "text1": "Naglo-load ng mapa...",
+      "text2": "Makipag-ugnayan sa Amin",
+      "text3": "Gusto naming marinig mula sa iyo! Padalhan kami ng mensahe at sasagutin namin sa lalong madaling panahon."
     },
     "Product": {
-      "text1": "Produk Tidak Ditemukan",
-      "text2": "Maaf, kami tidak dapat menemukan produk yang Anda cari.",
-      "text3": "Kembali ke Produk",
-      "text4": "Beranda"
+      "text1": "Hindi Nakita ang Produkto",
+      "text2": "Paumanhin, hindi namin mahanap ang produkto na hinahanap mo.",
+      "text3": "Bumalik sa Mga Produkto",
+      "text4": "Home"
     },
     "Shop": {
-      "text1": "Kategori Tidak Ditemukan",
-      "text2": "Maaf, kami tidak dapat menemukan kategori yang Anda cari.",
-      "text3": "Kembali ke beranda",
-      "text4": "Berbelanja untuk"
+      "text1": "Hindi Nakita ang Kategorya",
+      "text2": "Paumanhin, hindi namin mahanap ang kategorya na hinahanap mo.",
+      "text3": "Bumalik sa home",
+      "text4": "Pamimili para sa"
     }
   },
+
   "components": {
     "main": {
       "about": {
         "About": {
-          "text1": "Pilihan Tepat untuk",
-          "text2": "Sahabat",
-          "text3": "Hewan Peliharaan",
-          "text4": "Di mana sains bertemu cinta untuk sahabat kesayangan Anda",
-          "text5": "Temukan Kisah Kami",
-          "title": "DNA Merek Kami",
-          "text6": "Ilmiah",
-          "text7": "Sehat",
+          "text1": "Ang Tamang Pagpipilian para sa",
+          "text2": "Alagang",
+          "text3": "Hayop",
+          "text4": "Kung saan ang agham ay nagtatagpo ng pagmamahal para sa iyong minamahal na kasama",
+          "text5": "Tuklasin ang Aming Kuwento",
+          "title": "Ang DNA ng Aming Brand",
+          "text6": "Siyentipiko",
+          "text7": "Malusog",
           "text8": "Premium",
-          "text9": "Holistik",
-          "text10": "Nutrisi dan solusi perawatan berbasis penelitian",
-          "text11": "Gizi seimbang untuk kesehatan hewan peliharaan yang optimal",
-          "text12": "Bahan dan produk kualitas tertinggi",
-          "text13": "Perawatan lengkap untuk kebutuhan fisik dan emosional hewan peliharaan",
-          "text14": "Misi Kami",
-          "text15": "Untuk kesejahteraan hewan peliharaan hari ini, CRUNCHIES berupaya memberikan solusi yang tepat:",
-          "text16": "Makanan bergizi seimbang",
-          "text17": "untuk kesehatan optimal",
-          "text18": "Produk perawatan khusus, kebutuhan perawatan harian, dan suplemen",
-          "text19": "memprioritaskan kenyamanan dan vitalitas",
-          "text20": "Penelitian dan inovasi tanpa henti",
-          "text21": "untuk meningkatkan gaya hidup hewan peliharaan",
-          "text22": "Misi kami adalah menumbuhkan budaya kesejahteraan holistik, di mana sains dan perawatan bersatu untuk setiap sahabat kesayangan.",
-          "text23": "Kisah Merek",
-          "text24": "Sebuah janji hangat dari Korea, berjuang untuk menjadi jembatan antara hewan peliharaan dan pemilik, menerangi rumah dengan cinta dan persahabatan.",
-          "text25": "Pada tahun 2012, L mengadopsi seekor anjing liar bernama Dudu di Korea Selatan. Melalui kesabaran dan cinta, Dudu bertransformasi dari teman yang pemalu menjadi bagian tak tergantikan dalam hidup L. Ketakutan Dudu terhadap badai petir dan hujan membuat L menyadari:",
-          "text26": "Hewan peliharaan tidak hanya membutuhkan makanan, tetapi juga keamanan dan persahabatan.",
-          "text27": "Pada tahun 2017, setelah Dudu meninggal, L mendirikan Crunchies—merek hewan peliharaan Korea yang berkomitmen untuk memberikan cinta dan perhatian kepada hewan peliharaan di seluruh dunia. Setiap desain produk membawa warisan Dudu, yang mewujudkan keyakinan L:",
-          "text28": "Setiap hewan peliharaan berhak mendapatkan cinta, dan setiap kehidupan berhak dihormati.",
-          "text29": "Komitmen Kami",
-          "text30": "CRUNCHIES berdedikasi untuk penelitian ilmiah dalam nutrisi hewan peliharaan, berkomitmen untuk meningkatkan penyerapan nutrisi, dan memanfaatkan teknologi mutakhir untuk membuat produk yang direkayasa secara presisi. Kami menyediakan solusi holistik untuk gaya hidup perawatan hewan peliharaan yang dipandu sains.",
-          "text31": "Temukan Produk Kami"
+          "text9": "Holistic",
+          "text10": "Nutrisyon at solusyon sa pangangalaga na suportado ng pananaliksik",
+          "text11": "Balanseng nutrisyon para sa optimal na kalusugan ng alaga",
+          "text12": "Pinakamataas na kalidad ng sangkap at produkto",
+          "text13": "Kumpletong pangangalaga para sa pisikal at emosyonal na pangangailangan ng alaga",
+          "text14": "Ang Aming Misyon",
+          "text15": "Para sa kapakanan ng mga alaga ngayon, sinisikap ng CRUNCHIES na magbigay ng tamang solusyon:",
+          "text16": "Pagkaing balanse sa nutrisyon",
+          "text17": "para sa optimal na kalusugan",
+          "text18": "Mga produktong pangkulay, pang-araw-araw na pangangalaga, at suplemento",
+          "text19": "binibigyang-priyoridad ang kaginhawaan at sigla",
+          "text20": "Walang humpay na pananaliksik at inobasyon",
+          "text21": "upang mapataas ang pamumuhay ng mga alaga",
+          "text22": "Ang aming misyon ay linangin ang kultura ng holistic na kapakanan, kung saan nagtatagpo ang agham at pangangalaga para sa bawat minamahal na kasama.",
+          "text23": "Kuwento ng Brand",
+          "text24": "Isang mainit na pangako mula sa Korea, nagsusumikap na maging tulay sa pagitan ng mga alaga at may-ari, nagpapaliwanag ng mga tahanan ng pag-ibig at pagsasama.",
+          "text25": "Noong 2012, inampon ni L ang isang ligaw na aso na nagngangalang Dudu sa Timog Korea. Sa pamamagitan ng pagtitiis at pagmamahal, si Dudu ay nagbago mula sa isang mahiyain na kasama tungo sa isang hindi mapapalitang bahagi ng buhay ni L. Ang takot ni Dudu sa mga bagyo at ulan ay nagpabatid kay L:",
+          "text26": "Hindi lamang pagkain ang kailangan ng mga alaga, kundi pati na rin ang seguridad at pagsasama.",
+          "text27": "Noong 2017, pagkatapos ng pagkamatay ni Dudu, itinatag ni L ang Crunchies—isang Korean pet brand na nakatuon sa pagbibigay ng pagmamahal at pangangalaga sa mga alaga sa buong mundo. Bawat disenyo ng produkto ay nagtataglay ng pamana ni Dudu, na naglalaman ng paniniwala ni L:",
+          "text28": "Bawat alaga ay nararapat na mahalin, at bawat buhay ay nararapat na igalang.",
+          "text29": "Ang Aming Commitment",
+          "text30": "Ang CRUNCHIES ay nakatuon sa siyentipikong pananaliksik sa nutrisyon ng alaga, nakatuon sa pagpapahusay ng nutrient absorption, at paggamit ng cutting-edge na teknolohiya upang lumikha ng mga produkto na precision-engineered. Nagbibigay kami ng holistic na solusyon para sa isang science-guided pet care lifestyle.",
+          "text31": "Tuklasin ang Aming Mga Produkto"
         }
       },
       "blog": {
@@ -175,14 +176,14 @@
       }
     },
     "Header": {
-      "text1": "Beranda",
-      "text2": "Toko",
+      "text1": "Home",
+      "text2": "Shop",
       "text3": "Blog",
-      "text4": "Tentang",
-      "text5": "Kontak",
-      "text6": "Cari",
-      "text7": "DI MANA MEMBELI",
-      "text8": "Temukan Toko"
+      "text4": "About",
+      "text5": "Contact",
+      "text6": "Search",
+      "text7": "WHERE TO BUY",
+      "text8": "Find a Store"
     },
     "Footer": {
       "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",

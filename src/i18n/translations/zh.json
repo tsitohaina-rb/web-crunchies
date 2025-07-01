@@ -1,23 +1,207 @@
 {
-     "text": {
-    "text1": "",
-    "text2": "",
-    "text3": "",
-    "text4": "",
-    "text5": "",
-    "text6": "",
-    "text7": "",
-    "text8": "",
-    "text9": "",
-    "text10": "",
-    "text11": "",
-    "text12": "",
-    "text13": "",
-    "text14": "",
-    "text15": "",
-    "text16": "",
-    "text17": "",
-    "text18": ""
+  "pages": {
+    "Blog": {
+      "titlePrefix": "우리의",
+      "titleMain": "반려동물 블로그",
+      "subtitle": "반려동물 관리, 건강, 행복에 대한 팁, 조언, 이야기를 찾아보세요",
+      "loadMore": "더 보기",
+      "searchPlaceholder": "블로그 게시물 검색...",
+      "categoriesTitle": "카테고리",
+      "categories": {
+        "dogs": "개",
+        "dogsCount": "12",
+        "cats": "고양이",
+        "catsCount": "9",
+        "healthcare": "건강 관리",
+        "healthcareCount": "9",
+        "general": "일반",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "인기 게시물"
+    },
+    "Contact": {
+      "text1": "지도 로드 중...",
+      "text2": "문의하기",
+      "text3": "연락을 기다립니다! 메시지를 보내주시면 최대한 빨리 답변해 드리겠습니다."
+    },
+    "Product": {
+      "text1": "제품을 찾을 수 없습니다",
+      "text2": "죄송합니다. 찾으시는 제품을 찾을 수 없습니다.",
+      "text3": "제품으로 돌아가기",
+      "text4": "홈"
+    },
+    "Shop": {
+      "text1": "카테고리를 찾을 수 없습니다",
+      "text2": "죄송합니다. 찾으시는 카테고리를 찾을 수 없습니다.",
+      "text3": "홈으로 돌아가기",
+      "text4": "쇼핑 중인 상품"
+    }
+  },
 
+  "components": {
+    "main": {
+      "about": {
+        "About": {
+          "text1": "올바른 선택",
+          "text2": "반려동물",
+          "text3": "동반자",
+          "text4": "과학이 사랑과 만나 소중한 반려동물을 위한 곳",
+          "text5": "우리의 이야기 발견하기",
+          "title": "우리 브랜드 DNA",
+          "text6": "과학적",
+          "text7": "건강한",
+          "text8": "프리미엄",
+          "text9": "전체적인",
+          "text10": "연구 기반 영양 및 관리 솔루션",
+          "text11": "최적의 반려동물 건강을 위한 영양 균형",
+          "text12": "최고 품질의 성분 및 제품",
+          "text13": "반려동물의 신체적, 정서적 요구를 위한 완벽한 관리",
+          "text14": "우리의 사명",
+          "text15": "오늘날 반려동물의 행복을 위해 CRUNCHIES는 올바른 해결책을 제공하기 위해 노력합니다:",
+          "text16": "영양 균형 잡힌 사료",
+          "text17": "최적의 건강을 위해",
+          "text18": "맞춤형 미용 제품, 일상 관리 필수품 및 보충제",
+          "text19": "편안함과 활력을 우선시",
+          "text20": "끊임없는 연구 및 혁신",
+          "text21": "반려동물의 라이프스타일 향상",
+          "text22": "우리의 사명은 과학과 보살핌이 모든 소중한 반려동물을 위해 수렴하는 전인적 웰빙 문화를 조성하는 것입니다.",
+          "text23": "브랜드 스토리",
+          "text24": "한국에서 온 따뜻한 약속, 반려동물과 주인 사이의 다리가 되어 사랑과 동반으로 가정을 밝히기 위해 노력합니다.",
+          "text25": "2012년, L은 한국에서 유기견 두두를 입양했습니다. 인내와 사랑을 통해 두두는 소심한 동반자에서 L의 삶에서 대체할 수 없는 존재로 변모했습니다. 두두의 천둥과 비에 대한 두려움은 L에게 깨달음을 주었습니다:",
+          "text26": "반려동물은 음식뿐만 아니라 안정감과 동반자 관계가 필요합니다.",
+          "text27": "2017년, 두두의 죽음 이후, L은 전 세계 반려동물에게 사랑과 보살핌을 전달하기 위해 헌신하는 한국 반려동물 브랜드 크런치스를 설립했습니다. 모든 제품 디자인은 두두의 유산을 담고 있으며, L의 신념을 구현합니다:",
+          "text28": "모든 반려동물은 사랑받을 자격이 있으며, 모든 생명은 존중받을 자격이 있습니다.",
+          "text29": "우리의 약속",
+          "text30": "CRUNCHIES는 반려동물 영양에 대한 과학적 연구에 전념하며, 영양 흡수 향상에 힘쓰고 최첨단 기술을 활용하여 정밀하게 설계된 제품을 만듭니다. 우리는 과학 기반의 반려동물 관리 라이프스타일을 위한 전체적인 솔루션을 제공합니다.",
+          "text31": "우리의 제품 발견하기"
+        }
+      },
+      "blog": {
+        "BlogCard": {
+          "text1": "Read More",
+          "text2": ""
+        }
+      },
+      "contact": {
+        "Contact": {
+          "text1": "Get In Touch",
+          "text2": "Our Location",
+          "text3": "United States",
+          "text4": "Phone Number",
+          "text5": "Email Address",
+          "text6": "Send Us A Message",
+          "text7": "Your Name",
+          "text8": "Your Email",
+          "text9": "Subject",
+          "text10": "Your Message",
+          "text11": "Write your message here...",
+          "text12": "Sending...",
+          "text13": "Send Message"
+        }
+      },
+      "header": {
+        "SearchModal": {
+          "text1": "Search Products",
+          "text2": "No products found for",
+          "text3": "Recent searches",
+          "text4": "Clear all",
+          "text5": "No recent searches",
+          "text6": "Search products..."
+        }
+      },
+      "home": {
+        "BlogSection": {
+          "text1": "Our",
+          "text2": "Pet Blog",
+          "text3": "Read our latest articles on pet care, training, and health",
+          "text4": "View All Posts"
+        },
+        "BrandBanner": {
+          "text1": "Shop by",
+          "text2": "Brand",
+          "text3": "Browse through our product brand to find the perfect match for your pet"
+        },
+        "CategoryBanner": {
+          "text1": "Shop by",
+          "text2": "Categories",
+          "text3": "Browse through our product categories to find the perfect match for your pet"
+        },
+        "FeaturedProducts": {
+          "text1": "Featured",
+          "text2": "Products",
+          "text3": "Find the perfect products for your beloved pets",
+          "text4": "View All Products",
+          "text5": ""
+        },
+        "Hero": {
+          "text1": "Best Destination For Your Pets",
+          "text2": "We Care ",
+          "text3": "For Your Pets",
+          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
+          "text5": "Shop Now"
+        },
+        "NewArrivals": {
+          "text1": "New",
+          "text2": "Arrivals",
+          "text3": "Check out our latest pet products and accessories"
+        },
+        "PromoBanner": {
+          "text1": "New Arrivals",
+          "text2": "Premium",
+          "text3": "Dog Food",
+          "text4": "Balanced nutrition for your furry friend's health and happiness",
+          "text5": "Shop Now ",
+          "text6": "Special Offer",
+          "text7": "Cat",
+          "text8": "Accessories",
+          "text9": "Everything your feline friend needs for comfort and play",
+          "text10": "Shop Now"
+        },
+        "Services": {
+          "text1": "Fast Delivery",
+          "text2": "Get your orders delivered quickly and safely",
+          "text3": "Quality Products",
+          "text4": "We ensure the quality of our products",
+          "text5": "24/7 Customer Support",
+          "text6": "Dedicated support team for queries",
+          "text7": "Special Discounts",
+          "text8": "Regular promotions and member discounts"
+        },
+        "Testimonials": {
+          "text1": "What Our",
+          "text2": "Customers Say",
+          "text3": "Read testimonials from our happy customers and their pets",
+          "text4": ""
+        }
+      }
+    },
+    "Header": {
+      "text1": "홈",
+      "text2": "쇼핑",
+      "text3": "블로그",
+      "text4": "소개",
+      "text5": "연락처",
+      "text6": "검색",
+      "text7": "어디서 구매하나요?",
+      "text8": "매장 찾기"
+    },
+    "Footer": {
+      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
+      "text2": "Quick Links",
+      "text3": "Blog",
+      "text4": "About Us",
+      "text5": "Contact Us",
+      "text6": "Get in Touch",
+      "text7": "1234 Pet Street, Pawsville,",
+      "text8": "CA 98765, United States",
+      "text9": "All Rights Reserved."
+    },
+    "Newsletter": {
+      "text1": "Sign Up for Our Newsletter",
+      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
+      "text3": "Subscribe ",
+      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
+      "text5": "Enter your email"
+    }
   }
 }

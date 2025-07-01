@@ -1,23 +1,207 @@
 {
-     "text": {
-    "text1": "",
-    "text2": "",
-    "text3": "",
-    "text4": "",
-    "text5": "",
-    "text6": "",
-    "text7": "",
-    "text8": "",
-    "text9": "",
-    "text10": "",
-    "text11": "",
-    "text12": "",
-    "text13": "",
-    "text14": "",
-    "text15": "",
-    "text16": "",
-    "text17": "",
-    "text18": ""
+  "pages": {
+    "Blog": {
+      "titlePrefix": "Blog",
+      "titleMain": "Haiwan Kesayangan Kami",
+      "subtitle": "Temui petua, nasihat, dan cerita tentang penjagaan, kesihatan, dan kebahagiaan haiwan kesayangan",
+      "loadMore": "Muat Lebih Banyak",
+      "searchPlaceholder": "Cari catatan blog...",
+      "categoriesTitle": "Kategori",
+      "categories": {
+        "dogs": "Anjing",
+        "dogsCount": "12",
+        "cats": "Kucing",
+        "catsCount": "9",
+        "healthcare": "Penjagaan Kesihatan",
+        "healthcareCount": "9",
+        "general": "Umum",
+        "generalCount": "15"
+      },
+      "popularPostsTitle": "Catatan Popular"
+    },
+    "Contact": {
+      "text1": "Memuatkan peta...",
+      "text2": "Hubungi Kami",
+      "text3": "Kami ingin mendengar daripada anda! Hantar mesej kepada kami dan kami akan balas secepat mungkin."
+    },
+    "Product": {
+      "text1": "Produk Tidak Ditemui",
+      "text2": "Maaf, kami tidak dapat mencari produk yang anda cari.",
+      "text3": "Kembali ke Produk",
+      "text4": "Laman Utama"
+    },
+    "Shop": {
+      "text1": "Kategori Tidak Ditemui",
+      "text2": "Maaf, kami tidak dapat mencari kategori yang anda cari.",
+      "text3": "Kembali ke laman utama",
+      "text4": "Membeli-belah untuk"
+    }
+  },
 
+  "components": {
+    "main": {
+      "about": {
+        "About": {
+          "text1": "Pilihan Tepat untuk",
+          "text2": "Sahabat",
+          "text3": "Haiwan Peliharaan",
+          "text4": "Di mana sains bertemu kasih sayang untuk teman kesayangan anda",
+          "text5": "Temui Kisah Kami",
+          "title": "DNA Jenama Kami",
+          "text6": "Saintifik",
+          "text7": "Sihat",
+          "text8": "Premium",
+          "text9": "Holistik",
+          "text10": "Nutrisi dan penyelesaian penjagaan yang disokong penyelidikan",
+          "text11": "Seimbang nutrisi untuk kesihatan haiwan peliharaan yang optimum",
+          "text12": "Bahan dan produk berkualiti tertinggi",
+          "text13": "Penjagaan lengkap untuk keperluan fizikal dan emosi haiwan peliharaan",
+          "text14": "Misi Kami",
+          "text15": "Untuk kesejahteraan haiwan peliharaan hari ini, CRUNCHIES berusaha untuk menyampaikan penyelesaian yang tepat:",
+          "text16": "Makanan seimbang nutrisi",
+          "text17": "untuk kesihatan yang optimum",
+          "text18": "Produk dandanan yang disesuaikan, keperluan penjagaan harian, dan suplemen",
+          "text19": "mengutamakan keselesaan dan kecergasan",
+          "text20": "Penyelidikan dan inovasi tanpa henti",
+          "text21": "untuk meningkatkan gaya hidup haiwan peliharaan",
+          "text22": "Misi kami adalah untuk memupuk budaya kesejahteraan holistik, di mana sains dan penjagaan bertemu untuk setiap teman kesayangan.",
+          "text23": "Kisah Jenama",
+          "text24": "Janji hangat dari Korea, berusaha menjadi jambatan antara haiwan peliharaan dan pemilik, menerangi rumah dengan kasih sayang dan persahabatan.",
+          "text25": "Pada tahun 2012, L mengadopsi seekor anjing jalanan bernama Dudu di Korea Selatan. Melalui kesabaran dan kasih sayang, Dudu berubah dari teman yang pemalu menjadi bagian tak tergantikan dalam hidup L. Ketakutan Dudu terhadap badai petir dan hujan membuat L menyadari:",
+          "text26": "Haiwan peliharaan tidak hanya memerlukan makanan, tetapi juga keselamatan dan persahabatan.",
+          "text27": "Pada tahun 2017, setelah Dudu meninggal, L mendirikan Crunchies—jenama haiwan peliharaan Korea yang berkomitmen untuk menyampaikan kasih sayang dan penjagaan kepada haiwan peliharaan di seluruh dunia. Setiap reka bentuk produk membawa warisan Dudu, yang merangkumi kepercayaan L:",
+          "text28": "Setiap haiwan peliharaan berhak mendapat kasih sayang, dan setiap kehidupan berhak dihormati.",
+          "text29": "Komitmen Kami",
+          "text30": "CRUNCHIES berdedikasi untuk penyelidikan saintifik dalam nutrisi haiwan peliharaan, komited untuk meningkatkan penyerapan nutrien, dan memanfaatkan teknologi canggih untuk menghasilkan produk yang direkayasa secara tepat. Kami menyediakan penyelesaian holistik untuk gaya hidup penjagaan haiwan peliharaan berpandukan sains.",
+          "text31": "Temui Produk Kami"
+        }
+      },
+      "blog": {
+        "BlogCard": {
+          "text1": "Read More",
+          "text2": ""
+        }
+      },
+      "contact": {
+        "Contact": {
+          "text1": "Get In Touch",
+          "text2": "Our Location",
+          "text3": "United States",
+          "text4": "Phone Number",
+          "text5": "Email Address",
+          "text6": "Send Us A Message",
+          "text7": "Your Name",
+          "text8": "Your Email",
+          "text9": "Subject",
+          "text10": "Your Message",
+          "text11": "Write your message here...",
+          "text12": "Sending...",
+          "text13": "Send Message"
+        }
+      },
+      "header": {
+        "SearchModal": {
+          "text1": "Search Products",
+          "text2": "No products found for",
+          "text3": "Recent searches",
+          "text4": "Clear all",
+          "text5": "No recent searches",
+          "text6": "Search products..."
+        }
+      },
+      "home": {
+        "BlogSection": {
+          "text1": "Our",
+          "text2": "Pet Blog",
+          "text3": "Read our latest articles on pet care, training, and health",
+          "text4": "View All Posts"
+        },
+        "BrandBanner": {
+          "text1": "Shop by",
+          "text2": "Brand",
+          "text3": "Browse through our product brand to find the perfect match for your pet"
+        },
+        "CategoryBanner": {
+          "text1": "Shop by",
+          "text2": "Categories",
+          "text3": "Browse through our product categories to find the perfect match for your pet"
+        },
+        "FeaturedProducts": {
+          "text1": "Featured",
+          "text2": "Products",
+          "text3": "Find the perfect products for your beloved pets",
+          "text4": "View All Products",
+          "text5": ""
+        },
+        "Hero": {
+          "text1": "Best Destination For Your Pets",
+          "text2": "We Care ",
+          "text3": "For Your Pets",
+          "text4": "Find the perfect companion who fits your lifestyle. Visit our store for quality pet supplies, toys, food, and more.",
+          "text5": "Shop Now"
+        },
+        "NewArrivals": {
+          "text1": "New",
+          "text2": "Arrivals",
+          "text3": "Check out our latest pet products and accessories"
+        },
+        "PromoBanner": {
+          "text1": "New Arrivals",
+          "text2": "Premium",
+          "text3": "Dog Food",
+          "text4": "Balanced nutrition for your furry friend's health and happiness",
+          "text5": "Shop Now ",
+          "text6": "Special Offer",
+          "text7": "Cat",
+          "text8": "Accessories",
+          "text9": "Everything your feline friend needs for comfort and play",
+          "text10": "Shop Now"
+        },
+        "Services": {
+          "text1": "Fast Delivery",
+          "text2": "Get your orders delivered quickly and safely",
+          "text3": "Quality Products",
+          "text4": "We ensure the quality of our products",
+          "text5": "24/7 Customer Support",
+          "text6": "Dedicated support team for queries",
+          "text7": "Special Discounts",
+          "text8": "Regular promotions and member discounts"
+        },
+        "Testimonials": {
+          "text1": "What Our",
+          "text2": "Customers Say",
+          "text3": "Read testimonials from our happy customers and their pets",
+          "text4": ""
+        }
+      }
+    },
+    "Header": {
+      "text1": "Laman Utama",
+      "text2": "Kedai",
+      "text3": "Blog",
+      "text4": "Tentang Kami",
+      "text5": "Hubungi",
+      "text6": "Cari",
+      "text7": "DI MANA UNTUK MEMBELI",
+      "text8": "Cari Kedai"
+    },
+    "Footer": {
+      "text1": "Crunchies is a premium pet store dedicated to providing high-quality products and exceptional service for pets and their owners.",
+      "text2": "Quick Links",
+      "text3": "Blog",
+      "text4": "About Us",
+      "text5": "Contact Us",
+      "text6": "Get in Touch",
+      "text7": "1234 Pet Street, Pawsville,",
+      "text8": "CA 98765, United States",
+      "text9": "All Rights Reserved."
+    },
+    "Newsletter": {
+      "text1": "Sign Up for Our Newsletter",
+      "text2": "Subscribe to our newsletter and receive updates on new products,special offers, and care tips for your pets.",
+      "text3": "Subscribe ",
+      "text4": "By subscribing, you agree to our privacy policy and consent to receive updates from our company.",
+      "text5": "Enter your email"
+    }
   }
 }
