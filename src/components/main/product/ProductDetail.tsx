@@ -288,6 +288,26 @@ const ProductDetail = ({ product }: { product: (typeof products)[0] }) => {
                   {getLinkWithSubcategoriesAndName(product.subcategory).nameSub}
                 </Link>
               </div>
+              {/* Product Specifications */}
+              {product.specifications && (
+                <div className="mt-2">
+                  <span className="font-medium text-gray-600 block mb-1">
+                    Specifications:
+                  </span>
+                  <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                    {Object.entries(product.specifications).map(
+                      ([key, value]) => (
+                        <li key={key}>
+                          <span className="capitalize">
+                            {key.replace(/([A-Z])/g, " $1")}
+                          </span>
+                          : {value}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
