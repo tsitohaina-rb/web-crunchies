@@ -17,11 +17,11 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
   return (
     <Fragment>
       <div
-        className="group bg-white border border-primary/10 rounded-lg overflow-hidden transition-all hover:shadow-sm"
+        className="group bg-white border border-primary/10 rounded-lg overflow-hidden transition-all hover:shadow-sm h-full flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="relative h-60 overflow-hidden">
+        <div className="relative h-60 overflow-hidden flex-shrink-0">
           <Link href={`/product/${product.slug}`}>
             <Image
               src={product.images[0]}
@@ -45,7 +45,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
         </div> */}
         </div>
 
-        <div className="p-4">
+        <div className="p-4 flex flex-col flex-grow">
           <Link
             href={getLinkWithSubcategoriesAndName(product.subcategory).linkSub}
             className="block mb-1 text-sm hover:text-primary hover:underline transition-colors"
@@ -54,7 +54,8 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
           </Link>
           <Link
             href={`/product/${product.slug}`}
-            className="block mb-2 text-lg font-semibold hover:text-primary hover:underline transition-colors"
+            className="block mb-3 text-lg font-semibold hover:text-primary hover:underline transition-colors line-clamp-2 flex-grow"
+            title={product.name}
           >
             {product.name}
           </Link>
@@ -74,7 +75,8 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
           ))}
         </div> */}
 
-          <div className="flex items-center justify-between">
+          {/* star and button buy - now at bottom */}
+          <div className="flex items-center justify-between mt-auto">
             {/* Reset if active price */}
             {/* <div className="flex items-center gap-2">
             {product.variants[0].salePrice ? (
@@ -96,8 +98,8 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
             )}
           </div> */}
 
-            {/* Delete if active price */}
-            <div className="flex items-center">
+            {/* Star ratings */}
+            <div className="flex items-center flex-shrink-0">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
@@ -114,7 +116,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
             <Button
               size="sm"
               variant="default"
-              className="rounded-full"
+              className="rounded-full flex-shrink-0 ml-2"
               onClick={() => setIsShopModalOpen(true)}
             >
               Shop Now
