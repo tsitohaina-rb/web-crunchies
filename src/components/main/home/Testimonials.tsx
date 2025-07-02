@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 const testimonials = [
-
   {
     id: 1,
     name: "John Smith",
@@ -75,49 +74,57 @@ const testimonials = [
 
 const Testimonials = () => {
   const t = useTranslations('components.main.home.Testimonials');
+  
   return (
-    <section className="section-padding bg-white">
-      <div className="container-custom">
-        <div className="text-center mb-12">
-          <h2 className="section-title">
+    <section className="py-12 md:py-16 lg:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section avec espacement amélioré */}
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
             {t('text1')} <span className="text-primary">{t('text2')}</span>
           </h2>
-          <p className="section-subtitle">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             {t('text3')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Grid responsive améliorée */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className=" bg-primary-foreground p-6 rounded-lg relative"
+              className="bg-primary-foreground p-4 sm:p-6 rounded-lg relative min-h-[280px] flex flex-col"
             >
-              <div className="absolute top-6 right-6 text-primary opacity-20">
-                <Quote size={48} />
+              {/* Quote Icon */}
+              <div className="absolute top-4 sm:top-6 right-4 sm:right-6 text-primary opacity-20">
+                <Quote size={32} className="sm:w-12 sm:h-12" />
               </div>
 
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+              {/* User Info */}
+              <div className="flex items-center gap-3 mb-4 relative z-10">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm sm:text-base">
                   {testimonial.name.charAt(0).toUpperCase()}
                 </div>
-                <div>
-                  <h4 className="font-semibold flex items-center">
-                    {testimonial.name}{" "}
-                    <Globe size={12} className="m-1 text-primary" />
-                    <span className="text-gray-600 text-xs">
+                <div className="flex-1 min-w-0">
+                  <h4 className="font-semibold flex items-center text-sm sm:text-base">
+                    <span className="truncate">{testimonial.name}</span>
+                    <Globe size={10} className="ml-1 text-primary flex-shrink-0" />
+                    <span className="text-gray-600 text-xs ml-1 flex-shrink-0">
                       {testimonial.countryCode}
                     </span>
                   </h4>
-                  <p className="text-sm ">{testimonial.product}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 truncate">
+                    {testimonial.product}
+                  </p>
                 </div>
               </div>
 
-              <div className="flex items-center mb-4">
+              {/* Rating */}
+              <div className="flex items-center mb-3 sm:mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    size={16}
+                    size={14}
                     className={
                       i < testimonial.rating
                         ? "fill-primary text-primary"
@@ -127,18 +134,26 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              <p className="mb-4">{testimonial.text}</p>
-              <p className="text-xs text-gray-500 flex items-center">
-                <Clock size={12} className="mr-1" /> {testimonial.date}
+              {/* Review Text */}
+              <p className="text-sm sm:text-base text-gray-700 mb-4 flex-grow leading-relaxed">
+                {testimonial.text}
+              </p>
+
+              {/* Date */}
+              <p className="text-xs text-gray-500 flex items-center mt-auto">
+                <Clock size={10} className="mr-1 flex-shrink-0" /> 
+                {testimonial.date}
               </p>
             </div>
           ))}
         </div>
-      </div>
-      <div className="mt-12 text-center">
-        <Button className="bg-primary-foreground text-gray-800 hover:bg-primary/20 rounded-full px-8 py-6 font-medium">
-          Load More
-        </Button>
+
+        {/* Load More Button */}
+        <div className="mt-8 md:mt-12 text-center">
+          <Button className="bg-primary-foreground text-gray-800 hover:bg-primary/20 rounded-full px-6 sm:px-8 py-3 sm:py-4 font-medium text-sm sm:text-base transition-colors duration-200">
+            Load More
+          </Button>
+        </div>
       </div>
     </section>
   );

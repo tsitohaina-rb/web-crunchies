@@ -7,6 +7,7 @@
       "loadMore": "Muat Lebih Banyak",
       "searchPlaceholder": "Cari postingan blog...",
       "categoriesTitle": "Kategori",
+      "loading": "Memuat...",
       "categories": {
         "dogs": "Anjing",
         "dogsCount": "12",

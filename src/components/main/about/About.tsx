@@ -5,9 +5,19 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const About = () => {
   const t = useTranslations("components.main.about.About");
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <div className="flex-grow mt-20 lg:mt-28">
       <section className="relative min-h-[80vh] flex items-center">
@@ -31,7 +41,10 @@ const About = () => {
               <p className="text-xl md:text-2xl mb-12 text-gray-700">
                 {t("text4")}
               </p>
-              <Button className="rounded-full  hover:scale-105 transition-transform">
+              <Button
+                className="rounded-full  hover:scale-105 transition-transform"
+                onClick={() => scrollToSection("testimonials-section")}
+              >
                 {t("text5")}
               </Button>
             </motion.div>
@@ -204,6 +217,7 @@ const About = () => {
 
       <motion.section
         initial={{ opacity: 0, y: 50 }}
+        id="testimonials-section"
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
@@ -317,7 +331,7 @@ const About = () => {
             </h2>
             <p className="text-lg max-w-3xl mx-auto mb-12">{t("text30")}</p>
             <button className="bg-white text-primary font-semibold py-3 px-8 rounded-full hover:bg-primary/5 transition">
-              {t("text31")}
+              <Link href="/shop/all">{t("text31")}</Link>
             </button>
           </div>
         </div>

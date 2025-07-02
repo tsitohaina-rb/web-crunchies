@@ -7,6 +7,7 @@
       "loadMore": "加载更多",
       "searchPlaceholder": "搜索博客文章...",
       "categoriesTitle": "分类",
+      "loading": "正在加载...",
       "categories": {
         "dogs": "狗",
         "dogsCount": "12",

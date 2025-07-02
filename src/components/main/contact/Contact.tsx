@@ -76,9 +76,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="font-semibold text-lg">{t('text4')}</h3>
                     <p className="text-petio-text mt-1">
-                      +1 (234) 567-8901
-                      <br />
-                      +1 (234) 567-8902
+                      +86 18221419361
                     </p>
                   </div>
                 </div>
@@ -89,7 +87,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-semibold text-lg">{t('text5')}</h3>
-                    <p className="text-petio-text mt-1">info@crunchies.com</p>
+                    <p className="text-petio-text mt-1">mislm61@gmail.com</p>
                   </div>
                 </div>
               </div>

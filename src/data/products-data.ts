@@ -43,7 +43,7 @@ export default [
       },
       {
         id: 2,
-        name: "Phidelis P.",
+        name: "Gilberto",
         status: true,
         countryCode: "FR",
         rating: 3,
