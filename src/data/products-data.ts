@@ -328,7 +328,7 @@ export default [
     slug: "crunchies-tofu-blend-cat-litter",
     brand: "Crunchies",
     category: "pet-supplies",
-    subcategory: "pet-toys",
+    subcategory: "cat-litter",
     description:
       "Vacuum-sealed tofu blend cat litter with superior absorption and odor control. Eco-friendly and dust-free formula.",
     images: [
