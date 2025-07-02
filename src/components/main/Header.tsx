@@ -28,7 +28,7 @@ import LanguageSwitcher from "../ui/language-switcher";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 const Header = () => {
-  const t = useTranslations('components.Header');
+  const t = useTranslations("components.Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeMobileCategory, setActiveMobileCategory] = useState<
@@ -122,7 +122,7 @@ const Header = () => {
               onClick={() => setIsShopModalOpen(true)}
             >
               <MapPin size={16} className="text-primary" />
-              <span className="text-sm font-medium">{t('text1')}</span>
+              <span className="text-sm font-medium">{t("text1")}</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -165,14 +165,14 @@ const Header = () => {
                     href="/"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    {t('text1')}
+                    {t("text1")}
                   </Link>
                 </NavigationMenuItem>
 
                 {/* Categories Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="font-medium rounded-full hover:bg-primary/5 data-[state=open]:bg-primary/5 data-[state=open]:text-primary">
-                    {t('text2')}
+                    {t("text2")}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <motion.ul
@@ -238,7 +238,7 @@ const Header = () => {
                     href="/blog"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    {t('text3')}
+                    {t("text3")}
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -246,7 +246,7 @@ const Header = () => {
                     href="/about"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    {t('text4')}
+                    {t("text4")}
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -254,7 +254,7 @@ const Header = () => {
                     href="/contact"
                     className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
-                    {t('text5')}
+                    {t("text5")}
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -269,7 +269,7 @@ const Header = () => {
               onClick={() => setIsSearchModalOpen(true)}
             >
               <Search className="text-primary" size={18} />
-              <span className="hidden sm:inline-flex ml-2">{t('text6')}</span>
+              <span className="hidden sm:inline-flex ml-2">{t("text6")}</span>
             </Button>
             <Button
               variant="default"
@@ -279,7 +279,7 @@ const Header = () => {
               <div className="flex items-center gap-2">
                 <ShoppingBag size={18} />
                 <span className="hidden sm:inline-flex uppercase">
-                  {t('text7')}
+                  {t("text7")}
                 </span>
               </div>
             </Button>
@@ -324,7 +324,6 @@ const Header = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            variants={mobileMenuVariants}
           >
             <div className="px-4 py-2">
               <div className="relative">
@@ -337,7 +336,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {t('text1')}
+                      {t("text1")}
                     </Link>
                   </li>
 
@@ -352,7 +351,7 @@ const Header = () => {
                         activeMobileCategory === "shop" ? "text-primary" : ""
                       }`}
                     >
-                      <span>{t('text2')}</span>
+                      <span>{t("text2")}</span>
                       <ChevronDown
                         size={18}
                         className={`transition-transform duration-300 ${
@@ -416,7 +415,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {t('text3')}
+                      {t("text3")}
                     </Link>
                   </li>
                   <li>
@@ -425,7 +424,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {t('text4')}
+                      {t("text4")}
                     </Link>
                   </li>
                   <li>
@@ -434,7 +433,7 @@ const Header = () => {
                       className="font-medium py-3 hover:text-primary transition-colors flex items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {t('text5')}
+                      {t("text5")}
                     </Link>
                   </li>
                 </ul>
@@ -461,7 +460,7 @@ const Header = () => {
                     <p className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
                       <MapPin size={16} className="text-primary" />
                     </p>
-                    <span className="text-sm">{t('text8')}</span>
+                    <span className="text-sm">{t("text8")}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
