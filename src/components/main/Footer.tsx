@@ -91,14 +91,14 @@ const Footer = () => {
                   size={18}
                   className="text-primary group-hover:scale-110 transition-transform"
                 />
-                <p className="text-gray-600">+1 (234) 567-8901</p>
+                <p className="text-gray-600">+86 18221419361</p>
               </div>
               <div className="flex items-center gap-3 group">
                 <Mail
                   size={18}
                   className="text-primary group-hover:scale-110 transition-transform"
                 />
-                <p className="text-gray-600">info@crunchies.com</p>
+                <p className="text-gray-600">lmislm61@gmail.com</p>
               </div>
             </div>
           </div>

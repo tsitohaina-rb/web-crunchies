@@ -27,6 +27,7 @@ import SearchModal from "./header/SearchModal";
 import LanguageSwitcher from "../ui/language-switcher";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+
 const Header = () => {
   const t = useTranslations("components.Header");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -115,7 +116,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 hover:text-primary transition-all cursor-pointer">
               <Phone size={16} className="text-primary" />
-              <span className="text-sm font-medium">+1 (234) 567-8901</span>
+              <span className="text-sm font-medium">+86 18221419361</span>
             </div>
             <div
               className="flex items-center gap-2 hover:text-primary transition-all cursor-pointer"
@@ -126,9 +127,6 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            {/* <select className="bg-transparent text-sm font-medium cursor-pointer focus:outline-none transition-all">
-              <option>JPY</option>
-            </select> */}
             <div className="h-4 w-px bg-gray-300"></div>
             <LanguageSwitcher languages={languages} />
           </div>
@@ -163,15 +161,15 @@ const Header = () => {
                 <NavigationMenuItem>
                   <Link
                     href="/"
-                    className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
+                    className="font-medium text-base px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
                     {t("text1")}
                   </Link>
                 </NavigationMenuItem>
 
                 {/* Categories Dropdown */}
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="font-medium rounded-full hover:bg-primary/5 data-[state=open]:bg-primary/5 data-[state=open]:text-primary">
+                 <NavigationMenuItem>
+                  <NavigationMenuTrigger className="font-medium text-base px-6 py-3 rounded-full hover:bg-primary/5 data-[state=open]:bg-primary/5 data-[state=open]:text-primary [&>svg]:w-4 [&>svg]:h-4 [&>svg]:ml-1">
                     {t("text2")}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -218,7 +216,7 @@ const Header = () => {
                                   <li key={sub.id}>
                                     <Link
                                       href={`/shop/${category.slug}?subcategory=${sub.slug}`}
-                                      className="text-sm py-1.5 px-2 rounded hover:bg-primary/5 hover:text-primary transition-colors flex items-center gap-2"
+                                      className="text-base py-1.5 px-2 rounded hover:bg-primary/5 hover:text-primary transition-colors flex items-center gap-2"
                                     >
                                       <span className="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
                                       {sub.title}
@@ -233,10 +231,11 @@ const Header = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
+
                 <NavigationMenuItem>
                   <Link
                     href="/blog"
-                    className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
+                    className="font-medium text-base not-[]:px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
                     {t("text3")}
                   </Link>
@@ -244,7 +243,7 @@ const Header = () => {
                 <NavigationMenuItem>
                   <Link
                     href="/about"
-                    className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
+                    className="font-medium text-base px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
                     {t("text4")}
                   </Link>
@@ -252,7 +251,7 @@ const Header = () => {
                 <NavigationMenuItem>
                   <Link
                     href="/contact"
-                    className="font-medium px-4 py-2 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
+                    className="font-medium text-base px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
                     {t("text5")}
                   </Link>
@@ -263,14 +262,23 @@ const Header = () => {
 
           {/* Header Actions */}
           <div className="flex items-center gap-3">
+            {/* Language Switcher - Mobile visible */}
+            <div className="lg:hidden">
+              <LanguageSwitcher
+                languages={languages}
+                className="h-10 px-2 text-sm min-w-[60px]"
+              />
+            </div>
+
             <Button
               variant="outline"
               className="rounded-full shadow-none border-primary/20 hover:bg-primary/5 hover:border-primary/30 transition-all duration-200 hover:scale-105"
               onClick={() => setIsSearchModalOpen(true)}
             >
               <Search className="text-primary" size={18} />
-              <span className="hidden sm:inline-flex ml-2">{t("text6")}</span>
+              <span className="hidden text-base sm:inline-flex ml-2">{t("text6")}</span>
             </Button>
+
             <Button
               variant="default"
               className="rounded-full transition-all duration-200 hover:scale-105"
@@ -283,6 +291,7 @@ const Header = () => {
                 </span>
               </div>
             </Button>
+
             <button
               className="lg:hidden ml-2 w-10 h-10 flex items-center justify-center rounded-full hover:bg-primary/5 transition-colors relative z-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -439,6 +448,7 @@ const Header = () => {
                 </ul>
               </div>
 
+              {/* Contact Information Section - Removed Language Switcher */}
               <div className="mt-8 bg-primary/5 p-4 rounded-lg">
                 <h3 className="font-medium text-sm mb-3">
                   Contact Information
@@ -468,10 +478,6 @@ const Header = () => {
                     </div>
                     <span className="text-sm">Mon-Sat: 8.00-18.00</span>
                   </div>
-                </div>
-
-                <div className="mt-4 flex gap-2">
-                  <LanguageSwitcher languages={languages} className="w-full" />
                 </div>
               </div>
             </div>

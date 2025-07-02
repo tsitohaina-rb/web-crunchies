@@ -55,16 +55,16 @@ const BlogPage = async () => {
               ))}
             </div>
 
-            <div className="mt-10 flex justify-center">
+            {/* <div className="mt-10 flex justify-center">
               <Button variant="outline" size="lg" className="rounded-full px-8">
                 {t('loadMore')}
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Sidebar */}
           <div className="lg:w-1/4">
-            <div className="bg-white border border-petio-border rounded-lg p-6">
+            {/* <div className="bg-white border border-petio-border rounded-lg p-6">
               <form className="flex gap-x-1 mb-4">
                 <Input
                   type="email"
@@ -115,9 +115,9 @@ const BlogPage = async () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
-            <div className="bg-white border border-petio-border rounded-lg p-6 mt-8">
+            <div className="bg-white border border-petio-border rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-4">{t('popularPostsTitle')}</h3>
               <Separator className="mb-4" />
               <ul className="space-y-4">

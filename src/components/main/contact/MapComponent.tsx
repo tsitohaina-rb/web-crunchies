@@ -19,12 +19,8 @@ import { useTranslations } from "next-intl";
 
 // French overseas territories
 const markers = [
-  { name: "Wallis", coordinates: [-176.2, -13.3] },
-  { name: "Madagascar", coordinates: [47.5, -18.8] },
-  { name: "Réunion", coordinates: [55.5, -21.1] },
-  { name: "Mayotte", coordinates: [45.2, -12.8] },
-  { name: "Papouasie-Nouvelle-Guinée", coordinates: [143.5, -6.3] },
-  { name: "Nouvelle-Calédonie", coordinates: [165.6, -21.3] },
+  { name: "Malaysia", coordinates: [101.9, 4.2] },
+  { name: "Thailand", coordinates: [100.9, 15.8] },
 ];
 
 const MapComponent = () => {
