@@ -53,13 +53,6 @@ export default [
     ],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -107,13 +100,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
@@ -163,13 +149,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -203,13 +182,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
@@ -252,13 +224,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -299,13 +264,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
@@ -349,13 +307,6 @@ export default [
     findOnline: [
       {
         shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
-        shopName: "Amazon",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
         note: 4.5,
@@ -389,13 +340,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.8,
-        review: 1200,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
