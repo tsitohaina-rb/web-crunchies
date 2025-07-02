@@ -59,4 +59,30 @@ export default [
       },
     ],
   },
+  {
+    id: 3,
+    title: "Pet Supplies",
+    slug: "pet-supplies",
+    description:
+      "A wide range of pet supplies including toys, accessories, and more to keep your pets happy and healthy.",
+    image: "/images/category-pet-supplies.png",
+    icon: "🧸🎾",
+    color: "bg-green-50",
+    keywords: [
+      "pet toys",
+      "pet accessories",
+      "pet supplies",
+      "cat toys",
+      "dog toys",
+    ],
+    subcategories: [
+      {
+        id: 301,
+        title: "Cat Litter",
+        slug: "cat-litter",
+        description:
+          "Fun and engaging toys for pets, designed to stimulate play and exercise.",
+      },
+    ],
+  },
 ];

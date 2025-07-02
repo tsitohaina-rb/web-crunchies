@@ -333,7 +333,6 @@ const Header = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            variants={mobileMenuVariants}
           >
             <div className="px-4 py-2">
               <div className="relative">

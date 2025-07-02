@@ -13,7 +13,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const CategoryBanner = () => {
-  const t = useTranslations('components.main.home.CategoryBanner');
+  const t = useTranslations("components.main.home.CategoryBanner");
   const getTotalProductsForCategory = (slug: string): number => {
     return products.filter((product) => product.category === slug).length;
   };
@@ -22,31 +22,29 @@ const CategoryBanner = () => {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            {t('text1')} <span className="text-primary">{t('text2')}</span>
+            {t("text1")} <span className="text-primary">{t("text2")}</span>
           </h2>
-          <p className="section-subtitle">
-            {t('text3')}
-          </p>
+          <p className="section-subtitle">{t("text3")}</p>
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-6xl mx-auto">
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
               slidesToScroll: 1,
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="flex justify-center -ml-2 md:-ml-4">
               {categories.map((category) => (
                 <CarouselItem
                   key={category.id}
-                  className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/4"
+                  className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0"
                 >
                   <Link
                     href={`/shop/${category.slug}`}
-                    className={`${category.color} rounded-2xl p-4 block h-full transition-transform hover:-translate-y-2 group`}
+                    className={`${category.color} rounded-2xl p-4 block h-full transition-transform hover:-translate-y-2 group mx-auto max-w-sm`}
                   >
                     <div className="h-40 sm:h-52 relative overflow-hidden rounded-xl mb-4">
                       <img

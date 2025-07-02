@@ -53,13 +53,6 @@ export default [
     ],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -71,6 +64,7 @@ export default [
     stockAmount: 2,
     isNew: true,
     isSale: true,
+    isFeatured: true,
   },
 
   {
@@ -107,13 +101,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
@@ -163,13 +150,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -204,13 +184,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -222,6 +195,7 @@ export default [
     stockAmount: 2,
     isNew: true,
     isSale: true,
+    isFeatured: true,
   },
 
   {
@@ -251,13 +225,6 @@ export default [
     ],
     reviews: [],
     findOnline: [
-      {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
       {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
@@ -300,13 +267,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -318,6 +278,7 @@ export default [
     stockAmount: 2,
     isNew: true,
     isSale: true,
+    isFeatured: true,
   },
 
   {
@@ -349,13 +310,6 @@ export default [
     findOnline: [
       {
         shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.9,
-        review: 2000,
-      },
-      {
-        shopName: "Amazon",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
         note: 4.5,
@@ -373,11 +327,15 @@ export default [
     name: "Crunchies Tofu Blend Cat Litter",
     slug: "crunchies-tofu-blend-cat-litter",
     brand: "Crunchies",
-    category: "pet-grooming-supplies",
-    subcategory: "cleaning-solutions-litter",
+    category: "pet-supplies",
+    subcategory: "cat-litter",
     description:
       "Vacuum-sealed tofu blend cat litter with superior absorption and odor control. Eco-friendly and dust-free formula.",
-    images: ["/images/products/crunchies-tofu-blend-litter.jpg"],
+    images: [
+      "/images/products/crunchies-tofu-blend-litter-1.png",
+      "/images/products/crunchies-tofu-blend-litter-2.png",
+      "/images/products/crunchies-tofu-blend-litter-3.png",
+    ],
     variants: [
       {
         weight: "1.9kg",
@@ -390,13 +348,6 @@ export default [
     reviews: [],
     findOnline: [
       {
-        shopName: "Amazon",
-        image: "/images/logo/amazon.png",
-        url: "https://www.amazon.com",
-        note: 4.8,
-        review: 1200,
-      },
-      {
         shopName: "Shopee",
         image: "/images/logo/shopee.png",
         url: "https://shopee.co.th",
@@ -408,6 +359,7 @@ export default [
     stockAmount: 24,
     isNew: true,
     isSale: true,
+    isFeatured: true,
     specifications: {
       packaging: "1.9kg per bag (vacuum-sealed)",
       bagDimensions: "26cm × 20cm × 5cm",
