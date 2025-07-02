@@ -78,17 +78,10 @@ export default [
     subcategories: [
       {
         id: 301,
-        title: "Pet Toys",
-        slug: "pet-toys",
+        title: "Cat Litter",
+        slug: "cat-litter",
         description:
           "Fun and engaging toys for pets, designed to stimulate play and exercise.",
-      },
-      {
-        id: 302,
-        title: "Pet Accessories",
-        slug: "pet-accessories",
-        description:
-          "Stylish and functional accessories for pets, including collars, leashes, and more.",
       },
     ],
   },
