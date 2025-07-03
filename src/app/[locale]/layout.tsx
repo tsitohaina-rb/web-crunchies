@@ -50,9 +50,23 @@ export default async function RootLayout({
       currentPath: pathname,
       baseUrl,
     });
+
   return (
     <html lang={locale} dir="ltr">
       <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-T39TG8TL');
+            `,
+          }}
+        />
+        
         {/* Google Analytics */}
         <script
           async
@@ -68,6 +82,7 @@ export default async function RootLayout({
             `,
           }}
         />
+        
         {/* Alternates */}
         {alternateLinks.map((link) => (
           <link
@@ -78,9 +93,11 @@ export default async function RootLayout({
           />
         ))}
         <link rel="canonical" href={canonical} />
+        
         {/* Hardcoded alternates as per config */}
         <link rel="alternate" hrefLang="en-US" href={`${baseUrl}/en`} />
         <link rel="alternate" hrefLang="fr-FR" href={`${baseUrl}/fr`} />
+        
         {/* Robots meta */}
         <meta
           name="robots"
@@ -90,6 +107,7 @@ export default async function RootLayout({
           name="googlebot"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
+        
         {/* Google site verification */}
         {process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
           <meta
@@ -97,6 +115,7 @@ export default async function RootLayout({
             content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION}
           />
         )}
+        
         <meta property="og:locale" content={currentLocale} />
         {alternateLocales.map((meta, index) => (
           <meta key={index} property={meta.property} content={meta.content} />
@@ -107,6 +126,16 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T39TG8TL"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        
         <NextIntlClientProvider messages={messages}>
           <ToastProvider defaultPosition="top-right">
             <div className="relative min-h-screen flex flex-col">
