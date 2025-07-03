@@ -102,10 +102,7 @@ export default async function RootLayout({
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta
-          name="googlebot"
-          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-        />
+
         
         {/* Google site verification */}
         {process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION && (
