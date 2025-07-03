@@ -96,7 +96,6 @@ export default async function RootLayout({
         
         {/* Hardcoded alternates as per config */}
         <link rel="alternate" hrefLang="en-US" href={`${baseUrl}/en`} />
-        <link rel="alternate" hrefLang="fr-FR" href={`${baseUrl}/fr`} />
         
         {/* Robots meta */}
         <meta
