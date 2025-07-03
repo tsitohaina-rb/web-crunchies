@@ -235,7 +235,7 @@ const Header = () => {
                 <NavigationMenuItem>
                   <Link
                     href="/blog"
-                    className="font-medium text-base not-[]:px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
+                    className="font-medium text-base px-6 py-3 rounded-full hover:bg-primary/5 hover:text-primary transition-colors flex items-center"
                   >
                     {t("text3")}
                   </Link>
